@@ -1,11 +1,13 @@
 import Nav from "../Nav";
-import { Container, Title } from "./styles";
+import { Container, DivFlexBox, Title } from "./styles";
 
 const Header = () => {
     return (
         <Container>
             <Nav urlImage='/assets/logo.png' textoAlternativo='logo da marca'/> 
-            <Title></Title>
+            <DivFlexBox>
+                <Title>Aromas e Sabores Inigualáveis</Title>
+            </DivFlexBox>
         </Container>
     )
 }

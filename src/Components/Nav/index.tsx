@@ -1,4 +1,4 @@
-import { Container, BoxLink, Link, Logo } from "./styles";
+import { Container, BoxLink, Link, Logo, Div, InstagramIcon, ArrowIcon, FacebookIcon } from "./styles";
 
 interface NavProps {
     urlImage: string
@@ -8,12 +8,27 @@ interface NavProps {
 const Nav = ({urlImage, textoAlternativo}: NavProps) => {
     return (
         <Container>
-            <Logo src={ urlImage } alt={ textoAlternativo }/>
+            <Div>
+                <Logo src={ urlImage } alt={ textoAlternativo }/>
+            </Div>
+
             <BoxLink>
-                <Link>Cardápio</Link>
+                <Link>Empório
+                    <ArrowIcon />
+                </Link>
                 <Link>Nossa História</Link>
-                <Link>Contato</Link>
+                <Link>Lojas</Link>
+                <Link>Seja um franquiado</Link>
             </BoxLink>
+
+            <Div>
+                <Div>
+                    <InstagramIcon />
+                </Div>
+                <Div>
+                    <FacebookIcon />
+                </Div>
+            </Div>
         </Container>    
     )
 }

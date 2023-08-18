@@ -6,16 +6,17 @@ interface ContentProps {
     children: string 
     textButton: string
     backgroundImage: ImageProps
+    background_Button: string 
 }
 
-const Content = ({backgroundImage, title, children, textButton}: ContentProps) => {
+const Content = ({backgroundImage, title, children, textButton, background_Button}: ContentProps) => {
     return (
         <Section>
             <Image backgroundImage={ backgroundImage } />
             <TextBox>
                 <Titulo>{ title }</Titulo>
                 <p>{ children }</p>
-                <Button>{ textButton }</Button>
+                <Button background_Button={ background_Button }>{ textButton }</Button>
             </TextBox>
         </Section> 
     )
@@ -27,7 +28,7 @@ export const Content2 = ({backgroundImage, title, children, textButton}: Content
             <TextBox>
                 <Titulo>{ title }</Titulo>
                 <p>{ children }</p>
-                <Button>{ textButton }</Button>
+                <Button background_Button="black">{ textButton }</Button>
             </TextBox>
             <Image backgroundImage={ backgroundImage } />
         </Section>

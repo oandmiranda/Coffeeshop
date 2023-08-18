@@ -5,6 +5,7 @@ import Header from "./Components/Header";
 import Content, { Content2 } from "./Components/Content";
 import imagemXicaras from './Components/Content/img/xicaras.jpg';
 import imagemGraos from './Components/Content/img/graos.jpg';
+import Delivery from "./Components/Delivery";
 
 function App () {
   return (
@@ -15,17 +16,25 @@ function App () {
         <Header />
         <Content 
           backgroundImage={imagemXicaras}
-          title="Uma surpresa refrescante para você"
-          children='Conheça nossa linha de Cold Brew e Refreshers™'
-          textButton='Clique aqui'
+          title="Momentos bons a todo momento"
+          children='Conheça nosso menu completo.'
+          textButton='Conhecer menu'
+          background_Button='black'
         />
         <Content2 
           backgroundImage={imagemGraos}
-          title="qualquer coissa"
-          children="teste"
-          textButton="click"
+          title="Nosso Café"
+          children="Perfeição em cada grão, uma jornada de sabores que desperta os sentidos em cada gole."
+          textButton="Conheça nossa história"
+          background_Button='black'
         />
-
+        <Delivery 
+          background_Button="gray"
+          title="PEÇA DE CASA!"
+          children="Peça pelo IFood (raio de entrega 7km) *Valores diferentes"
+          buttonText="iFood"
+          backgroundImage={imagemGraos}
+        />
         
       </ThemeProvider>
     </>
