@@ -6,6 +6,8 @@ import Content, { Content2 } from "./Components/Content";
 import imagemXicaras from './Components/Content/img/xicaras.jpg';
 import imagemGraos from './Components/Content/img/graos.jpg';
 import Delivery from "./Components/Delivery";
+import History from "./Components/History";
+import Footer from "./Components/Footer";
 
 function App () {
   return (
@@ -14,6 +16,8 @@ function App () {
         <GlobalStyle />
         
         <Header />
+        <History /> 
+
         <Content 
           backgroundImage={imagemXicaras}
           title="Momentos bons a todo momento"
@@ -35,7 +39,8 @@ function App () {
           buttonText="iFood"
           backgroundImage={imagemGraos}
         />
-        
+        <Footer />
+
       </ThemeProvider>
     </>
   )

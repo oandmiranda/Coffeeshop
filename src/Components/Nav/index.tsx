@@ -22,12 +22,8 @@ const Nav = ({urlImage, textoAlternativo}: NavProps) => {
             </BoxLink>
 
             <Div>
-                <Div>
-                    <InstagramIcon />
-                </Div>
-                <Div>
-                    <FacebookIcon />
-                </Div>
+                <InstagramIcon />
+                <FacebookIcon />
             </Div>
         </Container>    
     )
