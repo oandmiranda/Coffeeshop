@@ -9,14 +9,14 @@ export const GridContainer = styled.div`
     grid-template-columns: 100% 100%;
 `;
 
-export const AreaSuperior = styled.div`
+export const UpperArea = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
     grid-area: superior;
 `;
 
-export const Rodape = styled.div`
+export const LowerArea = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;

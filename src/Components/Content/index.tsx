@@ -1,4 +1,4 @@
-import { Button, Image, Section, TextBox, Titulo } from "./styles"
+import { Button, Image, Section, TextBox, Title } from "./styles"
 import { ImageProps } from "../../Types/userTypes"
 
 interface ContentProps {
@@ -14,7 +14,7 @@ const Content = ({backgroundImage, title, children, textButton, background_Butto
         <Section>
             <Image backgroundImage={ backgroundImage } />
             <TextBox>
-                <Titulo>{ title }</Titulo>
+                <Title>{ title }</Title>
                 <p>{ children }</p>
                 <Button background_Button={ background_Button }>{ textButton }</Button>
             </TextBox>
@@ -26,7 +26,7 @@ export const Content2 = ({backgroundImage, title, children, textButton}: Content
     return (
         <Section>
             <TextBox>
-                <Titulo>{ title }</Titulo>
+                <Title>{ title }</Title>
                 <p>{ children }</p>
                 <Button background_Button="black">{ textButton }</Button>
             </TextBox>

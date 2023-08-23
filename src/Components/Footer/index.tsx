@@ -1,11 +1,11 @@
 import { Div, FacebookIcon, InstagramIcon, Logo } from "../Nav/styles"
-import { AreaSuperior, GridContainer, Rodape } from "./styles"
+import { UpperArea, GridContainer, LowerArea } from "./styles"
 
 const Footer = () => {
     return (
         <GridContainer>
 
-            <AreaSuperior>
+            <UpperArea>
                 <Div>
                     <Logo src="/assets/logo.png"  alt="logomarca da empresa" />
                 </Div>
@@ -14,11 +14,11 @@ const Footer = () => {
                     <InstagramIcon />
                     <FacebookIcon />
                 </Div>
-            </AreaSuperior>
+            </UpperArea>
             
-            <Rodape>
+            <LowerArea>
                 <p>Parágrafo teste</p>
-            </Rodape>
+            </LowerArea>
 
         </GridContainer>
     )

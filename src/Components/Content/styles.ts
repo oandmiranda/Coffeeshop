@@ -31,7 +31,7 @@ export const TextBox = styled.div`
     padding: 30px;
 `;
 
-export const Titulo = styled.h2`
+export const Title = styled.h2`
     padding-bottom: 20px;
 `;
 

@@ -1,5 +1,5 @@
 import { styled } from "styled-components"
-import backgroundImage from "./header1.jpg"
+import backgroundImage from "../../img/header1.jpg"
 
 export const Container = styled.header`
     width: 100%;
