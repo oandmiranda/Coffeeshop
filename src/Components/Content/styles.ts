@@ -1,12 +1,14 @@
 import { styled } from "styled-components";
-import { ButtonProps, ImageProps } from "../../Types/userTypes"
+import { ButtonProps, ImageProps } from "../../Types/userTypes";
+import { StyleProps } from "../../Types/userTypes";
 
-export const Section = styled.div`
+export const ContentWrapper = styled.div<StyleProps>`
     width: 95%;
     height: 320px;
     min-height: 300px;
     margin: 0 auto;
     display: flex;
+    flex-direction: ${props => (props.reverse ? 'row-reverse' : 'row')};
     justify-content: space-evenly;
     margin-block: 15px;
     `;

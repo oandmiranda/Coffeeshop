@@ -2,7 +2,7 @@ import { ThemeProvider } from "styled-components";
 import { theme } from "./Styles/themes";
 import GlobalStyle from "./Styles/globalStyle";
 import Header from "./Components/Header";
-import Content, { Content2 } from "./Components/Content";
+import Content from "./Components/Content";
 import imagemXicaras from './img/xicaras.jpg';
 import imagemGraos from './img/graos.jpg';
 import Delivery from "./Components/Delivery";
@@ -19,13 +19,15 @@ function App () {
         <History /> 
 
         <Content 
+          reverse={false}
           backgroundImage={imagemXicaras}
           title="Momentos bons a todo momento"
           children='Conheça nosso menu completo.'
           textButton='Conhecer menu'
           background_Button='black'
         />
-        <Content2 
+        <Content
+          reverse={true}
           backgroundImage={imagemGraos}
           title="Nosso Café"
           children="Perfeição em cada grão, uma jornada de sabores que desperta os sentidos em cada gole."
