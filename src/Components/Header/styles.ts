@@ -1,5 +1,4 @@
 import { styled } from "styled-components"
-import backgroundImage from "../../img/header1.jpg"
 
 export const Container = styled.header`
     width: 100%;
@@ -7,7 +6,6 @@ export const Container = styled.header`
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(to top, transparent, rgba(0, 0, 0, 1) 100%), url(${backgroundImage});
     background-size: cover;
     background-position: center;
 
@@ -16,16 +14,25 @@ export const Container = styled.header`
     }
 `;
 
-export const DivFlexBox = styled.div`
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+export const Wrapper = styled.div`
+    width: 100%;
     height: 100%;
+    position: relative;
+    align-items: center;
+`;
+
+export const ImageBackground = styled.img`
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: linear-gradient(to top, transparent, rgba(0, 0, 0, 1) 100%);
+    z-index: 3;
 `;
 
 export const Title = styled.h1`
+    position: absolute;
+    top: 60%;
+    left: 50%;
     color: ${props => props.theme.colors.default};
     font-size: 3.7rem;
     text-align: center;

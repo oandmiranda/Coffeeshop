@@ -15,6 +15,7 @@ export const Container = styled.nav`
     opacity: 0.9;
     border-radius: 25px;
     position: fixed;
+    z-index: 3;
 `;
 
 export const BoxLink = styled.div`

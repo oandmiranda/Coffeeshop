@@ -1,4 +1,16 @@
 
+import { AutoplayOptions, NavigationOptions, PaginationOptions, SwiperModule } from "swiper/types";
+
+export interface SwiperProps {
+    className?: string
+    children: React.ReactNode
+    navigation?: NavigationOptions | boolean
+    pagination?: PaginationOptions
+    loop?: boolean
+    modules?: SwiperModule[] 
+    autoplay?: boolean | AutoplayOptions
+}
+
 export interface ImageProps {
     backgroundImage: any
 }
@@ -18,4 +30,3 @@ export interface ContentProps extends StyleProps {
     backgroundImage: ImageProps
     background_Button: string 
 }
-
