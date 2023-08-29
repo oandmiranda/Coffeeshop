@@ -1,5 +1,5 @@
-import { Div, FacebookIcon, InstagramIcon, Logo } from "../Nav/styles"
-import { UpperArea, GridContainer, LowerArea } from "./styles"
+import { Div, FacebookIcon, InstagramIcon, Logo } from "../Header/Nav/styles";
+import { UpperArea, GridContainer, LowerArea } from "./styles";
 
 const Footer = () => {
     return (

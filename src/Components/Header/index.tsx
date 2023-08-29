@@ -1,18 +1,18 @@
 import { SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, Autoplay} from "swiper";
 import SwiperWrapper from "../Swiper";
-import Nav from "../Nav";
+import Nav from "../Header/Nav";
 import { Container, ImageBackground, Title, Wrapper } from "./styles";
-import image1 from "../../img/header1.jpg";
-import image2 from "../../img/graos.jpg";
-import image3 from "../../img/xicaras.jpg";
+import xicara from "../../img/xicara.png";
+import coffeeshop from "../../img/coffeeshop.png";
+import coffeeAndCake from "../../img/coffeeandcake.png";
 
 const Header = () => {
     
     const headerContent = [
-        { id: 1, image: image1, altImage: 'Logo1', text: 'Um novo café para você' },
-        { id: 2, image: image2, altImage: 'Logo2', text: 'Sua nova experiência ao tomar café' },
-        { id: 2, image: image3, altImage: 'Logo3', text: 'Café fino do bom' },
+        { id: 1, image: xicara, altImage: 'café na xícara', text: 'Um novo café para você' },
+        { id: 3, image: coffeeshop, altImage: 'coffeeshop', text: '' },
+        { id: 4, image: coffeeAndCake, altImage: 'coffee and cake', text: 'Café fino do bom' },
     ]
 
     return (

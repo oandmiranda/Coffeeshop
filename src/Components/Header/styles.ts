@@ -2,7 +2,7 @@ import { styled } from "styled-components"
 
 export const Container = styled.header`
     width: 100%;
-    height: 700px;
+    height: 680px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,10 +22,14 @@ export const Wrapper = styled.div`
 `;
 
 export const ImageBackground = styled.img`
-    width: 100%;
+    width: 100vw;
     height: 100%;
     object-fit: cover;
-    background: linear-gradient(to top, transparent, rgba(0, 0, 0, 1) 100%);
+    background-position: left center;
+    background-image: inherit;
+    background-size: 69%;
+
+    /* background: linear-gradient(to top, transparent, rgba(0, 0, 0, 1) 100%); */
     z-index: 3;
 `;
 

@@ -3,8 +3,8 @@ import { theme } from "./Styles/themes";
 import GlobalStyle from "./Styles/globalStyle";
 import Header from "./Components/Header";
 import Content from "./Components/Content";
-import imagemXicaras from './img/xicaras.jpg';
-import imagemGraos from './img/graos.jpg';
+import imageXicara from './img/xicara.png';
+import imageGraos from './img/graos.png';
 import Delivery from "./Components/Delivery";
 import History from "./Components/History";
 import Footer from "./Components/Footer";
@@ -20,7 +20,7 @@ function App () {
 
         <Content 
           reverse={false}
-          backgroundImage={imagemXicaras}
+          backgroundImage={imageXicara}
           title="Momentos bons a todo momento"
           children='Conheça nosso menu completo.'
           textButton='Conhecer menu'
@@ -28,7 +28,7 @@ function App () {
         />
         <Content
           reverse={true}
-          backgroundImage={imagemGraos}
+          backgroundImage={imageGraos}
           title="Nosso Café"
           children="Perfeição em cada grão, uma jornada de sabores que desperta os sentidos em cada gole."
           textButton="Conheça nossa história"
@@ -39,7 +39,7 @@ function App () {
           title="PEÇA DE CASA!"
           children="Peça pelo IFood (raio de entrega 7km) *Valores diferentes"
           buttonText="iFood"
-          backgroundImage={imagemGraos}
+          backgroundImage={imageGraos}
         />
         <Footer />
 

@@ -30,3 +30,16 @@ export interface ContentProps extends StyleProps {
     backgroundImage: ImageProps
     background_Button: string 
 }
+
+export interface DropDownProps {
+    children: React.ReactNode
+}
+
+export interface PopUpProps {
+    isVisible: boolean
+}
+
+export interface NavProps {
+    urlImage: string
+    textoAlternativo?: string
+}
