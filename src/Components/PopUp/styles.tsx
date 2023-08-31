@@ -2,29 +2,33 @@ import { styled } from "styled-components";
 import { Link } from "../Header/Nav/styles";
 import { DropDownProps } from "../../Types/userTypes"
 
-export const DropDownWrapper = styled.div<{ isVisible: boolean}>`
-
+export const DropDownWrapper = styled.div<DropDownProps>`
     display: flex;
-    justify-content: center;
-    width: 150px;
-    height: 200px;
+    justify-content: start;
+    width: 130px;
+    height: 180px;
     padding: 10px;
-    background-color: gray;
+    background-color: ${props => props.theme.colors.default};
     border-radius: 10px;
     position: relative;
-    top: 120px;
-    left: 118px;
-    opacity: ${({isVisible}) => (isVisible ? '0.9' : '0')};
+    top: 110px;
+    left: 110px;
+    opacity: ${({isVisible}) => (isVisible ? '1' : '0')};
+    font-weight: bold;
 `;
 
-export const DropDownItem = styled.li`
+const DropDownItem = styled.li`
     padding-block: 10px;
+    color: ${props => props.theme.colors.background};
+    margin-left: 10px;
 `;
 
 export const Item = ({children}: DropDownProps) => {
     return (
         <DropDownItem>
-            <Link>{ children }</Link>
+            <Link isBlack={true}>
+                { children }
+            </Link>
         </DropDownItem>
     )
 }

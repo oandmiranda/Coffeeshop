@@ -32,6 +32,7 @@ export interface ContentProps extends StyleProps {
 }
 
 export interface DropDownProps {
+    isVisible?: boolean
     children: React.ReactNode
 }
 
@@ -42,4 +43,10 @@ export interface PopUpProps {
 export interface NavProps {
     urlImage: string
     textoAlternativo?: string
+}
+
+export interface LinkProps {
+    isBlack?: boolean
+    handleOver?: () => void 
+    handleOut?: () => void
 }

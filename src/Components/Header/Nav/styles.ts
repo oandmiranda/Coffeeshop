@@ -2,10 +2,7 @@ import styled from "styled-components";
 import { Instagram } from "@styled-icons/bootstrap";
 import { ArrowDownShort } from "@styled-icons/bootstrap";
 import { Facebook } from "@styled-icons/fa-brands";
-
-interface LinkProps {
-    onClick?: () => void 
-}
+import { LinkProps } from "../../../Types/userTypes";
 
 export const Container = styled.nav`
     width: 90%;
@@ -27,7 +24,7 @@ export const BoxLink = styled.div`
 `
 
 export const Link = styled.a<LinkProps>`
-    color: white;
+    color: ${({isBlack}) => isBlack ? 'black' : 'white'};
     padding-inline: 10px;
     cursor: pointer;
     display: flex; 

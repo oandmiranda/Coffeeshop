@@ -6,8 +6,12 @@ import { useState } from "react";
 const Nav = ({urlImage, textoAlternativo}: NavProps) => {
     const [isVisible, setVisible] = useState<boolean>(false)
 
-    const handleClick = () => {
-        setVisible(!isVisible)
+    const handleOver = () => {
+        setVisible(true)
+    }
+
+    const handleOut = () => {
+        setVisible(false)
     }
 
     return (
@@ -18,7 +22,11 @@ const Nav = ({urlImage, textoAlternativo}: NavProps) => {
 
             <BoxLink>
                 <PopUp isVisible={isVisible}/>
-                <Link onClick={handleClick}>Empório
+                <Link 
+                    onMouseOver={handleOver}
+                    onMouseOut={handleOut}
+                    >
+                    Empório
                     <ArrowIcon />
                 </Link>
                 <Link>Nossa História</Link>

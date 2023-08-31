@@ -5,6 +5,7 @@ import Header from "./Components/Header";
 import Content from "./Components/Content";
 import imageXicara from './img/xicara.png';
 import imageGraos from './img/graos.png';
+import imageCoffee from "./img/coffeeandcake.png";
 import Delivery from "./Components/Delivery";
 import History from "./Components/History";
 import Footer from "./Components/Footer";
@@ -39,7 +40,7 @@ function App () {
           title="PEÇA DE CASA!"
           children="Peça pelo IFood (raio de entrega 7km) *Valores diferentes"
           buttonText="iFood"
-          backgroundImage={imageGraos}
+          backgroundImage={imageCoffee}
         />
         <Footer />
 
