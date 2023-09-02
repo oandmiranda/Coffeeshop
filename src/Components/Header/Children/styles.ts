@@ -2,9 +2,10 @@ import { styled } from "styled-components";
 import { PopUpProps } from "../../../Types/userTypes";
 
 export const Container = styled.div<PopUpProps>`
+    width: 450px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     opacity: ${({isVisible}) => (isVisible ? '1' : '0')};
     position: absolute;
     left: 9%;

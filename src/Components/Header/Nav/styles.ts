@@ -30,7 +30,7 @@ export const Link = styled.a<LinkProps>`
     cursor: pointer;
     display: flex; 
     align-items: center;
-    font-size: 1.1rem;
+    font-size: ${props => props.theme.sizes.default};
 `;
 
 export const Div = styled(Link)`

@@ -24,7 +24,7 @@ export interface DropDownProps {
     children: React.ReactNode
 }
 
-export interface PopUpProps {
+export interface PopUpProps extends ButtonProps {
     isVisible: boolean
 }
 
@@ -40,8 +40,9 @@ export interface LinkProps {
 }
 
 export interface ButtonProps {
-    background_Button: string
+    background_Button?: string
     children?: React.ReactNode
+    fontSize?: string 
 }
 
 export interface DeliveryProps extends ButtonProps {

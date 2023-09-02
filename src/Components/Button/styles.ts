@@ -11,5 +11,5 @@ export const StyleButton = styled.a<ButtonProps>`
     border-radius: 7px;
     margin-top: 15px;
     cursor: pointer;
-    font-size: 1.1rem;
+    font-size: ${props => props.fontSize};
 `;
