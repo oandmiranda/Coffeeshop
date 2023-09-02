@@ -1,21 +1,13 @@
-import { ImageProps } from "../../Types/userTypes"
-import { Button } from "../Content/styles"
+import { DeliveryProps } from "../../Types/userTypes"
+import Button from "../Button";
 import { ContainerDelivery, H1, ImageDelivery, TextArea } from "./styles"
-
-interface DeliveryProps {
-    title: string
-    children: string
-    background_Button: string
-    buttonText: string
-    backgroundImage: ImageProps
-}
 
 const Delivery = ({title, background_Button, children, buttonText, backgroundImage}: DeliveryProps) => {
     return (
         <ContainerDelivery>
             <TextArea>
                 <H1>{ title }</H1>
-                <p>{ children }</p>
+                <>{ children }</>
                 <Button background_Button={ background_Button }>
                     { buttonText }
                 </Button>

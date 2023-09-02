@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { ButtonProps, ImageProps } from "../../Types/userTypes";
+import { ImageProps } from "../../Types/userTypes";
 import { StyleProps } from "../../Types/userTypes";
 
 export const ContentWrapper = styled.div<StyleProps>`
@@ -35,16 +35,6 @@ export const TextBox = styled.div`
 
 export const Title = styled.h2`
     padding-bottom: 20px;
-`;
-
-export const Button = styled.a<ButtonProps>`
-    width: 200px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: ${(props) => props.background_Button};
-    border-radius: 7px;
-    margin-top: 15px;
-    cursor: pointer;
+    font-family: ${props => props.theme.fonts.title.fontFamily};
+    letter-spacing: 2px;
 `;

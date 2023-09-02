@@ -16,17 +16,26 @@ export interface ImageProps {
 }
 
 export interface ButtonProps {
-    background_Button?: string
+    background_Button: string
+    children: React.ReactNode
 }
 
 export interface StyleProps {
     reverse: boolean
 }
 
+export interface DeliveryProps {
+    title: string
+    children: string
+    background_Button: string
+    buttonText: string
+    backgroundImage: ImageProps
+}
+
 export interface ContentProps extends StyleProps {
     title: string
-    children: string 
     textButton: string
+    children: string 
     backgroundImage: ImageProps
     background_Button: string 
 }

@@ -10,7 +10,7 @@ export const ContainerDelivery = styled.div`
 
 export const TextArea = styled(TextBox)`
     width: 50%;
-    background: ${props => props.theme.colors.secondary};
+    background: ${props => props.theme.colors.gradient};
     border-radius: 0;
 `;
 

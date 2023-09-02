@@ -21,14 +21,16 @@ export const Container = styled.nav`
 
 export const BoxLink = styled.div`
     display: flex;
-`
+    gap: 40px;
+    position: relative;
+`;
 
 export const Link = styled.a<LinkProps>`
     color: ${({isBlack}) => isBlack ? 'black' : 'white'};
-    padding-inline: 10px;
     cursor: pointer;
     display: flex; 
     align-items: center;
+    font-size: 1.1rem;
 `;
 
 export const Div = styled(Link)`

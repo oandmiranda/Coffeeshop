@@ -9,7 +9,7 @@ const Footer = () => {
                 <Div>
                     <Logo src="/assets/logo.png"  alt="logomarca da empresa" />
                 </Div>
-                <h1>Aberto todos os dias das 6h às 22h</h1>
+                <h2>Todos os dias das 8 as 21h</h2>
                 <Div>
                     <InstagramIcon />
                     <FacebookIcon />

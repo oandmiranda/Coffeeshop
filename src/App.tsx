@@ -38,8 +38,8 @@ function App () {
         <Delivery 
           background_Button="gray"
           title="PEÇA DE CASA!"
-          children="Peça pelo IFood (raio de entrega 7km) *Valores diferentes"
-          buttonText="iFood"
+          children="Peça pelo nosso WhatsApp e receba por Delivery"
+          buttonText="WhatsApp"
           backgroundImage={imageCoffee}
         />
         <Footer />

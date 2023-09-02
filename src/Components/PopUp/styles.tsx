@@ -4,17 +4,16 @@ import { DropDownProps } from "../../Types/userTypes"
 
 export const DropDownWrapper = styled.div<DropDownProps>`
     display: flex;
-    justify-content: start;
-    width: 130px;
-    height: 180px;
-    padding: 10px;
+    justify-content: center;
+    width: auto;
+    height: 190px;
+    padding: 10px 20px;
     background-color: ${props => props.theme.colors.default};
     border-radius: 10px;
-    position: relative;
-    top: 110px;
-    left: 110px;
+    position: absolute;
+    top: 29px;
+    left: -29px;
     opacity: ${({isVisible}) => (isVisible ? '1' : '0')};
-    font-weight: bold;
 `;
 
 const DropDownItem = styled.li`
