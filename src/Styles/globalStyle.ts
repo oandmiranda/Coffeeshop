@@ -12,7 +12,6 @@ const GlobalStyle = createGlobalStyle`
         font-size: 1rem;
         color: ${props => props.theme.colors.default};
         background: ${props => props.theme.colors.background};
-        overflow-x: hidden;
     }
 
     a {
