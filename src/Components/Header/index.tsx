@@ -11,10 +11,10 @@ import cake from "../../img/cake.png";
 const Header = () => {
     
     const headerContent = [
-        { id: 1, image: xicara, altImage: 'café na xícara', text: 'Um novo café para você' },
-        { id: 2, image: croissant, altImage: 'croissant', text: '' },
-        { id: 3, image: cake, altImage: 'croissant', text: '' },
-        { id: 4, image: coffeeshop, altImage: 'coffeeshop', text: '' },
+        { id: 1, image: coffeeshop, altImage: 'coffeeshop', text: '', isVisible: true },
+        { id: 2, image: xicara, altImage: 'café na xícara', text: 'Um novo café para você', isVisible: false},
+        { id: 3, image: cake, altImage: 'croissant', text: '', isVisible: false },
+        { id: 4, image: croissant, altImage: 'croissant', text: '', isVisible: false },
     ]
 
     return (
