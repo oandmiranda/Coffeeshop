@@ -14,8 +14,8 @@ const Header = () => {
     const headerContent = [
         { id: 1, image: coffeeshop, altImage: 'coffeeshop', text: '', isVisible: true },
         { id: 2, image: xicara, altImage: 'café na xícara', text: 'Um novo café para você', isVisible: false},
-        { id: 3, image: cake, altImage: 'croissant', text: '', isVisible: false },
-        { id: 4, image: croissant, altImage: 'croissant', text: '', isVisible: false },
+        { id: 3, image: croissant, altImage: 'croissant', text: 'Eleito o melhor Croissant pela Paris Coffe', isVisible: false },
+        { id: 4, image: cake, altImage: 'croissant', text: '', isVisible: false }
     ]
 
     return (

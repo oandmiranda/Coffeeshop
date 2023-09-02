@@ -5,14 +5,14 @@ import { DropDownProps } from "../../Types/userTypes"
 export const DropDownWrapper = styled.div<DropDownProps>`
     display: flex;
     justify-content: center;
-    width: auto;
+    width: 150px;
     height: 190px;
     padding: 10px 20px;
     background-color: ${props => props.theme.colors.default};
     border-radius: 10px;
     position: absolute;
     top: 29px;
-    left: -29px;
+    left: -40px;
     opacity: ${({isVisible}) => (isVisible ? '1' : '0')};
 `;
 

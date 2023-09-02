@@ -12,4 +12,10 @@ export const StyleButton = styled.a<ButtonProps>`
     margin-top: 15px;
     cursor: pointer;
     font-size: ${props => props.fontSize};
+    transition: background-color .7s ease, border 2s ease-in-out;
+
+    &:hover {
+        background: transparent;
+        border: 1px solid white;
+    }
 `;

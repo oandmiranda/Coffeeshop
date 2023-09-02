@@ -24,10 +24,11 @@ export const ImageBackground = styled.img`
 
 export const Title = styled.h1`
     position: absolute;
-    top: 75%;
-    left: 50%;
+    top: 60%;
+    left: 45%;
+    right: 3%;
     color: ${props => props.theme.colors.default};
-    font-size: 3.7rem;
+    font-size: 3.2rem;
     text-align: center;
-    font-family: ${props => props.theme.fonts.title.fontFamily};
+    font-family: ${props => props.theme.fonts.default.fontFamily};
 `;
