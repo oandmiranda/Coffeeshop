@@ -5,7 +5,7 @@ import { Facebook } from "@styled-icons/fa-brands";
 import { LinkProps } from "../../../Types/userTypes";
 
 export const Container = styled.nav`
-    width: 90%;
+    width: 88%;
     height: 70px;
     display: flex;
     justify-content: space-between;
