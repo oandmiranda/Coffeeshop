@@ -16,6 +16,7 @@ export const Container = styled.nav`
     border-radius: 25px;
     position: fixed;
     z-index: 3;
+    margin-top: 5px;
 `;
 
 export const BoxLink = styled.div`
