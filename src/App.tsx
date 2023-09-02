@@ -21,7 +21,7 @@ function App () {
 
         <Content 
           reverse={false}
-          backgroundImage={imageXicara}
+          backgroundImage={imageCoffee}
           title="Momentos bons a todo momento"
           h4_children='Conheça nosso menu completo.'
           children='Conhecer menu'
@@ -40,7 +40,7 @@ function App () {
           title="PEÇA DE CASA!"
           h2_children="Peça pelo nosso WhatsApp e receba por Delivery"
           children="WhatsApp"
-          backgroundImage={imageCoffee}
+          backgroundImage={imageXicara}
         />
         <Footer />
 

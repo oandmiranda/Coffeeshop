@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import imagem from "../../img/coffeeandcake.png";
+import image from "../../img/cafeteria.png";
 
 export const Container = styled.div`
     width: 80%;
@@ -12,16 +12,15 @@ export const Container = styled.div`
 `;
 
 export const Paragraph = styled.p`
-    font-size: 1rem;
+    font-size: ${props => props.theme.fonts.default};
     width: 60%;
     padding: 30px;
-    font-size: 1.2rem;
 `;
 
 export const Image = styled.div`
     width: 420px;
     height: 220px;
-    background-image: url(${imagem});
+    background-image: url(${image});
     background-size: cover;
     border-radius: 6px;
 `;
