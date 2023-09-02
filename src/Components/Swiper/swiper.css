@@ -22,5 +22,5 @@
 .swiper-button-prev::after, .swiper-button-next::after {
     color: #fff;
     opacity: 0.4;
-    padding-right: 5px;
+    padding-right: 15px;
 }

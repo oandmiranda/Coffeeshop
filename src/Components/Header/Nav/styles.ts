@@ -5,12 +5,11 @@ import { Facebook } from "@styled-icons/fa-brands";
 import { LinkProps } from "../../../Types/userTypes";
 
 export const Container = styled.nav`
-    width: 90%;
-    height: 70px;
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 5px auto 0 auto;
     padding: 0 20px;
     background: ${props => props.theme.colors.primary};
     opacity: 0.9;
