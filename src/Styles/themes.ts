@@ -9,17 +9,19 @@ export const theme = {
     },
     fonts: {
         default: {
+            fontFamily: " 'Jost', 'sans-serif' ",
+        },
+        secondary: {
             fontFamily: " 'Poppins', sans-serif' "
         },
         title: {
             fontFamily: " 'Lobster', 'cursive' "
         },
-        secondary: {
-            fontFamily: " 'Jost', 'sans-serif' ",
-        },
     },
     sizes: {
+        default: '1rem',
         title: '3rem',
+        subtitle: '2.4rem',
         titleDelivery: '5rem'
     }
 }

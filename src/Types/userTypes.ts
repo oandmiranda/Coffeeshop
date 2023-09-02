@@ -15,29 +15,8 @@ export interface ImageProps {
     backgroundImage: any
 }
 
-export interface ButtonProps {
-    background_Button: string
-    children: React.ReactNode
-}
-
 export interface StyleProps {
     reverse: boolean
-}
-
-export interface DeliveryProps {
-    title: string
-    children: string
-    background_Button: string
-    buttonText: string
-    backgroundImage: ImageProps
-}
-
-export interface ContentProps extends StyleProps {
-    title: string
-    textButton: string
-    children: string 
-    backgroundImage: ImageProps
-    background_Button: string 
 }
 
 export interface DropDownProps {
@@ -58,4 +37,25 @@ export interface LinkProps {
     isBlack?: boolean
     handleOver?: () => void 
     handleOut?: () => void
+}
+
+export interface ButtonProps {
+    background_Button: string
+    children?: React.ReactNode
+}
+
+export interface DeliveryProps extends ButtonProps {
+    title: string
+    h2_children: string
+    backgroundImage: ImageProps
+}
+
+export interface ChildrenProps extends ButtonProps {
+    subtitle: string
+}
+
+export interface ContentProps extends StyleProps, ButtonProps {
+    title: string
+    h4_children: string 
+    backgroundImage: ImageProps
 }

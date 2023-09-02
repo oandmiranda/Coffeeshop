@@ -2,14 +2,14 @@ import { DeliveryProps } from "../../Types/userTypes"
 import Button from "../Button";
 import { ContainerDelivery, H1, ImageDelivery, TextArea } from "./styles"
 
-const Delivery = ({title, background_Button, children, buttonText, backgroundImage}: DeliveryProps) => {
+const Delivery = ({title, background_Button, h2_children, children, backgroundImage}: DeliveryProps) => {
     return (
         <ContainerDelivery>
             <TextArea>
                 <H1>{ title }</H1>
-                <>{ children }</>
+                <h2>{ h2_children }</h2>
                 <Button background_Button={ background_Button }>
-                    { buttonText }
+                    { children }
                 </Button>
             </TextArea>
 

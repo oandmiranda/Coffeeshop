@@ -23,23 +23,23 @@ function App () {
           reverse={false}
           backgroundImage={imageXicara}
           title="Momentos bons a todo momento"
-          children='Conheça nosso menu completo.'
-          textButton='Conhecer menu'
+          h4_children='Conheça nosso menu completo.'
+          children='Conhecer menu'
           background_Button='black'
         />
         <Content
           reverse={true}
           backgroundImage={imageGraos}
           title="Nosso Café"
-          children="Perfeição em cada grão, uma jornada de sabores que desperta os sentidos em cada gole."
-          textButton="Conheça nossa história"
+          h4_children="Perfeição em cada grão, uma jornada de sabores que desperta os sentidos em cada gole."
+          children="Conheça nossa história"
           background_Button='black'
         />
         <Delivery 
           background_Button="gray"
           title="PEÇA DE CASA!"
-          children="Peça pelo nosso WhatsApp e receba por Delivery"
-          buttonText="WhatsApp"
+          h2_children="Peça pelo nosso WhatsApp e receba por Delivery"
+          children="WhatsApp"
           backgroundImage={imageCoffee}
         />
         <Footer />

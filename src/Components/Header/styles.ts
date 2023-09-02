@@ -18,6 +18,7 @@ export const Wrapper = styled.div`
     width: 100%;
     height: 100%;
     align-items: center;
+    position: relative;
 `;
 
 export const ImageBackground = styled.img`
@@ -25,7 +26,6 @@ export const ImageBackground = styled.img`
     height: 100%;
     object-fit: cover;
     background-size: cover;
-    /* background: linear-gradient(to top, transparent, rgba(0, 0, 0, 1) 100%); */
     z-index: 3;
 `;
 

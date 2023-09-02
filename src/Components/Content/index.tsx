@@ -3,15 +3,15 @@ import { ContentProps } from "../../Types/userTypes";
 import Button from "../Button";
 
 
-const Content = ({ reverse, backgroundImage, title, children, background_Button, textButton }: ContentProps) => {
+const Content = ({ reverse, backgroundImage, title, h4_children, background_Button, children }: ContentProps) => {
     return (
         <ContentWrapper reverse={reverse}>
             <Image backgroundImage={ backgroundImage } />
             <TextBox>
                 <Title>{ title }</Title>
-                <h4>{ children }</h4>
+                <h4>{ h4_children }</h4>
                 <Button background_Button={ background_Button }>
-                    { textButton }
+                    { children }
                 </Button>
             </TextBox>
         </ContentWrapper> 
