@@ -4,18 +4,18 @@ import SwiperWrapper from "../Swiper";
 import Nav from "../Header/Nav";
 import Children from "./Children";
 import { Container, ImageBackground, Title, Wrapper } from "./styles";
-import xicara from "../../img/xicara.png";
-import coffeeshop from "../../img/coffeeshop.png";
+import coffee_Cookie from "../../img/coffe-cookie.png";
 import croissant from "../../img/croissant.png";
+import coffeeshop from "../../img/coffeeshop.png";
 import cake from "../../img/cake.png";
 
 const Header = () => {
     
     const headerContent = [
-        { id: 1, image: coffeeshop, altImage: 'coffeeshop', text: '', isVisible: true },
-        { id: 2, image: xicara, altImage: 'café na xícara', text: 'Um novo café para você', isVisible: false},
-        { id: 3, image: croissant, altImage: 'croissant', text: 'Eleito o melhor Croissant pela Paris Coffe', isVisible: false },
-        { id: 4, image: cake, altImage: 'croissant', text: '', isVisible: false }
+        { id: 1, image: coffee_Cookie, altImage: 'coffe and cookie', text: '', isVisible: true },
+        { id: 2, image: croissant, altImage: 'croissant', text: 'Eleito o melhor Croissant pela Paris Coffe', isVisible: false },
+        { id: 3, image: coffeeshop, altImage: 'coffeeshop', text: '', isVisible: false},
+        { id: 4, image: cake, altImage: 'cake', text: '', isVisible: false }
     ]
 
     return (
@@ -34,6 +34,8 @@ const Header = () => {
                             <ImageBackground src={ object.image } alt={ object.altImage } />
                             <Children 
                                 isVisible={ object.isVisible }
+                                subtitle="A melhor cafeteria de São Paulo"
+                                children='Ver menu'
                             />
                             <Title>{ object.text }</Title>
                         </Wrapper>

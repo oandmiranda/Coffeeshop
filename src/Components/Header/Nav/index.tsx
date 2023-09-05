@@ -32,6 +32,10 @@ const Nav = ({urlImage, textoAlternativo}: NavProps) => {
                 <Link>Nossa História</Link>
                 <Link>Lojas</Link>
                 <Link>Seja um franquiado</Link>
+                <Link>
+                    Aprenda mais
+                    <ArrowIcon />
+                </Link>
             </BoxLink>
 
             <Div>

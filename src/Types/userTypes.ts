@@ -26,6 +26,7 @@ export interface DropDownProps {
 
 export interface PopUpProps extends ButtonProps {
     isVisible: boolean
+    subtitle?: string
 }
 
 export interface NavProps {
