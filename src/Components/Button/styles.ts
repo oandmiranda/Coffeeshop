@@ -7,15 +7,16 @@ export const StyleButton = styled.a<ButtonProps>`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: ${(props) => props.background_Button};
+    background-color: transparent;
     border-radius: 7px;
     margin-top: 15px;
     cursor: pointer;
     font-size: ${props => props.fontSize};
-    transition: background-color .7s ease, border 2s ease-in-out;
+    transition: background-color .4s ease-in-out;
+    border: 1px solid white;
 
     &:hover {
-        background: transparent;
-        border: 1px solid white;
+        background: ${(props) => props.background_Button};
+        border: none;
     }
 `;

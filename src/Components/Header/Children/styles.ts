@@ -13,7 +13,7 @@ const slide = keyframes`
 `;
 
 export const Container = styled.div<PopUpProps>`
-    width: 450px;
+    width: 350px;
     display: ${({isVisible}) => (isVisible ? 'flex' : 'none')};
     flex-direction: column;
     align-items: start;
