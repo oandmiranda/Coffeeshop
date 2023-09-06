@@ -6,6 +6,7 @@ import imageCoffee from "../../img/coffeeandcake.png";
 import Delivery from "../../Components/Delivery";
 import History from "../../Components/History";
 import Footer from "../../Components/Footer";
+import Category from "../../Components/Category";
 
 function Home () {
   return (
@@ -29,6 +30,7 @@ function Home () {
           children="Conheça nossa história"
           background_Button='black'
         />
+        <Category />
         <Delivery 
           background_Button="gray"
           title="PEÇA DE CASA!"

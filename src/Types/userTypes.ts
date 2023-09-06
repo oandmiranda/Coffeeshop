@@ -61,3 +61,8 @@ export interface ContentProps extends StyleProps, ButtonProps {
     h4_children: string 
     backgroundImage: ImageProps
 }
+
+export interface CategoryList {
+    image: string
+    id: string
+}
