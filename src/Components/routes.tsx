@@ -3,6 +3,7 @@ import { ThemeProvider } from "styled-components";
 import { theme } from "../Styles/themes";
 import GlobalStyle from "../Styles/globalStyle";
 import Home from "../pages/Home";
+import Category from "../pages/Category";
 
 const AppRoutes = () => {
     return (
@@ -11,6 +12,7 @@ const AppRoutes = () => {
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={ <Home /> }></Route>
+                    <Route path="/category/" element={ <Category /> }></Route>
                 </Routes>
             </BrowserRouter>
         </ThemeProvider>
