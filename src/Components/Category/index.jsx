@@ -1,19 +1,18 @@
 import { Description, Image, ItemCategory, Section } from "./styles";
-// import { CategoryList } from "../../Types/userTypes";
 import { Link } from "react-router-dom";
-
-
-// const categoryList: CategoryList[]
+import { useSelector} from "react-redux";
 
 const Category = () => {
+    const categories  = useSelector(state => state.categories)
+
     return (
         <Section>
-            { categoryList.map((item, index) => (
+            { categories.map((item, index) => (
                 <ItemCategory key={index}>
-                    <Link to={`/category/${item.id}`}>
+                    <Link to={`/categoria/${item.id}`}>
                         <div>
                             <Image src={item.image}/>
-                            <Description>{item.id}</Description>
+                            <Description>{item.description}</Description>
                         </div>
                     </Link>
                 </ItemCategory>

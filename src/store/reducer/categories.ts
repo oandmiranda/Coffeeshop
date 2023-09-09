@@ -6,23 +6,28 @@ import imageCookie from "../../img/coffe-cookie.png";
 import imageCoffeeShop from "../../img/coffeeshop.png";
 
 const initialState = [{ 
-        id: 'Cafés', 
+        description: 'Cafés', 
+        id: 'cafes',
         image: imageXicara 
     },
     { 
-        id: 'Cookies', 
+        description: 'Cookies',
+        id: 'cookies', 
         image: imageGraos 
     },
     {
-        id: 'Croissant',
+        description: 'Croissant',
+        id: 'croissant',
         image: imageCoffe 
     },
     { 
-        id: 'Sobremesas',
+        description: 'Sobremesas',
+        id: 'sobremesas',
         image: imageCookie 
     },
     { 
-        id: 'Breakfast',
+        description: 'Breakfast',
+        id: 'breakfast',
         image: imageCoffeeShop 
     }]
 

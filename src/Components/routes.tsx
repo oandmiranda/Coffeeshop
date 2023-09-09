@@ -12,7 +12,7 @@ const AppRoutes = () => {
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={ <Home /> }></Route>
-                    <Route path="/category/" element={ <Category /> }></Route>
+                    <Route path="/categoria/:nomeCategoria" element={ <Category /> }></Route>
                 </Routes>
             </BrowserRouter>
         </ThemeProvider>
