@@ -1,6 +1,17 @@
 
 import { AutoplayOptions, NavigationOptions, PaginationOptions, SwiperModule } from "swiper/types";
 
+export interface HeaderProps {
+    height: string
+    headerContent: Array<{
+        id: number
+        image: string
+        name: string
+        isVisible: boolean
+        text: string
+    }>
+}
+
 export interface SwiperProps {
     className?: string
     children: React.ReactNode

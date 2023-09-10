@@ -1,7 +1,7 @@
 import { styled } from "styled-components"
 
-export const Container = styled.header`
-    height: 100vh;
+export const Container = styled.header<{ height: string }>`
+    height: ${({height}) => (height === '70vh' ? '70vh' : '100vh')};
     display: flex;
     justify-content: center;
     background-size: cover;

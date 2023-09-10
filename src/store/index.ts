@@ -1,6 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
 import categoriesSlice from './reducer/categories';
 import itemsSlice from './reducer/items'; 
+import headerContentSlice from './reducer/header';
 // import { TypedUseSelectorHook } from 'react-redux';
 // import { useSelector } from 'react-redux';
 
@@ -10,7 +11,8 @@ import itemsSlice from './reducer/items';
 const store = configureStore({
     reducer: {
         categories: categoriesSlice,
-        items: itemsSlice
+        items: itemsSlice,
+        headerContent: headerContentSlice
     }
 })
 

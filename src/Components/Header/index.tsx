@@ -4,22 +4,11 @@ import SwiperWrapper from "../Swiper";
 import Nav from "../Header/Nav";
 import Children from "./Children";
 import { Container, ImageBackground, Title, Wrapper } from "./styles";
-import coffee_Cookie from "../../img/coffe-cookie.png";
-import croissant from "../../img/croissant.png";
-import coffeeshop from "../../img/coffeeshop.png";
-import cake from "../../img/cake.png";
+import { HeaderProps } from "../../Types/userTypes";
 
-const Header = () => {
-    
-    const headerContent = [
-        { id: 1, image: coffee_Cookie, altImage: 'coffe and cookie', text: '', isVisible: true },
-        { id: 2, image: croissant, altImage: 'croissant', text: 'Eleito o melhor Croissant pela Paris Coffe', isVisible: false },
-        { id: 3, image: coffeeshop, altImage: 'coffeeshop', text: '', isVisible: false},
-        { id: 4, image: cake, altImage: 'cake', text: '', isVisible: false }
-    ]
-
+const Header = ({height, headerContent}: HeaderProps) => {
     return (
-        <Container>
+        <Container height={ height }>
             <Nav urlImage='/assets/logo.png' textoAlternativo='logo da marca'/> 
             <SwiperWrapper
                 modules={[Navigation, Pagination, Scrollbar, Autoplay]}
@@ -31,7 +20,7 @@ const Header = () => {
                 { headerContent.map((object) => (
                     <SwiperSlide key={ object.id }>
                         <Wrapper>
-                            <ImageBackground src={ object.image } alt={ object.altImage } />
+                            <ImageBackground src={ object.image } alt={ object.name } />
                             <Children 
                                 isVisible={ object.isVisible }
                                 subtitle="A melhor cafeteria de São Paulo"
