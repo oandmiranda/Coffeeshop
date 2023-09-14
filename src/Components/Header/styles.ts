@@ -1,16 +1,17 @@
-import { styled } from "styled-components"
+import { styled } from "styled-components";
+import { ContainerProps } from "../../Types/userTypes";
 
-export const Container = styled.header<{ height: string }>`
-    height: ${({height}) => (height === '70vh' ? '70vh' : '100vh')};
-    display: flex;
+export const Container = styled.header<ContainerProps>`
+    height: ${props => props.height};
+    display: flex;  
     justify-content: center;
     background-size: cover;
     background-position: center;
 `;
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.div<ContainerProps>`
     width: 100vw;
-    height: 100vh;
+    height: ${props => props.height};
     position: relative;
 `;
 
@@ -20,15 +21,4 @@ export const ImageBackground = styled.img`
     object-fit: cover;
     background-size: cover;
     z-index: 3;
-`;
-
-export const Title = styled.h1`
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    right: 5%;
-    color: ${props => props.theme.colors.default};
-    font-size: 3.2rem;
-    text-align: center;
-    font-family: ${props => props.theme.fonts.default.fontFamily};
 `;

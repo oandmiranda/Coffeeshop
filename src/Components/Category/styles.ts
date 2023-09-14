@@ -9,9 +9,11 @@ export const Section = styled.div`
     display: flex;
     justify-content: space-around;
     padding-block: 20px;
+    position: relative;
 `;
 
 export const ItemCategory = styled.li`
+    padding-top: 60px;
     display: flex;
     align-items: center;
 

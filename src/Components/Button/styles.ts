@@ -13,7 +13,8 @@ export const StyleButton = styled.a<ButtonProps>`
     cursor: pointer;
     font-size: ${props => props.fontSize};
     transition: background-color .4s ease-in-out;
-    border: 1px solid white;
+    border: 1px solid #fff;
+    color: #fff;
 
     &:hover {
         background: ${(props) => props.background_Button};

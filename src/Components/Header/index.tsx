@@ -3,12 +3,12 @@ import { Navigation, Pagination, Scrollbar, Autoplay} from "swiper";
 import SwiperWrapper from "../Swiper";
 import Nav from "../Header/Nav";
 import Children from "./Children";
-import { Container, ImageBackground, Title, Wrapper } from "./styles";
+import { Container, ImageBackground, Wrapper } from "./styles";
 import { HeaderProps } from "../../Types/userTypes";
 
-const Header = ({height, headerContent}: HeaderProps) => {
+const Header = ({content, height, subtitle, children}: HeaderProps) => {
     return (
-        <Container height={ height }>
+        <Container height={height}>
             <Nav urlImage='/assets/logo.png' textoAlternativo='logo da marca'/> 
             <SwiperWrapper
                 modules={[Navigation, Pagination, Scrollbar, Autoplay]}
@@ -17,16 +17,15 @@ const Header = ({height, headerContent}: HeaderProps) => {
                 loop={true}
                 autoplay={{delay: 5000, disableOnInteraction: false}}
             >
-                { headerContent.map((object) => (
+                { content.map((object) => (
                     <SwiperSlide key={ object.id }>
-                        <Wrapper>
+                        <Wrapper height={height}>
                             <ImageBackground src={ object.image } alt={ object.name } />
                             <Children 
                                 isVisible={ object.isVisible }
-                                subtitle="A melhor cafeteria de São Paulo"
-                                children='Ver menu'
+                                subtitle={ subtitle }
+                                children={ children }
                             />
-                            <Title>{ object.text }</Title>
                         </Wrapper>
                     </SwiperSlide>
                 ))} 

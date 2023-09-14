@@ -34,7 +34,7 @@ const initialState = [{
 }]
 
 const headerContentSlice = createSlice({
-    name: 'headerContent',
+    name: 'headerHome',
     initialState,
     reducers: {}
 })

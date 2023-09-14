@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import { Instagram } from "@styled-icons/bootstrap";
 import { ArrowDownShort } from "@styled-icons/bootstrap";
 import { Facebook } from "@styled-icons/fa-brands";
@@ -11,7 +12,7 @@ export const Container = styled.nav`
     justify-content: space-between;
     align-items: center;
     padding: 0 40px;
-    margin-top: 5px;
+    margin-top: 3px;
     background: ${props => props.theme.colors.primary};
     opacity: 0.9;
     border-radius: 25px;
@@ -19,23 +20,19 @@ export const Container = styled.nav`
     z-index: 3;
 `;
 
-export const BoxLink = styled.div`
+export const Div = styled.div`
     display: flex;
-    gap: 40px;
-    position: relative;
-`;
+    `;
 
-export const Link = styled.a<LinkProps>`
+    export const BoxLink = styled(Div)`
+        gap: 40px;
+        position: relative;
+    `;
+
+export const NavbarLink= styled(Link)<LinkProps>`
     color: ${({isBlack}) => isBlack ? 'black' : 'white'};
     cursor: pointer;
-    display: flex; 
-    align-items: center;
     font-size: ${props => props.theme.sizes.default};
-`;
-
-export const Div = styled(Link)`
-    padding-inline: 0;
-    display: flex;
 `;
 
 export const Logo = styled.img`

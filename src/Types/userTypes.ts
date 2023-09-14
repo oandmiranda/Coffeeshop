@@ -1,15 +1,24 @@
 
 import { AutoplayOptions, NavigationOptions, PaginationOptions, SwiperModule } from "swiper/types";
 
-export interface HeaderProps {
-    height: string
-    headerContent: Array<{
+export interface HeaderProps extends ContainerProps, PopUpProps {
+    children: string
+    content: Array<{
         id: number
         image: string
         name: string
-        isVisible: boolean
+        // isVisible: boolean
         text: string
+        isVisible: boolean
     }>
+}
+
+export interface ContainerProps {
+    children: React.ReactNode
+}
+
+export interface ContainerProps {
+    height: string
 }
 
 export interface SwiperProps {
@@ -36,7 +45,7 @@ export interface DropDownProps {
 }
 
 export interface PopUpProps extends ButtonProps {
-    isVisible: boolean
+    isVisible?: boolean
     subtitle?: string
 }
 
@@ -76,4 +85,13 @@ export interface ContentProps extends StyleProps, ButtonProps {
 export interface CategoryList {
     image: string
     id: string
+}
+
+export interface TitleProps {
+    positionTop: string
+    positionLeft: string 
+    positionRight: string 
+    fontSize: string
+    children: React.ReactNode
+    color: string
 }

@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { Link } from "../Header/Nav/styles";
+import { NavbarLink } from "../Header/Nav/styles";
 import { DropDownProps } from "../../Types/userTypes"
 
 export const DropDownWrapper = styled.div<DropDownProps>`
@@ -25,9 +25,11 @@ const DropDownItem = styled.li`
 export const Item = ({children}: DropDownProps) => {
     return (
         <DropDownItem>
-            <Link isBlack={true}>
+            <NavbarLink 
+                to="/"
+                isBlack={true}>
                 { children }
-            </Link>
+            </NavbarLink>
         </DropDownItem>
     )
 }

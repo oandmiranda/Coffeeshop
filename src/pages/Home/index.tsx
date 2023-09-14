@@ -12,7 +12,7 @@ import croissant from "../../img/croissant.png";
 import coffeeshop from "../../img/coffeeshop.png";
 import cake from "../../img/cake.png";
 
-const headerContent = [
+const headerHome = [
   { id: 1, image: coffee_Cookie, name: 'coffe and cookie', text: '', isVisible: true },
   { id: 2, image: croissant, name: 'croissant', text: 'Eleito o melhor Croissant pela Paris Coffe', isVisible: false },
   { id: 3, image: coffeeshop, name: 'coffeeshop', text: '', isVisible: false},
@@ -23,8 +23,10 @@ function Home () {
   return (
     <>        
         <Header 
-          headerContent={headerContent}
+          content={headerHome}
           height="100vh"
+          subtitle="Conheça nosso cardápio"
+          children="Ver menu"
         />
         <History /> 
 
