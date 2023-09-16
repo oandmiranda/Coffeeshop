@@ -4,7 +4,15 @@ import croissant from "../../img/croissant.png";
 import coffeeshop from "../../img/coffeeshop.png";
 import cake from "../../img/cake.png";
 
-const initialState = [{
+interface IState {
+    id: number 
+    image: string
+    name: string 
+    text: string 
+    isVisible: boolean
+}
+
+const initialState: IState[] = [{
     id: 1, 
     image: coffee_Cookie, 
     name: 'coffe and cookie', 

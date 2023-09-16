@@ -1,34 +1,46 @@
 import { createSlice } from "@reduxjs/toolkit";
-import imageXicara from "../../img/xicara.png";
-import imageGraos from "../../img/graos.png";
-import imageCoffe from "../../img/coffe-cookie.png";
+import imageCroissant from "../../img/croissant.png";
+import imageCoffee from "../../img/coffe-cookie.png";
 import imageCookie from "../../img/coffe-cookie.png";
 import imageCoffeeShop from "../../img/coffeeshop.png";
+import imageSobremesa from "../../img/sobremesa.png";
+
+export interface InitialStateInterface {
+    name: string 
+    id: string
+    image: string
+    images: {image: string}[]
+}
 
 const initialState = [{ 
-        description: 'Cafés', 
+        name: 'Cafés', 
         id: 'cafes',
-        image: imageXicara 
+        image: imageCoffee, 
+        title: 'Os melhores cafés de São Paulo'
     },
     { 
-        description: 'Cookies',
+        name: 'Cookies',
         id: 'cookies', 
-        image: imageGraos 
+        image: imageCookie,
+        title: 'Os melhores cafés de São Paulo'
     },
     {
-        description: 'Croissant',
+        name: 'Croissant',
         id: 'croissant',
-        image: imageCoffe 
+        image: imageCroissant,
+        title: 'Os melhores cafés de São Paulo'
     },
     { 
-        description: 'Sobremesas',
+        name: 'Sobremesas',
         id: 'sobremesas',
-        image: imageCookie 
+        image: imageSobremesa,
+        title: 'Os melhores cafés de São Paulo'
     },
     { 
-        description: 'Breakfast',
+        name: 'Breakfast',
         id: 'breakfast',
-        image: imageCoffeeShop 
+        image: imageCoffeeShop,
+        title: 'Os melhores cafés de São Paulo'
     }]
 
 const categoriesSlice = createSlice({

@@ -6,19 +6,20 @@ import { Image, Item, Description, DivButton } from "../../Components/Container/
 import Button from "../../Components/Button";
 
 const Category = () => {
-    const headerContent = useSelector(state => state.headerContent)
+    // const headerContent = useSelector(state => state.headerContent)
     const { categoryRoute } = useParams();
     const { categories, items } = useSelector(state => ({
-        categories: state.categories.find(category => category.id === categoryRoute),
+        categories: state.categories.filter(category => category.id === categoryRoute),
         items: state.items.filter(item => item.category === categoryRoute),
     }))
-    console.log(items);
+    
 
     return (
         <>
             <Header 
-                content={headerContent}
+                content={categories}
                 height='75vh'
+                children='Ver lista'
             />
             <Container>
                 { items.map(item => (
@@ -26,7 +27,7 @@ const Category = () => {
                     <Link to="/">
                         <Item>
                             <Image src={item.image} />
-                            <Description>{item.description}</Description>
+                            <Description>{item.name}</Description>
                             <DivButton>
                                 <Button
                                     background_Button="black"

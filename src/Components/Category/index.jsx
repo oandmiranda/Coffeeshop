@@ -22,7 +22,7 @@ const Category = () => {
                     <Link to={`/categoria/${item.id}`}>
                         <div>
                             <Image src={item.image}/>
-                            <Description>{item.description}</Description>
+                            <Description>{item.name}</Description>
                         </div>
                     </Link>
                 </ItemCategory>

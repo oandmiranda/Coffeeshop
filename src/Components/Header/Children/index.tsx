@@ -3,7 +3,7 @@ import Button from "../../Button";
 import { Container, SubTitle } from "./styles";
 // import { ChildrenProps } from "../../../Types/userTypes";
 
-const Children = ({ isVisible, subtitle, children }: PopUpProps) => {
+const Children = ({ isVisible, subtitle, contentText }: PopUpProps) => {
     return (
         <Container isVisible={ isVisible }>
             <SubTitle>{ subtitle }</SubTitle>
@@ -11,7 +11,7 @@ const Children = ({ isVisible, subtitle, children }: PopUpProps) => {
                 background_Button="gray"
                 fontSize="1.5rem"
             > 
-            { children }
+            { contentText }
             </Button>
         </Container>
     )

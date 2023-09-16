@@ -5,10 +5,11 @@ import Nav from "../Header/Nav";
 import Children from "./Children";
 import { Container, ImageBackground, Wrapper } from "./styles";
 import { HeaderProps } from "../../Types/userTypes";
+import Title from "../Title";
 
-const Header = ({content, height, subtitle, children}: HeaderProps) => {
+const Header = (props: HeaderProps) => {
     return (
-        <Container height={height}>
+        <Container height={props.height}>
             <Nav urlImage='/assets/logo.png' textoAlternativo='logo da marca'/> 
             <SwiperWrapper
                 modules={[Navigation, Pagination, Scrollbar, Autoplay]}
@@ -17,15 +18,24 @@ const Header = ({content, height, subtitle, children}: HeaderProps) => {
                 loop={true}
                 autoplay={{delay: 5000, disableOnInteraction: false}}
             >
-                { content.map((object) => (
+                { props.content.map((object) => (
                     <SwiperSlide key={ object.id }>
-                        <Wrapper height={height}>
+                        <Wrapper height={props.height}>
                             <ImageBackground src={ object.image } alt={ object.name } />
-                            <Children 
+                            <Children
                                 isVisible={ object.isVisible }
-                                subtitle={ subtitle }
-                                children={ children }
+                                subtitle={ props.subtitle }
+                                contentText={ props.contentText }
                             />
+                            <Title
+                                positionTop={props.positionTop}
+                                positionLeft={props.positionLeft}
+                                positionRight={props.positionRight}
+                                color={props.color}
+                                fontSize={props.fontSize}
+                            >
+                                {object.text}
+                            </Title>
                         </Wrapper>
                     </SwiperSlide>
                 ))} 

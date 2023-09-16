@@ -20,14 +20,23 @@ const headerHome = [
 ]
 
 function Home () {
+
+  const props = {
+    content: headerHome,
+    height: "100vh",
+    subtitle: "Conheça nosso cardápio",
+    contentText: "Ver menu",
+    children: 'texto teste',
+    positionTop: "50%",
+    positionRight: "10%",
+    positionLeft: "40%",
+    fontSize: "3rem",
+    color: '#fff',
+  }
+
   return (
     <>        
-        <Header 
-          content={headerHome}
-          height="100vh"
-          subtitle="Conheça nosso cardápio"
-          children="Ver menu"
-        />
+        <Header {...props}/>
         <History /> 
 
         <Content 
