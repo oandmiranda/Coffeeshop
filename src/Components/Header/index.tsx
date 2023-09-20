@@ -8,8 +8,13 @@ import { HeaderProps } from "../../Types/userTypes";
 import Title from "../Title";
 
 const Header = (props: HeaderProps) => {
+
+    const {
+        content, height, subtitle, contentText, children, positionTop, positionLeft, positionRight, fontSize, color 
+    } = props;
+
     return (
-        <Container height={props.height}>
+        <Container height={height}>
             <Nav urlImage='/assets/logo.png' textoAlternativo='logo da marca'/> 
             <SwiperWrapper
                 modules={[Navigation, Pagination, Scrollbar, Autoplay]}
@@ -18,21 +23,21 @@ const Header = (props: HeaderProps) => {
                 loop={true}
                 autoplay={{delay: 5000, disableOnInteraction: false}}
             >
-                { props.content.map((object) => (
+                { content.map((object) => (
                     <SwiperSlide key={ object.id }>
-                        <Wrapper height={props.height}>
+                        <Wrapper height={ height } >
                             <ImageBackground src={ object.image } alt={ object.name } />
                             <Children
                                 isVisible={ object.isVisible }
-                                subtitle={ props.subtitle }
-                                contentText={ props.contentText }
+                                subtitle={ subtitle }
+                                contentText={ contentText }
                             />
                             <Title
-                                positionTop={props.positionTop}
-                                positionLeft={props.positionLeft}
-                                positionRight={props.positionRight}
-                                color={props.color}
-                                fontSize={props.fontSize}
+                                positionTop={ positionTop }
+                                positionLeft={ positionLeft }
+                                positionRight={ positionRight }
+                                color={ color }
+                                fontSize={ fontSize }
                             >
                                 {object.text}
                             </Title>
