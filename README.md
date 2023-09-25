@@ -1,2 +1,2 @@
 # Coffeeshop
-Projeto em React integrando TypeScript e StyledComponents (Em desenvolvimento)
+Projeto em React integrando TypeScript, Styled-Components e Redux toolkit (Em desenvolvimento)
