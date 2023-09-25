@@ -10,17 +10,17 @@ export const GridContainer = styled.div`
 `;
 
 export const UpperArea = styled.div`
+    grid-area: superior;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    grid-area: superior;
 `;
 
 export const LowerArea = styled.div`
+    grid-area: rodape; 
     display: flex;
     justify-content: center;
     align-items: center;
-    grid-area: rodape;
 
     & p {
         font-size: .8rem;

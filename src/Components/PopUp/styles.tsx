@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
-import { NavbarLink } from "../Header/Nav/styles";
 import { DropDownProps } from "../../Types/userTypes"
+import { NavbarLink } from "../Header/Nav/styles";
 
 export const DropDownWrapper = styled.div<DropDownProps>`
     display: flex;

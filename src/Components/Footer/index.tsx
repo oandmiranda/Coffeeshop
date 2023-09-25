@@ -4,7 +4,6 @@ import { UpperArea, GridContainer, LowerArea } from "./styles";
 const Footer = () => {
     return (
         <GridContainer>
-
             <UpperArea>
                 <Div>
                     <Logo src="/assets/logo.png"  alt="logomarca da empresa" />
@@ -17,9 +16,8 @@ const Footer = () => {
             </UpperArea>
             
             <LowerArea>
-                <p>Parágrafo teste</p>
+                <p>Projeto em desenvolvimento</p>
             </LowerArea>
-
         </GridContainer>
     )
 }

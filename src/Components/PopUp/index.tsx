@@ -1,5 +1,5 @@
-import { DropDownWrapper, Item } from "./styles";
 import { PopUpProps } from "../../Types/userTypes";
+import { DropDownWrapper, Item } from "./styles";
 
 const PopUp = ({isVisible}: PopUpProps) => {
     return (

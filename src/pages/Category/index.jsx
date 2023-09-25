@@ -1,9 +1,9 @@
-import Container from "../../Components/Container";
-import Header from "../../Components/Header";
 import { useSelector } from "react-redux";
 import { Link, useParams } from 'react-router-dom';
-import { Image, Item, Description, DivButton } from "../../Components/Container/styles";
+import Container from "../../Components/Container";
+import Header from "../../Components/Header";
 import Button from "../../Components/Button";
+import { Image, Item, Description, DivButton } from "../../Components/Container/styles";
 
 const Category = () => {
     // const headerContent = useSelector(state => state.headerContent)

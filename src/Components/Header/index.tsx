@@ -1,11 +1,11 @@
 import { SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, Autoplay} from "swiper";
 import SwiperWrapper from "../Swiper";
+import { HeaderProps } from "../../Types/userTypes";
 import Nav from "../Header/Nav";
 import Children from "./Children";
-import { Container, ImageBackground, Wrapper } from "./styles";
-import { HeaderProps } from "../../Types/userTypes";
 import Title from "../Title";
+import { Container, ImageBackground, Wrapper } from "./styles";
 
 const Header = (props: HeaderProps) => {
 
