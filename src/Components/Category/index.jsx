@@ -1,7 +1,7 @@
-import { Description, Image, ItemCategory, Section } from "./styles";
 import { Link } from "react-router-dom";
 import { useSelector} from "react-redux";
 import Title from "../Title";
+import { Description, Image, ItemCategory, Section } from "./styles";
 
 const Category = () => {
     const categories = useSelector(state => state.categories)

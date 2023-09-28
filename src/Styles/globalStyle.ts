@@ -15,13 +15,14 @@ const GlobalStyle = createGlobalStyle`
         overflow-x: hidden;
     }
 
+    ul {
+        list-style: none;
+    }
+    
     a {
         text-decoration: none;
     }
 
-    ul, li {
-        list-style: none;
-    }
 `;
 
 export default GlobalStyle

@@ -5,12 +5,12 @@ import imageCookie from "../../img/coffe-cookie.png";
 import imageCoffeeShop from "../../img/coffeeshop.png";
 import imageSobremesa from "../../img/sobremesa.png";
 
-export interface InitialStateInterface {
-    name: string 
-    id: string
-    image: string
-    images: {image: string}[]
-}
+// export interface InitialStateInterface {
+//     name: string 
+//     id: string
+//     image: string
+//     images: {image: string}[]
+// }
 
 const initialState = [{ 
         name: 'Cafés', 

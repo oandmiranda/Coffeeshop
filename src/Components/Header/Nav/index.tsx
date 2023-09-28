@@ -1,8 +1,8 @@
-import { Container, BoxLink, NavbarLink, Logo, Div, InstagramIcon, ArrowIcon, FacebookIcon } from "./styles";
-import PopUp from "../../PopUp";
-import { NavProps } from "../../../Types/userTypes";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { NavProps } from "../../../Types/userTypes";
+import PopUp from "../../PopUp";
+import { Container, BoxLink, NavbarLink, Logo, Div, InstagramIcon, ArrowIcon, FacebookIcon } from "./styles";
 
 const Nav = ({urlImage, textoAlternativo}: NavProps) => {
     const [isVisible, setVisible] = useState<boolean>(false)

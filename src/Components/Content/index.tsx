@@ -1,7 +1,6 @@
-import { Image, ContentWrapper, TextBox, Title } from "./styles"
 import { ContentProps } from "../../Types/userTypes";
 import Button from "../Button";
-
+import { Image, ContentWrapper, TextBox, Title } from "./styles"
 
 const Content = ({ reverse, backgroundImage, title, h4_children, background_Button, children }: ContentProps) => {
     return (
