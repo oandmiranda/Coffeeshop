@@ -12,7 +12,7 @@ const store = configureStore({
     reducer: {
         categories: categoriesSlice,
         items: itemsSlice,
-        headerContent: headerContentSlice
+        headerContent: headerContentSlice,
     }
 })
 

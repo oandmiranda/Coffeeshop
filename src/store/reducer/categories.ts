@@ -16,31 +16,26 @@ const initialState = [{
         name: 'Cafés', 
         id: 'cafes',
         image: imageCoffee, 
-        title: 'Os melhores cafés de São Paulo'
     },
     { 
         name: 'Cookies',
         id: 'cookies', 
         image: imageCookie,
-        title: 'Os melhores cafés de São Paulo'
     },
     {
         name: 'Croissant',
         id: 'croissant',
         image: imageCroissant,
-        title: 'Os melhores cafés de São Paulo'
     },
     { 
         name: 'Sobremesas',
         id: 'sobremesas',
         image: imageSobremesa,
-        title: 'Os melhores cafés de São Paulo'
     },
     { 
         name: 'Breakfast',
         id: 'breakfast',
         image: imageCoffeeShop,
-        title: 'Os melhores cafés de São Paulo'
     }]
 
 const categoriesSlice = createSlice({
