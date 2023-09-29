@@ -1,5 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
-import imageTest from "../../img/cake.png";
+import imageTest from "../../assets/img/cake.png";
+import cookieFamily from "../../assets/img/cookie-familia.png";
+import cookieChocolate from "../../assets/img/cookie-chocolate.png";
+import cookieNozes from "../../assets/img/cookie-nozes.png";
+import cookieRedVelvet from "../../assets/img/cookie-redVervet.png";
+import cookieMeioAmargo from "../../assets/img/cookie-meioAmargo.png";
 
 const initialState = [{ 
     image: imageTest,
@@ -20,15 +25,15 @@ const initialState = [{
     id: 2,
 },
 {
-    image: imageTest,
+    image: cookieFamily,
     category: 'cookies',
-    name: 'Cookie de Nutella', 
+    name: 'Cookie tamanho família', 
     id: 3,
 },
 {
-    image: imageTest,
+    image: cookieChocolate,
     category: 'cookies',
-    name: 'Cookie de Doce de Leite', 
+    name: 'Cookie de Chocolate', 
     id: 4,
 },
 {
@@ -74,9 +79,21 @@ const initialState = [{
     id: 11,
 },
 {
-    image: imageTest,
+    image: cookieNozes,
     category: 'cookies',
-    name: 'Cookie de maçã com canela', 
+    name: 'Cookie de Nozes', 
+    id: 12,
+},
+{
+    image: cookieRedVelvet,
+    category: 'cookies',
+    name: 'Cookie RedVelvet', 
+    id: 12,
+},
+{
+    image: cookieMeioAmargo,
+    category: 'cookies',
+    name: 'Cookie de Chocolate meio amargo', 
     id: 12,
 },
 {

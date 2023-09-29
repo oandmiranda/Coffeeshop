@@ -1,10 +1,8 @@
 import { useSelector } from "react-redux";
 import { Link, useParams } from 'react-router-dom';
-import Category from "../../Components/Category";
 import Container from "../../Components/Container";
 import Header from "../../Components/Header";
-import Button from "../../Components/Button";
-import { Image, Item, Description, DivButton } from "../../Components/Container/styles";
+import { Image, ItemContainer, Description, DivButton, ButtonCard } from "../../Components/Container/styles";
 
 const Category = () => {
     const { categoryRoute } = useParams();
@@ -32,17 +30,17 @@ const Category = () => {
                 { items.map(item => (
                     <li key={item.id}>
                     <Link to="/">
-                        <Item>
+                        <ItemContainer>
                             <Image src={item.image} />
                             <Description>{item.name}</Description>
                             <DivButton>
-                                <Button
+                                <ButtonCard
                                     background_Button="black"
                                 >
                                     Pedir
-                                </Button>
+                                </ButtonCard>
                             </DivButton>
-                        </Item>
+                        </ItemContainer>
                     </Link>
                 </li>
                 ))}

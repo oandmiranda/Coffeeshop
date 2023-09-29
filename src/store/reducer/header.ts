@@ -1,8 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
-import coffee_Cookie from "../../img/coffe-cookie.png";
-import croissant from "../../img/croissant.png";
-import coffeeshop from "../../img/coffeeshop.png";
-import cake from "../../img/cake.png";
+import coffee_Cookie from "../../assets/img/coffe-cookie.png";
+import croissant from "../../assets/img/croissant.png";
+import coffeeshop from "../../assets/img/coffeeshop.png";
+import cake from "../../assets/img/cake.png";
 
 interface IState {
     id: number 

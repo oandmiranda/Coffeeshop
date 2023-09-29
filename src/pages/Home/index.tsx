@@ -4,13 +4,13 @@ import Footer from "../../Components/Footer";
 import Header from "../../Components/Header";
 import History from "../../Components/History";
 import Category from "../../Components/Category";
-import imageXicara from '../../img/xicara.png';
-import imageGraos from '../../img/graos.png';
-import imageCoffee from "../../img/coffeeandcake.png";
-import coffee_Cookie from "../../img/coffe-cookie.png";
-import croissant from "../../img/croissant.png";
-import coffeeshop from "../../img/coffeeshop.png";
-import cake from "../../img/cake.png";
+import imageXicara from "../../assets/img/xicara.png";
+import imageGraos from '../../assets/img/graos.png';
+import imageCoffee from "../../assets/img/coffeeandcake.png";
+import coffee_Cookie from "../../assets/img/coffe-cookie.png";
+import croissant from "../../assets/img/croissant.png";
+import coffeeshop from "../../assets/img/coffeeshop.png";
+import cake from "../../assets/img/cake.png";
 
 const headerHome = [
   { id: 1, image: coffee_Cookie, name: 'coffe and cookie', text: '', isVisible: true },
