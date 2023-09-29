@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 import { Link, useParams } from 'react-router-dom';
 import Container from "../../Components/Container";
 import Header from "../../Components/Header";
-import { Image, ItemContainer, Description, DivButton, ButtonCard } from "../../Components/Container/styles";
+import { Image, ItemContainer, Description, ButtonCard } from "../../Components/Container/styles";
 
 const Category = () => {
     const { categoryRoute } = useParams();
@@ -33,13 +33,11 @@ const Category = () => {
                         <ItemContainer>
                             <Image src={item.image} />
                             <Description>{item.name}</Description>
-                            <DivButton>
                                 <ButtonCard
                                     background_Button="black"
                                 >
                                     Pedir
                                 </ButtonCard>
-                            </DivButton>
                         </ItemContainer>
                     </Link>
                 </li>
