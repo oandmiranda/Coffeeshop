@@ -5,6 +5,12 @@ import cookieChocolate from "../../assets/img/cookie-chocolate.png";
 import cookieNozes from "../../assets/img/cookie-nozes.png";
 import cookieRedVelvet from "../../assets/img/cookie-redVervet.png";
 import cookieMeioAmargo from "../../assets/img/cookie-meioAmargo.png";
+import cappucino from "../../assets/img/capuccino.png";
+import cappucino2 from "../../assets/img/capuccino2.png";
+import cappucinoTrufado from "../../assets/img/capuccino-trufado.png";
+import caféExpresso from "../../assets/img/cafe-expresso.png";
+import chocolateLindit from "../../assets/img/chocolate-trufado-lindit.png";
+import frapuccino from "../../assets/img/frapuccino.png";
 
 const initialState = [{ 
     image: imageTest,
@@ -19,9 +25,15 @@ const initialState = [{
     id: 1,
 },
 {
-    image: imageTest,
+    image: cappucino,
     category: 'cafes',
-    name: 'Café Expresso', 
+    name: 'Cappucino tradicional', 
+    id: 2,
+},
+{
+    image: frapuccino,
+    category: 'cafes',
+    name: 'Frapuccino (vários sabores)', 
     id: 2,
 },
 {
@@ -37,9 +49,9 @@ const initialState = [{
     id: 4,
 },
 {
-    image: imageTest,
+    image: cappucino2,
     category: 'cafes',
-    name: 'Café torrado', 
+    name: 'Capuccino com chantilly', 
     id: 5,
 },
 {
@@ -55,9 +67,9 @@ const initialState = [{
     id: 7,
 },
 {
-    image: imageTest,
+    image: cappucinoTrufado,
     category: 'cafes',
-    name: 'Smooth Coff', 
+    name: 'Capuccino Trufado', 
     id: 8,
 },
 {
@@ -103,9 +115,9 @@ const initialState = [{
     id: 13,
 },
 {
-    image: imageTest,
+    image: caféExpresso,
     category: 'cafes',
-    name: 'Café com leite', 
+    name: 'Café expresso', 
     id: 14,
 },
 {
@@ -127,9 +139,9 @@ const initialState = [{
     id: 17,
 },
 {
-    image: imageTest,
+    image: chocolateLindit,
     category: 'cafes',
-    name: 'cappucino', 
+    name: 'Chocolate Lindit trufado', 
     id: 18,
 },
 {
