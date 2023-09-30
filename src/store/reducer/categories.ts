@@ -2,8 +2,8 @@ import { createSlice } from "@reduxjs/toolkit";
 import imageCroissant from "../../assets/img/croissant.png";
 import imageCoffee from "../../assets/img/cafe-expresso.png";
 import imageCookie from "../../assets/img/coffe-cookie.png";
-import imageCoffeeShop from "../../assets/img/coffeeshop.png";
-import imageSobremesa from "../../assets/img/sobremesa.png";
+import pudim from "../../assets/img/sobremsa-pudim.png";
+import cake2 from "../../assets/img/cake-2.png";
 
 // export interface InitialStateInterface {
 //     name: string 
@@ -30,12 +30,12 @@ const initialState = [{
     { 
         name: 'Sobremesas',
         id: 'sobremesas',
-        image: imageSobremesa,
+        image: pudim,
     },
     { 
         name: 'Bolos',
         id: 'cakes',
-        image: imageCoffeeShop,
+        image: cake2,
     }]
 
 const categoriesSlice = createSlice({

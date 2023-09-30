@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import imageTest from "../../assets/img/cake.png";
 import cookieFamily from "../../assets/img/cookie-familia.png";
 import cookieChocolate from "../../assets/img/cookie-chocolate.png";
 import cookieNozes from "../../assets/img/cookie-nozes.png";
@@ -21,6 +20,17 @@ import croissantPalmito from "../../assets/img/croissant-palmito.png";
 import croissantFrango from "../../assets/img/croissant-frango.png";
 import croissant_3Queijos from "../../assets/img/croissant-3queijos.png";
 import croissantDoce from "../../assets/img/croissant-doce.png";
+import cake1 from "../../assets/img/cake-1.png";
+import cake2 from "../../assets/img/cake-2.png";
+import cake3 from "../../assets/img/cake-3.png";
+import cake4 from "../../assets/img/cake-4.png";
+import cake5 from "../../assets/img/cake-5.png";
+import cakeFolhado from "../../assets/img/cake-folhado.png";
+import cakeCapuccino from "../../assets/img/cake-capuccino.png";
+import cakeCereja from "../../assets/img/cake-cereja.png";
+import cakeMorango from "../../assets/img/cake-morango.png";
+import cakeNozes from "../../assets/img/cake-nozes.png";
+import cakeBerry from "../../assets/img/cake-berry.png";
 
 const initialState = [{ 
     image: croissantQueijo,
@@ -65,9 +75,33 @@ const initialState = [{
     id: 5,
 },
 {
-    image: imageTest,
+    image: cake1,
     category: 'cakes',
-    name: 'Item1', 
+    name: 'Cake1', 
+    id: 6,
+},
+{
+    image: cake2,
+    category: 'cakes',
+    name: 'Cake3', 
+    id: 6,
+},
+{
+    image: cake3,
+    category: 'cakes',
+    name: 'Cake3', 
+    id: 6,
+},
+{
+    image: cake4,
+    category: 'cakes',
+    name: 'Cake4', 
+    id: 6,
+},
+{
+    image: cake5,
+    category: 'cakes',
+    name: 'Cake5', 
     id: 6,
 },
 {
@@ -83,21 +117,33 @@ const initialState = [{
     id: 8,
 },
 {
-    image: imageTest,
+    image: cakeFolhado,
     category: 'cakes',
-    name: 'item2', 
+    name: 'Bolo Folhado ', 
     id: 9,
 },
 {
-    image: imageTest,
+    image: cakeNozes,
     category: 'cakes',
-    name: 'Item3', 
+    name: 'Bolo de Nozes ', 
+    id: 9,
+},
+{
+    image: cakeBerry,
+    category: 'cakes',
+    name: 'Bolo de Berry', 
     id: 10,
 },
 {
-    image: imageTest,
+    image: cakeMorango,
     category: 'cakes',
-    name: 'Item4', 
+    name: 'Bolo surpresa de morango', 
+    id: 11,
+},
+{
+    image: cakeCereja,
+    category: 'cakes',
+    name: 'Bolo de cereja', 
     id: 11,
 },
 {
@@ -119,9 +165,9 @@ const initialState = [{
     id: 12,
 },
 {
-    image: imageTest,
+    image: cakeCapuccino,
     category: 'cakes',
-    name: 'Item5', 
+    name: 'Bolo de Cappuccino', 
     id: 13,
 },
 {

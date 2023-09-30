@@ -8,7 +8,7 @@ export const StyledContainer = styled.section`
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 3px;
+    gap: 7px;
 `;
 
 export const ItemContainer = styled.div`
