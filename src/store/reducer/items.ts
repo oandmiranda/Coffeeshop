@@ -11,17 +11,27 @@ import cappucinoTrufado from "../../assets/img/capuccino-trufado.png";
 import caféExpresso from "../../assets/img/cafe-expresso.png";
 import chocolateLindit from "../../assets/img/chocolate-trufado-lindit.png";
 import frapuccino from "../../assets/img/frapuccino.png";
+import pudim from "../../assets/img/sobremsa-pudim.png";
+import cocadaComSorvete from "../../assets/img/sobremesa-cocada-sorvete.png";
+import tortaNutella from "../../assets/img/sobremesa-torta-nutella.png";
+import croissantQueijo from "../../assets/img/croissant-queijo.png";
+import croissantBauru from "../../assets/img/croissant-bauru.png";
+import croissantPepperone from "../../assets/img/croissant-pepperoni.png";
+import croissantPalmito from "../../assets/img/croissant-palmito.png";
+import croissantFrango from "../../assets/img/croissant-frango.png";
+import croissant_3Queijos from "../../assets/img/croissant-3queijos.png";
+import croissantDoce from "../../assets/img/croissant-doce.png";
 
 const initialState = [{ 
-    image: imageTest,
+    image: croissantQueijo,
     category: 'croissant',
-    name: 'Croissant de morango com Nutella', 
+    name: 'Croissant de Queijo Mussarela', 
     id: 0,
 },
 {
-    image: imageTest,
+    image: croissantBauru,
     category: 'croissant',
-    name: 'Croissant de passas', 
+    name: 'Croissant de Bauru', 
     id: 1,
 },
 {
@@ -56,12 +66,12 @@ const initialState = [{
 },
 {
     image: imageTest,
-    category: 'breakfast',
+    category: 'cakes',
     name: 'Item1', 
     id: 6,
 },
 {
-    image: imageTest,
+    image: pudim,
     category: 'sobremesas',
     name: 'Pudim de Leite', 
     id: 7,
@@ -74,19 +84,19 @@ const initialState = [{
 },
 {
     image: imageTest,
-    category: 'breakfast',
+    category: 'cakes',
     name: 'item2', 
     id: 9,
 },
 {
     image: imageTest,
-    category: 'breakfast',
+    category: 'cakes',
     name: 'Item3', 
     id: 10,
 },
 {
     image: imageTest,
-    category: 'breakfast',
+    category: 'cakes',
     name: 'Item4', 
     id: 11,
 },
@@ -110,7 +120,7 @@ const initialState = [{
 },
 {
     image: imageTest,
-    category: 'breakfast',
+    category: 'cakes',
     name: 'Item5', 
     id: 13,
 },
@@ -121,21 +131,21 @@ const initialState = [{
     id: 14,
 },
 {
-    image: imageTest,
+    image: cocadaComSorvete,
     category: 'sobremesas',
-    name: 'cocada de forno', 
+    name: 'Cocada de forno com sorvete de creme', 
     id: 15,
 },
 {
-    image: imageTest,
+    image: tortaNutella,
     category: 'sobremesas',
-    name: 'Bolo de nozes', 
+    name: 'Torta de Nutella', 
     id: 16,
 },
 {
-    image: imageTest,
+    image: croissantFrango,
     category: 'croissant',
-    name: 'Croissant de queijo briet', 
+    name: 'Croissant de Frango com Catupiry', 
     id: 17,
 },
 {
@@ -145,16 +155,28 @@ const initialState = [{
     id: 18,
 },
 {
-    image: imageTest,
+    image: croissantPalmito,
     category: 'croissant',
-    name: 'Croissant de frango com catupiry', 
+    name: 'Croissant de Palmito com queijo', 
     id: 19,
 },
 {
-    image: imageTest,
+    image: croissant_3Queijos,
+    category: 'croissant',
+    name: 'Croissant de 3 queijos', 
+    id: 19,
+},
+{
+    image: croissantPepperone,
     category: 'croissant',
     name: 'Croissant de Pepperoni', 
     id: 20,
+},
+{
+    image: croissantDoce,
+    category: 'croissant',
+    name: 'Croissant Doce (vários sabores)', 
+    id: 19,
 }]
 
 

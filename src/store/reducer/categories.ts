@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import imageCroissant from "../../assets/img/croissant.png";
-import imageCoffee from "../../assets/img/coffe-cookie.png";
+import imageCoffee from "../../assets/img/cafe-expresso.png";
 import imageCookie from "../../assets/img/coffe-cookie.png";
 import imageCoffeeShop from "../../assets/img/coffeeshop.png";
 import imageSobremesa from "../../assets/img/sobremesa.png";
@@ -33,8 +33,8 @@ const initialState = [{
         image: imageSobremesa,
     },
     { 
-        name: 'Breakfast',
-        id: 'breakfast',
+        name: 'Bolos',
+        id: 'cakes',
         image: imageCoffeeShop,
     }]
 
