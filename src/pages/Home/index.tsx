@@ -3,7 +3,7 @@ import Delivery from "../../Components/Delivery";
 import Footer from "../../Components/Footer";
 import Header from "../../Components/Header";
 import History from "../../Components/History";
-import Category from "../../Components/Category";
+import Category from "../../Components/ItemCategory";
 import imageXicara from "../../assets/img/xicara.png";
 import imageGraos from '../../assets/img/graos.png';
 import imageCoffee from "../../assets/img/coffeeandcake.png";
@@ -13,10 +13,10 @@ import coffeeshop from "../../assets/img/coffeeshop.png";
 import cake from "../../assets/img/cake.png";
 
 const headerHome = [
-  { id: 1, image: coffee_Cookie, name: 'coffe and cookie', text: '', isVisible: true },
-  { id: 2, image: croissant, name: 'croissant', text: 'Eleito o melhor Croissant pela Paris Coffe', isVisible: false },
-  { id: 3, image: coffeeshop, name: 'coffeeshop', text: '', isVisible: false},
-  { id: 4, image: cake, name: 'cake', text: '', isVisible: false }
+  { id: 1, coverImage: coffee_Cookie, name: 'coffe and cookie', text: '', isVisible: true },
+  { id: 2, coverImage: croissant, name: 'croissant', text: 'Eleito o melhor Croissant pela Paris Coffe', isVisible: false },
+  { id: 3, coverImage: coffeeshop, name: 'coffeeshop', text: '', isVisible: false},
+  { id: 4, coverImage: cake, name: 'cake', text: '', isVisible: false }
 ]
 
 function Home () {
@@ -55,7 +55,7 @@ function Home () {
           children="Conheça nossa história"
           background_Button='black'
         />
-        <Category />
+        <Category title="Conheça nosso menu completo" />
         <Delivery 
           background_Button="gray"
           title="PEÇA DE CASA!"
