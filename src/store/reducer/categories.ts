@@ -1,41 +1,44 @@
 import { createSlice } from "@reduxjs/toolkit";
 import imageCroissant from "../../assets/img/croissant.png";
-import imageCoffee from "../../assets/img/cafe-expresso.png";
+import imageCoffe from "../../assets/img/cafe-category.png";
 import imageCookie from "../../assets/img/coffe-cookie.png";
-import pudim from "../../assets/img/sobremsa-pudim.png";
+import imageSobremesa from "../../assets/img/sobremesa-category.png";
 import cake2 from "../../assets/img/cake-2.png";
-
-// export interface InitialStateInterface {
-//     name: string 
-//     id: string
-//     image: string
-//     images: {image: string}[]
-// }
+import smallImageCoffee from "../../assets/img/categoryCoffee.png";
+import smallImageCookie from "../../assets/img/category-cookie.png";
+import smallImageCroissant from "../../assets/img/category-croissant.png";
+import smallImageSobremesa from "../../assets/img/category-sobremesa.png";
+import smallImageCake from "../../assets/img/category-cake.png";
 
 const initialState = [{ 
         name: 'Cafés', 
         id: 'cafes',
-        image: imageCoffee, 
+        coverImage: imageCoffe,
+        categoryImage: smallImageCoffee
     },
     { 
         name: 'Cookies',
         id: 'cookies', 
-        image: imageCookie,
+        coverImage: imageCookie,
+        categoryImage: smallImageCookie
     },
     {
-        name: 'Croissant',
+        name: 'Croissants',
         id: 'croissant',
-        image: imageCroissant,
+        coverImage: imageCroissant,
+        categoryImage: smallImageCroissant
     },
     { 
         name: 'Sobremesas',
         id: 'sobremesas',
-        image: pudim,
+        coverImage: imageSobremesa,
+        categoryImage: smallImageSobremesa
     },
     { 
         name: 'Bolos',
         id: 'cakes',
-        image: cake2,
+        coverImage: cake2,
+        categoryImage: smallImageCake
     }]
 
 const categoriesSlice = createSlice({
