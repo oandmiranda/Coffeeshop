@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import Container from "../../Components/Container";
 import Header from "../../Components/Header";
 import { Image, ItemContainer, Description, ButtonCard } from "../../Components/Container/styles";
+import ItemCategory from "../../Components/ItemCategory";
 
 const Category = () => {
     const { categoryRoute } = useParams();
@@ -43,6 +44,7 @@ const Category = () => {
                 </li>
                 ))}
             </Container>
+            <ItemCategory title="Conheça mais" />
         </>
     )
 }
