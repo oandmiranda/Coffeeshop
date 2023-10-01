@@ -31,6 +31,7 @@ export const Description = styled.p`
     font-size: 1.1rem;
     padding: 5px;
     color: black;
+    text-align: center;
 `;
 
 export const ButtonCard = styled(StyleButton)`
