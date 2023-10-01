@@ -5,7 +5,7 @@ export interface HeaderProps extends ContainerProps, PopUpProps, TitleProps {
     children: string
     content: Array<{
         id: number
-        image: string
+        coverImage: string
         image2?: string
         name: string
         text: string
