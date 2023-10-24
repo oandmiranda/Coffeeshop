@@ -15,10 +15,7 @@ export interface HeaderProps extends ContainerProps, PopUpProps, TitleProps {
 
 export interface ContainerProps {
     children: React.ReactNode
-}
-
-export interface ContainerProps {
-    height: string
+    height?: string
 }
 
 export interface SwiperProps {
