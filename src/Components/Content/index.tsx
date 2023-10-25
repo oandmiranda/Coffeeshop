@@ -1,17 +1,22 @@
 import { ContentProps } from "../../Types/userTypes";
 import Button from "../Button";
-import { Image, ContentWrapper, TextBox, Title } from "./styles"
+import { Image, ContentWrapper, TextBox, Title } from "./styles";
+import { Link } from "react-router-dom";
 
-const Content = ({ reverse, backgroundImage, title, h4_children, background_Button, children }: ContentProps) => {
+const Content = ({ reverse, backgroundImage, positionCenter, title, paragraph, background_Button, children, btnVisible = true }: ContentProps) => {
     return (
         <ContentWrapper reverse={reverse}>
-            <Image backgroundImage={ backgroundImage } />
-            <TextBox>
+            <Image backgroundImage={backgroundImage} />
+            <TextBox positionCenter={positionCenter}>
                 <Title>{ title }</Title>
-                <h4>{ h4_children }</h4>
-                <Button background_Button={ background_Button }>
-                    { children }
-                </Button>
+                <p>{ paragraph }</p>
+                { btnVisible && (
+                    <Link to="/myhistory">
+                        <Button background_Button={ background_Button }>
+                            { children }
+                        </Button> 
+                    </Link>
+                )}
             </TextBox>
         </ContentWrapper> 
     )
