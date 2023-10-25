@@ -42,22 +42,27 @@ function Home () {
         <Content 
           reverse={false}
           backgroundImage={imageCoffee}
+          positionCenter
           title="Momentos bons a todo momento"
-          h4_children='Conheça nosso menu completo.'
+          paragraph='Conheça nosso menu completo.'
           children='Conhecer menu'
           background_Button='black'
+          btnVisible
         />
         <Content
           reverse={true}
           backgroundImage={imageGraos}
+          positionCenter
           title="Nosso Café"
-          h4_children="Perfeição em cada grão, uma jornada de sabores que desperta os sentidos em cada gole."
+          paragraph="Perfeição em cada grão, uma jornada de sabores que desperta os sentidos em cada gole."
           children="Conheça nossa história"
           background_Button='black'
+          btnVisible
         />
         <Category title="Conheça nosso menu completo" />
         <Delivery 
           background_Button="gray"
+          positionCenter
           title="PEÇA DE CASA!"
           h2_children="Peça pelo nosso WhatsApp e receba por Delivery"
           children="WhatsApp"
