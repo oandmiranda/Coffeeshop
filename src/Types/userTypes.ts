@@ -33,7 +33,8 @@ export interface ImageProps {
 }
 
 export interface StyleProps {
-    reverse: boolean
+    reverse?: boolean
+    positionCenter?: boolean
 }
 
 export interface DropDownProps {
@@ -68,6 +69,7 @@ export interface DeliveryProps extends ButtonProps {
     title: string
     h2_children: string
     backgroundImage: ImageProps
+    positionCenter: boolean
 }
 
 export interface ChildrenProps {
@@ -78,8 +80,9 @@ export interface ChildrenProps {
 
 export interface ContentProps extends StyleProps, ButtonProps {
     title: string
-    h4_children: string 
+    paragraph: string 
     backgroundImage: ImageProps
+    btnVisible: boolean
 }
 
 export interface CategoryList {
