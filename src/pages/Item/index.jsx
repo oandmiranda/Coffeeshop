@@ -1,14 +1,15 @@
 import { useSelector } from "react-redux";
-import { useParams } from "react-router-dom";
+// import { useParams } from "react-router-dom";
 import Header from "../../Components/Header";
 
 
 const Item = () => {
 
-    const { itemRoute } = useParams();
-    const { items } = useSelector(state => ({
-        items: state.items.filter(item => item.name === itemRoute)
-    }))
+    // const { itemRoute } = useParams();
+    // const { items } = useSelector(state => ({
+    //     items: state.items.filter(item => item.name === itemRoute)
+    // }))
+    const items = useSelector(state => state.items);
 
     const props = {
         content: items,

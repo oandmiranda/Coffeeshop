@@ -15,8 +15,8 @@ const AppRoutes = () => {
                 <Routes>
                     <Route path="/" element={ <Home /> }></Route>
                     <Route path="/categoria/:categoryRoute" element={ <Category /> }></Route>
-                    <Route path="/myhistory" element={ <MyHistory /> }></Route>
                     <Route path="/categoria/:categoryRoute/:itemRoute" element={ <Item /> }></Route>
+                    <Route path="/myhistory" element={ <MyHistory /> }></Route>
                 </Routes>
             </BrowserRouter>
         </ThemeProvider>
