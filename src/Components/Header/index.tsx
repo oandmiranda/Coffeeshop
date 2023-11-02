@@ -26,7 +26,7 @@ const Header = (props: HeaderProps) => {
                 { content.map((object) => (
                     <SwiperSlide key={ object.id }>
                         <Wrapper height={ height } >
-                            <ImageBackground src={ object.coverImage } alt={ object.name } />
+                            <ImageBackground src={ object.image } alt={ object.name } />
                             <Children
                                 isVisible={ object.isVisible }
                                 subtitle={ subtitle }
