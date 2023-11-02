@@ -13,31 +13,31 @@ import smallImageCake from "../../assets/img/category-cake.png";
 const initialState = [{ 
         name: 'Cafés', 
         id: 'cafes',
-        coverImage: imageCoffe,
+        image: imageCoffe,
         categoryImage: smallImageCoffee
     },
     { 
         name: 'Cookies',
         id: 'cookies', 
-        coverImage: imageCookie,
+        image: imageCookie,
         categoryImage: smallImageCookie
     },
     {
         name: 'Croissants',
         id: 'croissant',
-        coverImage: imageCroissant,
+        image: imageCroissant,
         categoryImage: smallImageCroissant
     },
     { 
         name: 'Sobremesas',
         id: 'sobremesas',
-        coverImage: imageSobremesa,
+        image: imageSobremesa,
         categoryImage: smallImageSobremesa
     },
     { 
         name: 'Bolos',
         id: 'cakes',
-        coverImage: cake2,
+        image: cake2,
         categoryImage: smallImageCake
     }]
 
