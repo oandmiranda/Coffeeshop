@@ -30,7 +30,7 @@ const Category = () => {
             <Container>
                 { items.map(item => (
                     <li key={item.id}>
-                    <Link to={item.category}>
+                    <Link to={item.name}>
                         <ItemContainer>
                             <Image src={item.image} />
                             <Description>{item.name}</Description>
