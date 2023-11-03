@@ -8,12 +8,23 @@ import ItemCategory from "../../Components/ItemCategory";
 const Category = () => {
     const { categoryRoute } = useParams();
     const { categories, items } = useSelector(state => ({
-        categories: state.categories.filter(category => category.id === categoryRoute),
-        items: state.items.filter(item => item.category === categoryRoute),
-    }))
+      categories: state.categories.filter(category => category.id === categoryRoute),
+      items: state.items.filter(item => item.category === categoryRoute),
+    }));
+   
+    const images = useSelector(state => state.items);
+    const filteredImages = images.reduce((acc, image) => {
+      if (!acc[image.category]) {
+        acc[image.category] = [];
+      }
+      acc[image.category].push(image);
+      return acc;
+    }, {});
+   
+    const currentCategoryImages = filteredImages[categoryRoute];
     
     const props = {
-        content: categories,
+        content: currentCategoryImages,
         height: '75vh',
         children: 'Ver lista',
         subtitle: categories.name,
