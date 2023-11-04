@@ -5,7 +5,7 @@ export interface HeaderProps extends ContainerProps, PopUpProps, TitleProps {
     children: string
     content: Array<{
         id: number
-        coverImage: string
+        image?: string
         image2?: string
         name: string
         text: string
@@ -15,10 +15,7 @@ export interface HeaderProps extends ContainerProps, PopUpProps, TitleProps {
 
 export interface ContainerProps {
     children: React.ReactNode
-}
-
-export interface ContainerProps {
-    height: string
+    height?: string
 }
 
 export interface SwiperProps {
@@ -36,7 +33,8 @@ export interface ImageProps {
 }
 
 export interface StyleProps {
-    reverse: boolean
+    reverse?: boolean
+    positionCenter?: boolean
 }
 
 export interface DropDownProps {
@@ -71,6 +69,7 @@ export interface DeliveryProps extends ButtonProps {
     title: string
     h2_children: string
     backgroundImage: ImageProps
+    positionCenter: boolean
 }
 
 export interface ChildrenProps {
@@ -81,8 +80,9 @@ export interface ChildrenProps {
 
 export interface ContentProps extends StyleProps, ButtonProps {
     title: string
-    h4_children: string 
+    paragraph: string 
     backgroundImage: ImageProps
+    btnVisible: boolean
 }
 
 export interface CategoryList {

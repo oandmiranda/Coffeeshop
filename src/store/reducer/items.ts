@@ -85,7 +85,7 @@ const initialState = [{
 {
     image: cake2,
     category: 'cakes',
-    name: 'Cake3', 
+    name: 'Cake2', 
     id: 8,
 },
 {

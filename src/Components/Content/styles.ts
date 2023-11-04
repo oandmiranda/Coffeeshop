@@ -1,10 +1,9 @@
 import { styled } from "styled-components";
-import { ImageProps } from "../../Types/userTypes";
-import { StyleProps } from "../../Types/userTypes";
+import { ImageProps, StyleProps } from "../../Types/userTypes";
 
 export const ContentWrapper = styled.div<StyleProps>`
     width: 95%;
-    height: 320px;
+    height: 340px;
     min-height: 300px;
     margin: 0 auto;
     display: flex;
@@ -21,13 +20,12 @@ export const ContentWrapper = styled.div<StyleProps>`
     background-position: center;
 `;
 
-export const TextBox = styled.div`
+export const TextBox = styled.div<StyleProps>`
     width: 49%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+    align-items: ${({positionCenter}) => (positionCenter ? 'center' : 'left')};
+    justify-content: ${({positionCenter}) => (positionCenter ? 'center' : 'left')};
     background: ${props => props.theme.colors.tertiary};
     border-radius: 10px;
     padding: 30px;

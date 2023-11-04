@@ -25,6 +25,7 @@ const Nav = ({urlImage, textoAlternativo}: NavProps) => {
 
             <BoxLink>
                 <PopUp isVisible={isVisible}/>
+                <NavbarLink to="/">Home</NavbarLink>
                 <NavbarLink 
                     to="/"
                     onMouseOver={handleOver}

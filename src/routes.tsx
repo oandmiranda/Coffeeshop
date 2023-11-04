@@ -1,9 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
-import { theme } from "../Styles/themes";
-import GlobalStyle from "../Styles/globalStyle";
-import Home from "../pages/Home";
-import Category from "../pages/Category";
+import { theme } from "./Styles/themes";
+import GlobalStyle from "./Styles/globalStyle";
+import Home from "./pages/Home";
+import Category from "./pages/Category";
+import MyHistory from "./pages/MyHistory";
+import Item from "./pages/Item";
 
 const AppRoutes = () => {
     return (
@@ -13,6 +15,8 @@ const AppRoutes = () => {
                 <Routes>
                     <Route path="/" element={ <Home /> }></Route>
                     <Route path="/categoria/:categoryRoute" element={ <Category /> }></Route>
+                    <Route path="/categoria/:categoryRoute/:itemRoute" element={ <Item /> }></Route>
+                    <Route path="/myhistory" element={ <MyHistory /> }></Route>
                 </Routes>
             </BrowserRouter>
         </ThemeProvider>
