@@ -21,3 +21,7 @@ export const StyleButton = styled.a<ButtonProps>`
         border: none;
     }
 `;
+
+StyleButton.defaultProps = {
+    background_Button: '#000'
+};
