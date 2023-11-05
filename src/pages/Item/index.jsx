@@ -28,7 +28,7 @@ const Item = () => {
     return (
         <>
             <Header {...props}/>
-            <Container>
+            <Container isWhite>
                 {items.map((item) => (
                     <Content 
                         backgroundImage={item.image}
