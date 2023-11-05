@@ -13,9 +13,13 @@ export interface HeaderProps extends ContainerProps, PopUpProps, TitleProps {
     }>
 }
 
-export interface ContainerProps {
+export interface ContainerProps extends StyledContainerProps {
     children: React.ReactNode
     height?: string
+}
+
+export interface StyledContainerProps {
+    isWhite?: string
 }
 
 export interface SwiperProps {
