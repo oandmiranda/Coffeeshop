@@ -43,7 +43,7 @@ const Category = () => {
     return (
         <>
             <Header {...props}/>
-            <Container>
+            <Container isWhite={false}>
                 { items.map(item => (
                     <li key={item.id}>
                     <Link to={item.name}>
