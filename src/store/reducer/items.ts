@@ -26,7 +26,6 @@ import cake1 from "../../assets/img/cake-1.png";
 import cake2 from "../../assets/img/cake-2.png";
 import cake3 from "../../assets/img/cake-3.png";
 import cake4 from "../../assets/img/cake-4.png";
-import cake5 from "../../assets/img/cake-5.png";
 import cakeFolhado from "../../assets/img/cake-folhado.png";
 import cakeCapuccino from "../../assets/img/cake-capuccino.png";
 import cakeCereja from "../../assets/img/cake-cereja.png";
@@ -37,206 +36,219 @@ import cakeBerry from "../../assets/img/cake-berry.png";
 const initialState = [{ 
     image: croissantQueijo,
     category: 'croissant',
-    name: 'Croissant de Queijo Mussarela', 
+    name: 'Croissant de Mussarela', 
     id: 0,
+    description: 'Croissant recheado com Queijo Mussarela e Orégano'
 },
 {
     image: croissantBauru,
     category: 'croissant',
     name: 'Croissant de Bauru', 
     id: 1,
+    description: 'Croissant recheado com Queijo Mussarela, Presunto de Parma e Tomate fresco'
 },
 {
     image: cappucino,
     category: 'cafes',
     name: 'Cappucino tradicional', 
     id: 2,
+    description: 'Um deleite italiano requintado que combina a intensidade do nosso espresso perfeitamente extraído com uma camada generosa de espuma de leite cremosa.'
 },
 {
     image: frapuccino,
     category: 'cafes',
-    name: 'Frapuccino (vários sabores)', 
+    name: 'Frapuccino', 
     id: 3,
+    description: 'Nosso Frappuccino combina a indulgência do café espresso, leite gelado, açúcar e gelo, tudo misturado até atingir uma textura cremosa e suave.'
 },
 {
     image: cookieFamily,
     category: 'cookies',
-    name: 'Cookie tamanho família (vários sabores)', 
+    name: 'Cookie de Chocolate (Tamanho família)', 
     id: 4,
+    description: '"Cookão" com uma casquinha crocante por fora e um miolo macio e recheado de pedaços de chocolate, é o cookie perfeito para compartilhar em família.'
 },
 {
     image: cookieChocolate,
     category: 'cookies',
-    name: 'Cookie de Chocolate', 
+    name: 'Cookie de Alpino', 
     id: 5,
+    description: 'Delicioso Cookie crocante com gotas de Chocolate Alpino'
 },
 {
     image: cappucino2,
     category: 'cafes',
     name: 'Capuccino com chantilly de chocolate', 
     id: 6,
+    description: 'Delicioso cappuccino com combinação perfeita de expresso encorpado, leite vaporizado e uma generosa cobertura de chantilly de chocolate cremoso.'
 },
 {
     image: cake1,
     category: 'cakes',
-    name: 'Cake1', 
+    name: 'Trufado Preto e Branco', 
     id: 7,
+    description: 'Bolo de massa de chocolate, recheio de trufado preto e trufas brancas, cobertura de trufado de chocolate preto, trufas brancas'
 },
 {
     image: cake2,
     category: 'cakes',
-    name: 'Cake2', 
+    name: 'Trufado Meio Amargo', 
     id: 8,
+    description: 'Bolo de massa de chocolate meio amargo, recheio de trufado de creme de avelã com chocolate meio amargo'
 },
 {
     image: cake3,
     category: 'cakes',
-    name: 'Cake3', 
+    name: 'Aerado', 
     id: 9,
+    description: 'Bolo de massa de chocolate, recheio de mousse de chocolate e cobertura de chantilly com cereja.'
 },
 {
     image: cake4,
     category: 'cakes',
-    name: 'Cake4', 
+    name: 'Red Velvet (Perfil Americano)', 
     id: 10,
-},
-{
-    image: cake5,
-    category: 'cakes',
-    name: 'Cake5', 
-    id: 11,
+    description: 'Bolo de massa red velvet, recheios de mousse de cream cheese e cobertura de strawberry'
 },
 {
     image: pudim,
     category: 'sobremesas',
     name: 'Pudim de Leite', 
     id: 12,
+    description: 'Feito com ingredientes cuidadosamente selecionados, ele é uma combinação perfeita de textura suave e doçura delicada. Cada pedaço derrete na boca, revelando a riqueza do leite condensado caramelizado que o envolve. '
 },
 {
     image: cappucinoTrufado,
     category: 'cafes',
     name: 'Capuccino Trufado', 
     id: 13,
-},
-{
-    image: cakeFolhado,
-    category: 'cakes',
-    name: 'Bolo Folhado ', 
-    id: 14,
-},
-{
-    image: cakeNozes,
-    category: 'cakes',
-    name: 'Bolo de Nozes ', 
-    id: 15,
+    description: 'Expresso de alta qualidade, misturado com leite vaporizado para criar a base perfeita. Em seguida, incorporamos um toque de ganache de chocolate trufado, que se dissolve delicadamente na bebida'
 },
 {
     image: cakeBerry,
     category: 'cakes',
-    name: 'Bolo de Berry', 
+    name: 'Bolo Berry', 
     id: 16,
+    description: 'Bolo de massa de chocolate, recheio de avelã com essência de Strowberry e cobertura de Strowberry (decorativas)'
 },
 {
     image: cakeMorango,
     category: 'cakes',
-    name: 'Bolo surpresa de morango', 
+    name: 'Iogurte', 
     id: 17,
+    description: 'Bolo de massa de baunilha, recheio de mousse de iogurte, cobertura de mousse de iogurte e morangos (decorativos)'
 },
 {
     image: cakeCereja,
     category: 'cakes',
-    name: 'Bolo de cereja', 
+    name: 'Delícia de Cereja', 
     id: 18,
+    description: 'Bolo de massa de baunilha, recheio de mousse de cerejas, cobertura de mousse branca e cerejas (decorativas).'
 },
 {
     image: cookieNozes,
     category: 'cookies',
     name: 'Cookie de Nozes', 
     id: 19,
+    description: 'Delicioso Cookie crocante com Nozes frescos'
 },
 {
     image: cookieRedVelvet,
     category: 'cookies',
     name: 'Cookie RedVelvet', 
     id: 20,
+    description: 'Delicioso Cookie crocante com massa RedVelvet e castanhas'
 },
 {
     image: cookieMeioAmargo,
     category: 'cookies',
-    name: 'Cookie de Chocolate meio amargo', 
+    name: 'Cookie Formigueiro', 
     id: 21,
+    description: 'Delicioso Cookie crocante de Chocolate meio amargo'
 },
 {
     image: cakeCapuccino,
     category: 'cakes',
-    name: 'Bolo de Cappuccino', 
+    name: 'Delícia de Ninho', 
     id: 22,
+    description: 'Bolo de massa de chocolate, recheio de mousse de leite em pó e cobertura de ganache'
 },
 {
     image: cafeExpresso,
     category: 'cafes',
     name: 'Café expresso', 
     id: 23,
+    description: 'Café expresso com grãos moídos na hora'
 },
 {
     image: cocadaComSorvete,
     category: 'sobremesas',
-    name: 'Cocada de forno com sorvete de creme', 
+    name: 'Cocada', 
     id: 24,
+    description: 'Deliciosa Cocada de forno com sorvete de creme da casa'
 },
 {
     image: tortaNutella,
     category: 'sobremesas',
-    name: 'Torta de Nutella', 
+    name: 'Torta de Nutella cremosa', 
     id: 25,
+    description: 'Deliciosa Torta de Nutella cremosa com base de mousse de chocolate ao leite'
 },
 {
     image: croissantFrango,
     category: 'croissant',
     name: 'Croissant de Frango com Catupiry', 
     id: 26,
+    description: 'Delicioso Croissant recheado com Frango temperado e desfiado e Catypury Original'
 },
 {
     image: chocolateLindit,
     category: 'cafes',
     name: 'Chocolate Lindit trufado', 
     id: 27,
+    description: 'Maravilhoso Chocolate feito com chocolate Lindit derretido e lascas de chocolate'
 },
 {
     image: croissantPalmito,
     category: 'croissant',
-    name: 'Croissant de Palmito com queijo', 
+    name: 'Croissant de Palmito', 
     id: 28,
+    description: 'Delicioso Croissant recheado com Palmito em pedaços e Queijo Mussarela'
 },
 {
     image: croissant_3Queijos,
     category: 'croissant',
     name: 'Croissant de 3 queijos', 
     id: 29,
+    description: 'Delicioso Croissant recheado com Queijo Mussarela, Gorgonzola e Catupury Original'
 },
 {
     image: croissantPepperone,
     category: 'croissant',
     name: 'Croissant de Pepperoni', 
     id: 30,
+    description: 'Delicioso Croissant recheado com muito Pepperoni e Queijo Mussarela'
 },
 {
     image: croissantDoce,
     category: 'croissant',
-    name: 'Croissant Doce (vários sabores)', 
+    name: 'Croissant de Banana com Doce de Leite', 
     id: 31,
+    description: 'Delicioso Croissant de Banana com Doce de Leite caseiro'
 },
 {
     image: cafeChantilly,
     category: 'cafes',
-    name: 'Café com Chantilly', 
+    name: 'Café com Chantilly tradicional', 
     id: 32,
+    description: 'Delicioso Café Expresso tradicional coberto com Chantilly e chocolate em pó polvilhado'
 },
 {
     image: cafe2,
     category: 'cafes',
-    name: 'Café com alguma coisa)', 
+    name: "Cappuccino Hershey's", 
     id: 33,
+    description: "Delicioso Capuccinno cremoso com Hershey's (ao leite) derretido e mesclado com café expresso"
 }]
 
 
