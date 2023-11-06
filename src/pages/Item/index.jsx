@@ -27,19 +27,20 @@ const Item = () => {
 
     return (
         <>
-            <Header {...props}/>
-            <Container isWhite>
-                {items.map((item) => (
-                    <Content 
-                        backgroundImage={item.image}
-                        title={item.name}
-                        paragraph="Delicioso croissant de frango com catupiry"
-                        children="Pedir"
-                        btnVisible 
-                        positionCenter
-                    /> ))}
-            </Container>
-            <Footer />
+        <Header {...props}/>
+        <Container isWhite>
+            {items.map((item) => (
+                <Content 
+                    backgroundImage={item.image}
+                    title={item.name}
+                    paragraph={item.description}
+                    children="Pedir no WhatsApp"
+                    btnVisible 
+                    positionCenter
+                    backgroundColor="#B40404"
+                /> ))}
+        </Container>
+        <Footer />
         </>
     )
 };
