@@ -4,6 +4,7 @@ import Header from "../../Components/Header";
 import Container from "../../Components/Container";
 import Content from "../../Components/Content";
 import Footer from "../../Components/Footer";
+import ItemCategory from "../../Components/ItemCategory";
 
 
 const Item = () => {
@@ -39,6 +40,7 @@ const Item = () => {
                     positionCenter
                     backgroundColor="#B40404"
                 /> ))}
+        <ItemCategory title="Conheça mais" />
         </Container>
         <Footer />
         </>
