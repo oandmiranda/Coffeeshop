@@ -39,6 +39,7 @@ export interface ImageProps {
 export interface StyleProps {
     reverse?: boolean
     positionCenter?: boolean
+    backgroundColor?: string
 }
 
 export interface DropDownProps {
