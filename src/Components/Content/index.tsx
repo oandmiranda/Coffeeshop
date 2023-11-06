@@ -3,11 +3,11 @@ import Button from "../Button";
 import { Image, ContentWrapper, TextBox, Title } from "./styles";
 import { Link } from "react-router-dom";
 
-const Content = ({ reverse, backgroundImage, positionCenter, title, paragraph, background_Button, children, btnVisible = true }: ContentProps) => {
+const Content = ({ reverse, backgroundImage, positionCenter, title, paragraph, background_Button, children, backgroundColor, btnVisible = true }: ContentProps) => {
     return (
         <ContentWrapper reverse={reverse}>
             <Image backgroundImage={backgroundImage} />
-            <TextBox positionCenter={positionCenter}>
+            <TextBox positionCenter={positionCenter} backgroundColor={backgroundColor}>
                 <Title>{ title }</Title>
                 <p>{ paragraph }</p>
                 { btnVisible && (
