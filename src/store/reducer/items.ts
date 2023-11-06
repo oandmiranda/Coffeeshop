@@ -26,11 +26,9 @@ import cake1 from "../../assets/img/cake-1.png";
 import cake2 from "../../assets/img/cake-2.png";
 import cake3 from "../../assets/img/cake-3.png";
 import cake4 from "../../assets/img/cake-4.png";
-import cakeFolhado from "../../assets/img/cake-folhado.png";
 import cakeCapuccino from "../../assets/img/cake-capuccino.png";
 import cakeCereja from "../../assets/img/cake-cereja.png";
 import cakeMorango from "../../assets/img/cake-morango.png";
-import cakeNozes from "../../assets/img/cake-nozes.png";
 import cakeBerry from "../../assets/img/cake-berry.png";
 
 const initialState = [{ 
@@ -94,7 +92,7 @@ const initialState = [{
     category: 'cakes',
     name: 'Trufado Meio Amargo', 
     id: 8,
-    description: 'Bolo de massa de chocolate meio amargo, recheio de trufado de creme de avelã com chocolate meio amargo'
+    description: 'Bolo de massa de chocolate meio amargo com recheio trufado de creme de avelã, cobertura de bombom ao leite e chocolate meio amargo'
 },
 {
     image: cake3,
@@ -185,7 +183,7 @@ const initialState = [{
     category: 'sobremesas',
     name: 'Cocada', 
     id: 24,
-    description: 'Deliciosa Cocada de forno com sorvete de creme da casa'
+    description: 'Deliciosa Cocada de forno com sorvete de creme'
 },
 {
     image: tortaNutella,
