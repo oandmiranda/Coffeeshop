@@ -2,10 +2,10 @@ export const theme = {
     colors: {
         default: '#fff',
         primary: '#0a0600',
-        secondary: '#e6931e',
+        secondary: '#bb6f06',
         tertiary: '#4b3621',
         background: '#000',
-        gradient: 'linear-gradient(to bottom, #e6931e, #000)'
+        gradient: 'linear-gradient(to bottom, #bb6f06, #000)'
     },
     fonts: {
         default: {
