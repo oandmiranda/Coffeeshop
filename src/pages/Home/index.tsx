@@ -56,6 +56,7 @@ function Home () {
           title="Nosso Café"
           paragraph="Perfeição em cada grão, uma jornada de sabores que desperta os sentidos em cada gole."
           children="Conheça nossa história"
+          backgroundColor='#bb6f06'
           background_Button='black'
           btnVisible
         />
