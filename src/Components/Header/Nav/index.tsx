@@ -4,7 +4,7 @@ import { NavProps } from "../../../Types/userTypes";
 import PopUp from "../../PopUp";
 import { Container, BoxLink, NavbarLink, Logo, Div, InstagramIcon, ArrowIcon, FacebookIcon } from "./styles";
 
-const Nav = ({urlImage, textoAlternativo}: NavProps) => {
+const Nav = ({urlImage, textoAlternativo, style}: NavProps) => {
     const [isVisible, setVisible] = useState<boolean>(false)
 
     const handleOver = () => {
@@ -16,7 +16,7 @@ const Nav = ({urlImage, textoAlternativo}: NavProps) => {
     }
 
     return (
-        <Container>
+        <Container style={style}>
             <Div>
                 <Link to="/">
                     <Logo src={ urlImage } alt={ textoAlternativo }/>

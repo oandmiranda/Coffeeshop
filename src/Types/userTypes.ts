@@ -3,7 +3,7 @@ import { AutoplayOptions, NavigationOptions, PaginationOptions, SwiperModule } f
 
 export interface HeaderProps extends ContainerProps, PopUpProps, TitleProps {
     children: string
-    content: Array<{
+    content?: Array<{
         id: number
         image?: string
         image2?: string
@@ -56,6 +56,7 @@ export interface PopUpProps {
 export interface NavProps {
     urlImage: string
     textoAlternativo?: string
+    style?: React.CSSProperties
 }
 
 export interface LinkProps {
@@ -88,6 +89,7 @@ export interface ContentProps extends StyleProps, ButtonProps {
     paragraph: string 
     backgroundImage: ImageProps
     btnVisible: boolean
+    style?: React.CSSProperties
 }
 
 export interface CategoryList {
