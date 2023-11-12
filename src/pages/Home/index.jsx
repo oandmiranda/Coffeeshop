@@ -1,3 +1,6 @@
+import { Navigation, Scrollbar, Autoplay} from "swiper";
+import { SwiperSlide } from "swiper/react";
+import { useSelector } from "react-redux";
 import Content from "../../Components/Content";
 import Delivery from "../../Components/Delivery";
 import Footer from "../../Components/Footer";
@@ -11,7 +14,7 @@ import coffee_Cookie from "../../assets/img/coffe-cookie.png";
 import croissant from "../../assets/img/croissant.png";
 import coffeeshop from "../../assets/img/coffeeshop.png";
 import cake from "../../assets/img/cake.png";
-import espacoKids from "../../assets/img/espaco-kids.png";
+import SwiperWrapper from "../../Components/Swiper";
 
 const headerHome = [
   { id: 1, image: coffee_Cookie, name: 'coffe and cookie', text: '', isVisible: true },
@@ -20,7 +23,7 @@ const headerHome = [
   { id: 4, image: cake, name: 'cake', text: '', isVisible: false }
 ]
 
-function Home () {
+export default function Home () {
 
   const props = {
     content: headerHome,
@@ -33,7 +36,9 @@ function Home () {
     positionLeft: "40%",
     fontSize: "3rem",
     color: '#fff',
-  }
+  };
+
+  const coffeeshopAreas = useSelector(state => state.coffeeshopAreas);
 
   return (
     <>        
@@ -41,7 +46,7 @@ function Home () {
         <History /> 
 
         <Content 
-          reverse={false}
+          reverse={true}
           backgroundImage={imageCoffee}
           positionCenter
           title="Momentos bons a todo momento"
@@ -50,24 +55,35 @@ function Home () {
           children='Conhecer menu'
           background_Button='black'
         />
+        <SwiperWrapper // Carroussel
+            modules={[Navigation, Scrollbar, Autoplay]}
+            navigation={false}
+            loop={true}
+            autoplay={{delay: 3000, disableOnInteraction: false}}
+          >
+            { coffeeshopAreas.map((item) => (
+              <SwiperSlide key={item.id}>
+                <Content 
+                  reverse={false}
+                  backgroundImage={item.image}
+                  positionCenter
+                  title={item.title}
+                  paragraph={item.paragraph}
+                  btnVisible={false}
+                  backgroundColor={item.background}
+                />
+              </SwiperSlide>
+            ))};
+        </SwiperWrapper>
         <Content
           reverse={true}
           backgroundImage={imageGraos}
           positionCenter
           title="Nosso Café"
           paragraph="Perfeição em cada grão, uma jornada de sabores que desperta os sentidos em cada gole."
-          backgroundColor='#bb6f06'
           btnVisible
           children="Conheça nossa história"
           background_Button='black'
-        />
-        <Content 
-          reverse={false}
-          backgroundImage={espacoKids}
-          positionCenter
-          title="Espaço Kids"
-          paragraph="Espaço reservado especialmente para sua família"
-          btnVisible={false}
         />
         <Category title="Conheça nosso menu completo" />
         <Delivery 
@@ -81,6 +97,4 @@ function Home () {
         <Footer />
     </>
   )
-}
-
-export default Home;
+};
