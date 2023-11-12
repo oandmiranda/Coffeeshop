@@ -313,7 +313,7 @@ const initialState = [{
     category: 'sobremesas',
     name: "Mousse de Chocolate", 
     id: 41,
-    description: "Delicioso Mousse de Chocolate cremoso com chantilly e Strowberry"
+    description: "Delicioso Mousse de Chocolate cremoso com chantilly e frutas vermelhas"
 },
 {
     image: tortaHolandesa,
