@@ -30,9 +30,10 @@ export const ItemContainer = styled.div`
     padding-bottom: 5px;
 `;
 
-
 export const Image = styled.img`
     width: 100%;
+    height: auto;
+    max-height: 145px;
 `;
 
 export const Description = styled.p`
