@@ -12,7 +12,7 @@ import cafeChantilly from "../../assets/img/cafe-chantilly.png";
 import cafe2 from "../../assets/img/cafe2.png";
 import chocolateLindit from "../../assets/img/chocolate-trufado-lindit.png";
 import frapuccino from "../../assets/img/frapuccino.png";
-import pudim from "../../assets/img/sobremsa-pudim.png";
+import pudim from "../../assets/img/sobremesa-pudim.png";
 import cocadaComSorvete from "../../assets/img/sobremesa-cocada-sorvete.png";
 import tortaNutella from "../../assets/img/sobremesa-torta-nutella.png";
 import croissantQueijo from "../../assets/img/croissant-queijo.png";
@@ -30,6 +30,17 @@ import cakeCapuccino from "../../assets/img/cake-capuccino.png";
 import cakeCereja from "../../assets/img/cake-cereja.png";
 import cakeMorango from "../../assets/img/cake-morango.png";
 import cakeBerry from "../../assets/img/cake-berry.png";
+import americanCookie from "../../assets/img/american-cookie4.png";
+import cookieMms from "../../assets/img/cookie-mms.png";
+import cookieChocolate4 from "../../assets/img/cookie-chocolate4.png";
+import cheeseCake from "../../assets/img/cheesecake.png";
+import paoDeMel from "../../assets/img/pao-de-mel.png";
+import icecream from "../../assets/img/sorvete.png";
+import saladaDeFruta from "../../assets/img/salada-de-fruta.png";
+import mousseChocolate from "../../assets/img/mousse-chocolate.png";
+import tortaHolandesa from "../../assets/img/torta-holandesa.png";
+import cakePacoca from "../../assets/img/cake-pacoca.png";
+import cakeLimon from "../../assets/img/cake-limon.png";
 
 const initialState = [{ 
     image: croissantQueijo,
@@ -247,7 +258,85 @@ const initialState = [{
     name: "Cappuccino Hershey's", 
     id: 33,
     description: "Delicioso Capuccinno cremoso com Hershey's (ao leite) derretido e mesclado com café expresso"
-}]
+},
+{
+    image: americanCookie,
+    category: 'cookies',
+    name: "Cookie Preto e Branco", 
+    id: 34,
+    description: "Delicioso Cookie metade chocolate e metade chocolate branco recheado com Doce de Leite"
+},
+{
+    image: cookieMms,
+    category: 'cookies',
+    name: "Cookie MM'S", 
+    id: 35,
+    description: "Delicioso Cookie de bauninha com MM'S"
+},
+{
+    image: cookieChocolate4,
+    category: 'cookies',
+    name: "Cookie de Chocolate", 
+    id: 36,
+    description: "Delicioso Cookie de Chocolate com recheio de Chocolate ao Leite"
+},
+{
+    image: cheeseCake,
+    category: 'sobremesas',
+    name: "Cheesecake de Frutas Vermelhas", 
+    id: 37,
+    description: "Delicioso CheeseCake cremoso com um festival de frutas vermelhas frescas "
+},
+{
+    image: paoDeMel,
+    category: 'sobremesas',
+    name: "Pão de mel", 
+    id: 38,
+    description: "Pão de mel suculento com recheio de Chocolate ao leite ou Doce de leite"
+},
+{
+    image: icecream,
+    category: 'sobremesas',
+    name: "Sorvetes", 
+    id: 39,
+    description: "Sorvete super cremoso de Creme ou Morango"
+},
+{
+    image: saladaDeFruta,
+    category: 'sobremesas',
+    name: "Salada de Frutas", 
+    id: 40,
+    description: "Salada de Frutas frescas a gosto (Kiwi, Morango, Tangerina, Abacaxi, Banana, Manga, Maça e Uva)"
+},
+{
+    image: mousseChocolate,
+    category: 'sobremesas',
+    name: "Mousse de Chocolate", 
+    id: 41,
+    description: "Delicioso Mousse de Chocolate cremoso com chantilly e Strowberry"
+},
+{
+    image: tortaHolandesa,
+    category: 'sobremesas',
+    name: "Torta Holandesa", 
+    id: 42,
+    description: "Torta Holandesa cremosa eleita a melhor de São Paulo"
+},
+{
+    image: cakePacoca,
+    category: 'cakes',
+    name: "Bolo Paçoca", 
+    id: 43,
+    description: "Delicioso bolo feito com massa de paçoca recheado e coberto com creme de macarujá"
+},
+{
+    image: cakeLimon,
+    category: 'cakes',
+    name: "Bolo de Limão", 
+    id: 44,
+    description: "Delicioso bolo com massa de limão e bauninha coberto com mousse de limão"
+},
+]
 
 
 const itemsSlice = createSlice({
