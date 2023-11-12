@@ -5,6 +5,7 @@ import Container from "../../Components/Container";
 import Header from "../../Components/Header";
 import { Image, ItemContainer, Description, ButtonCard } from "../../Components/Container/styles";
 import ItemCategory from "../../Components/ItemCategory";
+import Footer from "../../Components/Footer";
 
 const Category = () => {
 
@@ -32,9 +33,6 @@ const Category = () => {
         height: '85vh',
         children: 'Ver lista',
         subtitle: categories.name,
-        positionTop: "45%",
-        positionLeft: "9%",
-        positionRight: "0",
         color: "#fff",
         fontSize: "1.3rem",
     }), [currentCategoryItems, categories.name]);
@@ -61,6 +59,7 @@ const Category = () => {
                 ))}
             </Container>
             <ItemCategory title="Conheça mais" />
+            <Footer />
         </>
     )
 }

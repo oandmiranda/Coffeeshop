@@ -10,7 +10,7 @@ import { Container, ImageBackground, Wrapper } from "./styles";
 const Header = (props: HeaderProps) => {
 
     const {
-        content, height, subtitle, contentText, positionTop, positionLeft, positionRight, fontSize, color 
+        content, height, subtitle, contentText, fontSize, color 
     } = props;
 
     return (
@@ -33,9 +33,6 @@ const Header = (props: HeaderProps) => {
                                 contentText={ contentText }
                             />
                             <Title
-                                positionTop={ positionTop }
-                                positionLeft={ positionLeft }
-                                positionRight={ positionRight }
                                 color={ color }
                                 fontSize={ fontSize }
                             >

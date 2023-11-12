@@ -98,9 +98,6 @@ export interface CategoryList {
 }
 
 export interface TitleProps {
-    positionTop: string
-    positionLeft: string 
-    positionRight: string 
     fontSize?: string
     children: React.ReactNode
     color: string

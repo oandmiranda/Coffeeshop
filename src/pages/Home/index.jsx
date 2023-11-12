@@ -22,10 +22,6 @@ export default function Home () {
     height: "100vh",
     subtitle: "Conheça nosso cardápio",
     contentText: "Ver menu",
-    children: 'texto teste',
-    positionTop: "50%",
-    positionRight: "10%",
-    positionLeft: "40%",
     fontSize: "3rem",
     color: '#fff',
   };
