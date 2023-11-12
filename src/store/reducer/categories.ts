@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import imageCroissant from "../../assets/img/croissant.png";
 import imageCoffe from "../../assets/img/cafe-category.png";
 import imageCookie from "../../assets/img/coffe-cookie.png";
-import imageSobremesa from "../../assets/img/sobremesa-category.png";
+import imageSobremesa from "../../assets/img/sobremesa-morango.png";
 import cake2 from "../../assets/img/cake-2.png";
 import smallImageCoffee from "../../assets/img/categoryCoffee.png";
 import smallImageCookie from "../../assets/img/category-cookie.png";

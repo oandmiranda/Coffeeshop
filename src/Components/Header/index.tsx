@@ -23,7 +23,7 @@ const Header = (props: HeaderProps) => {
                 loop={true}
                 autoplay={{delay: 5000, disableOnInteraction: false}}
             >
-                { content.map((object) => (
+                { content && content.map((object) => (
                     <SwiperSlide key={ object.id }>
                         <Wrapper height={ height } >
                             <ImageBackground src={ object.image } alt={ object.name } />

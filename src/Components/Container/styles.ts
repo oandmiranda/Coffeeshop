@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import { StyleButton } from "../../Components/Button/styles";
+import { StyledContainerProps } from "../../Types/userTypes";
 
-export const StyledContainer = styled.section`
+export const StyledContainer = styled.section<StyledContainerProps>`
     width: 95%;
     margin: 50px auto 20px auto;
     display: flex;
@@ -9,7 +10,13 @@ export const StyledContainer = styled.section`
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 7px;
+    border-radius: 10px;
+    background: ${(props) => (props.isWhite && '#fff')};
 `;
+
+StyledContainer.defaultProps = {
+    isWhite: 'black'
+};
 
 export const ItemContainer = styled.div`
     width: 250px;
@@ -25,6 +32,8 @@ export const ItemContainer = styled.div`
 
 export const Image = styled.img`
     width: 100%;
+    height: auto;
+    max-height: 145px;
 `;
 
 export const Description = styled.p`

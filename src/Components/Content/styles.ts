@@ -26,7 +26,7 @@ export const TextBox = styled.div<StyleProps>`
     flex-direction: column;
     align-items: ${({positionCenter}) => (positionCenter ? 'center' : 'left')};
     justify-content: ${({positionCenter}) => (positionCenter ? 'center' : 'left')};
-    background: ${props => props.theme.colors.tertiary};
+    background-color: ${props => props.backgroundColor || props.theme.colors.tertiary}; // define props.theme.colors.tertiary por default caso a prop "backgroundColor" não seja passada no componente
     border-radius: 10px;
     padding: 30px;
 `;
@@ -35,4 +35,6 @@ export const Title = styled.h2`
     padding-bottom: 20px;
     font-family: ${props => props.theme.fonts.title.fontFamily};
     letter-spacing: 2px;
+    font-size: 1.8rem;
 `;
+

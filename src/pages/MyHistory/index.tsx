@@ -1,35 +1,19 @@
 import Content from "../../Components/Content";
 import Footer from "../../Components/Footer";
-import Header from "../../Components/Header";
-import coverImage from "../../assets/img/coffeeshop.png";
-import coverImage2 from "../../assets/img/cafeteria.png";
-
-const headerHome = [
-    { id: 1, coverImage: coverImage2, name: 'coffeeshop', text: "", isVisible: false },
-    { id: 2, coverImage: coverImage, name: 'coffeeshop', text: "", isVisible: false },
-  ]
+import Nav from "../../Components/Header/Nav";
+import nossoGraoImage from "../../assets/img/nossograo.png";
 
 const MyHistory = () => {
 
-    const props = {
-        content: headerHome,
-        height: "80vh",
-        subtitle: "Desde 1979 servindo o melhor café de São Paulo",
-        children: "texto teste",
-        positionTop: "50%",
-        positionRight: "50%",
-        positionLeft: "10%",
-        fontSize: "3rem",
-        color: '#fff',
-      }
-
     return (
         <>
-            <Header {...props} />
+            {/* <Header {...props} /> */}
+            <Nav urlImage="/assets/logo.png" style={{ position: 'fixed', top: '3px'}}/>
             <Content 
+                style={{ marginTop: '120px' }}
                 reverse
                 btnVisible={false}
-                backgroundImage={coverImage}
+                backgroundImage={nossoGraoImage}
                 positionCenter={false}
                 title="Nosso grão"
                 background_Button="gray"

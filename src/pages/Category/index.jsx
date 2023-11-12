@@ -1,31 +1,35 @@
 import { useSelector } from "react-redux";
 import { Link, useParams } from 'react-router-dom';
+import { useMemo } from "react";
 import Container from "../../Components/Container";
 import Header from "../../Components/Header";
 import { Image, ItemContainer, Description, ButtonCard } from "../../Components/Container/styles";
 import ItemCategory from "../../Components/ItemCategory";
 
 const Category = () => {
-    const { categoryRoute } = useParams();
-    const { categories, items } = useSelector(state => ({
-      categories: state.categories.filter(category => category.id === categoryRoute),
-      items: state.items.filter(item => item.category === categoryRoute),
-    }));
-   
-    const images = useSelector(state => state.items);
-    const filteredImages = images.reduce((acc, image) => {
-      if (!acc[image.category]) {
-        acc[image.category] = [];
-      }
-      acc[image.category].push(image);
-      return acc;
-    }, {});
-   
-    const currentCategoryImages = filteredImages[categoryRoute];
+
+    const { categoryRoute } = useParams(); 
+    const state = useSelector(state => state);
+    const categories = useMemo(() => state.categories.filter(category => category.id === categoryRoute), [state.categories, categoryRoute]);
+    const items = useMemo(() => state.items.filter(item => item.category === categoryRoute), [state.items, categoryRoute]);
     
-    const props = {
-        content: currentCategoryImages,
-        height: '75vh',
+    const itemsCategory = useSelector(state => state.items); // acessa o slice "items"
+    const filteredItems = useMemo(() => { // useMemo retorna um valor memorizado até que sua dependência mude
+      return itemsCategory.reduce((acc, item) => { // reduce retorna um único valor de um array (Neste caso, a função está sendo usada para agrupar imagens por categoria)
+        if (!acc[item.category]) { // verifica se a categoria do item já existe no acumulador.
+          acc[item.category] = []; // Se não existir, um novo array vazio é criado para essa categoria. 
+        }
+        acc[item.category].push(item); // adiciona o item ao array da categoria correspondente.
+        return acc;
+      }, {});
+    }, [itemsCategory]); // dependência do useMemo (se for alterada, o novo valor é memorizado pelo hook)
+ 
+    const currentCategoryItems = filteredItems[categoryRoute];
+    console.log(currentCategoryItems);
+    
+    const props = useMemo(() => ({
+        content: currentCategoryItems,
+        height: '85vh',
         children: 'Ver lista',
         subtitle: categories.name,
         positionTop: "45%",
@@ -33,12 +37,13 @@ const Category = () => {
         positionRight: "0",
         color: "#fff",
         fontSize: "1.3rem",
-    }
+    }), [currentCategoryItems, categories.name]);
+
 
     return (
         <>
             <Header {...props}/>
-            <Container>
+            <Container isWhite={false}>
                 { items.map(item => (
                     <li key={item.id}>
                     <Link to={item.name}>

@@ -3,7 +3,7 @@ import { AutoplayOptions, NavigationOptions, PaginationOptions, SwiperModule } f
 
 export interface HeaderProps extends ContainerProps, PopUpProps, TitleProps {
     children: string
-    content: Array<{
+    content?: Array<{
         id: number
         image?: string
         image2?: string
@@ -13,9 +13,13 @@ export interface HeaderProps extends ContainerProps, PopUpProps, TitleProps {
     }>
 }
 
-export interface ContainerProps {
+export interface ContainerProps extends StyledContainerProps {
     children: React.ReactNode
     height?: string
+}
+
+export interface StyledContainerProps {
+    isWhite?: string
 }
 
 export interface SwiperProps {
@@ -35,6 +39,7 @@ export interface ImageProps {
 export interface StyleProps {
     reverse?: boolean
     positionCenter?: boolean
+    backgroundColor?: string
 }
 
 export interface DropDownProps {
@@ -51,6 +56,7 @@ export interface PopUpProps {
 export interface NavProps {
     urlImage: string
     textoAlternativo?: string
+    style?: React.CSSProperties
 }
 
 export interface LinkProps {
@@ -83,6 +89,7 @@ export interface ContentProps extends StyleProps, ButtonProps {
     paragraph: string 
     backgroundImage: ImageProps
     btnVisible: boolean
+    style?: React.CSSProperties
 }
 
 export interface CategoryList {
