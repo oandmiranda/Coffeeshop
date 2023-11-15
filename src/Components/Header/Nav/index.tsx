@@ -34,9 +34,9 @@ const Nav = ({urlImage, textoAlternativo, style}: NavProps) => {
                     Empório
                     <ArrowIcon />
                 </NavbarLink>
-                <NavbarLink to="/">Nossa História</NavbarLink>
+                <NavbarLink to="/myhistory">Nossa História</NavbarLink>
                 <NavbarLink to="/">Lojas</NavbarLink>
-                <NavbarLink to="/">Seja um franqueado</NavbarLink>
+                <NavbarLink to="/franchise">Seja um franqueado</NavbarLink>
                 <NavbarLink to="/">
                     Aprenda mais
                     <ArrowIcon />
