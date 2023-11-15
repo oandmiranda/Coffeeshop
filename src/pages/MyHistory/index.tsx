@@ -3,8 +3,7 @@ import Footer from "../../Components/Footer";
 import Nav from "../../Components/Header/Nav";
 import nossoGraoImage from "../../assets/img/nossograo.png";
 
-const MyHistory = () => {
-
+export default function MyHistory () {
     return (
         <>
             {/* <Header {...props} /> */}
@@ -24,6 +23,4 @@ const MyHistory = () => {
             <Footer />
         </>
     )
-}
-
-export default MyHistory;
+};
