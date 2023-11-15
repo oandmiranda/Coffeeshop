@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import coffee_Cookie from "../../assets/img/coffe-cookie.png";
-import croissant from "../../assets/img/croissant.png";
+import coverCroissant from "../../assets/img/cover-croissant.png";
 import coffeeshop from "../../assets/img/coffeeshop.png";
 import cake from "../../assets/img/cake.png";
 
@@ -21,9 +21,9 @@ const initialState: IState[] = [{
 },
 { 
     id: 2,
-    image: croissant, 
+    image: coverCroissant, 
     name: 'croissant', 
-    text: 'Eleito o melhor Croissant pela Paris Coffe', 
+    text: '', 
     isVisible: false 
 },
 { 
