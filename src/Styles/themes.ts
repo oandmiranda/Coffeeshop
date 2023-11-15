@@ -20,8 +20,8 @@ export const theme = {
     },
     sizes: {
         default: '1rem',
-        title: '3rem',
-        subtitle: '2.4rem',
+        title: '2.8rem',
+        subtitle: '1.5rem',
         titleDelivery: '5rem'
     }
 }
