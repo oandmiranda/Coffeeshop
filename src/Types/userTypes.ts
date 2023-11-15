@@ -102,3 +102,8 @@ export interface TitleProps {
     children: React.ReactNode
     color: string
 }
+
+export interface HeaderFranchiseProps {
+    title: string
+    paragraph: string
+}
