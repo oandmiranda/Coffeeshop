@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Paragraph } from "../History/styles";
 
 const Box = styled.header`
     width: 100wh;
@@ -14,21 +15,16 @@ const TextArea = styled.div`
     height: auto;
     display: flex;
     flex-direction: column;
-    
-
-    h1 {
-        font-size: ${(props) => props.theme.sizes.title};
-        color: ${(props) => props.theme.colors.default};
-        padding-bottom: 20px;
-        line-height: 45px;
-        font-family: ${props => props.theme.fonts.secondary.fontFamily};
-    };
-
-    p {
-        font-size: ${(props) => props.theme.sizes.subtitle};
-        color: ${(props) => props.theme.colors.default};
-
-    }
 `;
 
-export { Box, TextArea }
+const Title = styled.h2`
+    font-size: ${props => props.theme.sizes.title};
+`;
+
+const SubTitle = styled(Paragraph)`
+    font-size: ${props => props.theme.sizes.subtitle};
+    width: 100%;
+    padding: 0;
+`;
+
+export { Box, TextArea, Title, SubTitle }

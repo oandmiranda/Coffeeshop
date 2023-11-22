@@ -29,6 +29,6 @@ export const Container = styled.div<PopUpProps>`
 
 export const SubTitle = styled.h1`
     color: ${props => props.theme.colors.default};
-    font-size: ${props => props.theme.sizes.subtitle};
+    font-size: 1.6rem;
     font-family: ${props => props.theme.fonts.secondary.fontFamily};
 `;

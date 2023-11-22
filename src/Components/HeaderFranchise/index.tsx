@@ -1,12 +1,12 @@
-import { Box, TextArea } from "./styles";
 import { HeaderFranchiseProps } from "../../Types/userTypes";
+import { Box, SubTitle, TextArea, Title } from "./styles";
 
 export default function HeaderFranchise ({title, paragraph} :HeaderFranchiseProps) {
     return (
         <Box>
             <TextArea>
-                <h1>{title}</h1>
-                <p>{paragraph}</p>
+                <Title>{title}</Title>
+                <SubTitle>{paragraph}</SubTitle>
             </TextArea>
         </Box>
     )

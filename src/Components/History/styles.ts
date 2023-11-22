@@ -12,7 +12,7 @@ export const Container = styled.div`
 `;
 
 export const Paragraph = styled.p`
-    font-size: ${props => props.theme.fonts.default};
+    font-size: ${props => props.theme.sizes.default};
     width: 60%;
     padding: 30px;
 `;
