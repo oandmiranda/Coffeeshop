@@ -101,9 +101,26 @@ export interface TitleProps {
     fontSize?: string
     children: React.ReactNode
     color: string
+    style?: React.CSSProperties
 }
 
 export interface HeaderFranchiseProps {
     title: string
     paragraph: string
+}
+
+export interface textAreaProps {
+    as?: keyof JSX.IntrinsicElements
+    boxBackground?: string
+    imageBackground?: string
+    backgroundWhite?: boolean
+    title?: string
+    color?: string
+    paragraph?: string
+    hasImage?: boolean
+    image1?: string 
+    image2?: string 
+    image3?: string 
+    fontSize?: string
+    hasButton?: boolean
 }
