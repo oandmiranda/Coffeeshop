@@ -1,13 +1,17 @@
+import Container from "../../Components/Container";
 import Content from "../../Components/Content";
-import Footer from "../../Components/Footer";
 import Nav from "../../Components/Header/Nav";
 import HeaderFranchise from "../../Components/HeaderFranchise";
-import TextArea from "../../Components/HeaderFranchise/textArea";
+import Section from "../../Components/HeaderFranchise/Section";
+import Title from "../../Components/Title";
 import boxBackground from "../../assets/img/background-franchise.png";
 import historyImage from "../../assets/img/cafe-category.png";
 import image1 from "../../assets/img/image-selfie1.png"
 import image2 from "../../assets/img/image-selfie2.png"
 import image3 from "../../assets/img/image-selfie3.png"
+import imageSectionNossosProdutos from "../../assets/img/xicara-cafe.png";
+import imageSectionNossosProdutos2 from "../../assets/img/image-nossosProdutos.png";
+import Box from "../../Components/Box";
 
 
 export default function Franchise () {
@@ -37,7 +41,7 @@ export default function Franchise () {
                 Fundado há mais de meio século por um apaixonado por café, o [nome da cafeteria] tem uma história profundamente enraizada na cultura do café.
                 Os grãos escolhidos a dedo são submetidos a um processo de torra que é uma verdadeira obra de arte. Os torrefadores experientes da cafeteria dominam a ciência e a arte de revelar os sabores intrínsecos de cada variedade de café. "
             />
-                <TextArea 
+                <Section 
                     boxBackground={boxBackground}
                     as="section"
                     title="Crescimento por meio de franquias"
@@ -48,17 +52,52 @@ export default function Franchise () {
                     fontSize='1.3rem'
                     hasImage={false}
                 />
-                <TextArea 
+                <Section 
                     as='section'
                     title="Nosso diferencial"
                     color='#fff'
                     paragraph="Visamos a excelência em tudo o que realizamos, desde a criteriosa seleção dos grãos de café até a elaboração dos nossos produtos, desejando que nossos clientes percebam esse cuidado em cada item servido. Além disso, nos empenhamos em manter nossa cafeteria atualizada com as últimas tendências em design e tecnologia, garantindo a melhor experiência possível a todos.
                     Uma de nossas inovações mais populares é a capacidade de estampar uma selfie na bebida. Isso mesmo, o cliente pode escolher uma foto sua ou de alguém especial, e nós a reproduzimos com perfeição na bebida. Essa é uma maneira divertida e exclusiva de personalizar a experiência e torná-la ainda mais especial e única."
                     fontSize='1.3rem'
-                    hasImage={true}
+                    hasImage
                     {...props}
+                    hasButton
                 />
-            <Footer />
+                <Container>
+                    <Title 
+                        style={{ marginTop: '50px' }}
+                        color="#000" 
+                        fontSize="2.8rem">
+                            Nossos Produtos 
+                    </Title>
+                    <Content 
+                        style={{ marginTop: '170px' }}
+                        reverse={false}
+                        btnVisible={false}
+                        backgroundImage={imageSectionNossosProdutos}
+                        backgroundColor="#421e12"
+                        positionCenter={false}
+                        title="A Marca Coffee"
+                        paragraph="Nossa cafeteria se destaca pelo casamento perfeito entre o sabor excepcional dos nossos produtos e a magia de imprimir fotos em bebidas. Somos conhecidos por oferecer uma experiência memorável e personalizada a cada cliente e estamos convencidos de que a (nome da cafeteria) é uma escolha sólida para seu próximo empreendimento no mercado de café e cafeterias."
+                    />
+                    <Content 
+                        reverse
+                        btnVisible={false}
+                        backgroundImage={imageSectionNossosProdutos2}
+                        backgroundColor="#421e12"
+                        positionCenter={false}
+                        title="Insumos Importados"
+                        paragraph="Utilizamos exclusivamente produtos e insumos importados de alta qualidade, garantindo a excelência em nossos produtos e a satisfação do cliente."
+                    />
+                </Container>
+                <Box as="section" boxBackground={boxBackground}>
+                <Title 
+                        // style={{ marginTop: '50px' }}
+                        color="#fff" 
+                        fontSize="2.8rem">
+                            Se cadastre para saber mais! 
+                    </Title>
+                </Box>
         </>
     )
 };
