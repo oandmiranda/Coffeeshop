@@ -3,7 +3,7 @@ import { ImageProps, StyleProps } from "../../Types/userTypes";
 
 export const ContentWrapper = styled.div<StyleProps>`
     width: 95%;
-    height: 340px;
+    height: auto;
     min-height: 300px;
     margin: 0 auto;
     display: flex;
