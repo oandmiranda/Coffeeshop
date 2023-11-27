@@ -1,13 +1,19 @@
 import styled from "styled-components";
 import { Paragraph } from "../History/styles";
 
-const Box = styled.header`
+interface BoxStyled {
+    backgroundImage?: string
+    backgroundCover?: boolean
+}
+
+const Box = styled.div<BoxStyled>`
     width: 100wh;
-    height: 100vh;
+    height: auto;
     padding: 50px;
     display: flex;
-    justify-content: start;
-    margin-top: 130px;
+    margin-top: 120px;
+    background: url(${props => props.backgroundImage});
+    background-size: ${props => props.backgroundCover && 'cover'}
 `;
 
 const TextArea = styled.div`
