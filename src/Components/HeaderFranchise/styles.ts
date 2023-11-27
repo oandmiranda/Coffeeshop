@@ -3,7 +3,6 @@ import { Paragraph } from "../History/styles";
 
 interface BoxStyled {
     backgroundImage?: string
-    backgroundCover?: boolean
 }
 
 const Box = styled.div<BoxStyled>`
@@ -13,7 +12,7 @@ const Box = styled.div<BoxStyled>`
     display: flex;
     margin-top: 120px;
     background: url(${props => props.backgroundImage});
-    background-size: ${props => props.backgroundCover && 'cover'}
+    background-size: cover;
 `;
 
 const TextArea = styled.div`
