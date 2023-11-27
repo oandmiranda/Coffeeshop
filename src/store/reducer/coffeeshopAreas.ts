@@ -1,6 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import espacoKids1 from "../../assets/img/espaco-kids.png";
 import coffeeshop from "../../assets/img/coffeeshop.png";
+import imageSelfie from "../../assets/img/image-selfie1.png";
 
 const initialState = [{
     image: espacoKids1,
@@ -17,6 +18,14 @@ const initialState = [{
     title: "Ambiente aconchegante",
     paragraph: "Espaço aconchegante para você e sua família",
     background: "#0a0600"
+},
+{
+    image: imageSelfie,
+    id: 3,
+    name: "selfieCoffee",
+    title: "Seu rosto no seu Café",
+    paragraph: "Sua experiência mais gostosa e divertida com a gente",
+    background: "#bb6f06"
 }]
 
 const coffeeshopAreasSlice = createSlice({
