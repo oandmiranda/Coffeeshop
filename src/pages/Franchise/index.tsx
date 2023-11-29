@@ -12,6 +12,8 @@ import image3 from "../../assets/img/image-selfie3.png"
 import imageSectionNossosProdutos from "../../assets/img/xicara-cafe.png";
 import imageSectionNossosProdutos2 from "../../assets/img/image-nossosProdutos.png";
 import Box from "../../Components/Box";
+import Form from "../../Components/Form";
+import Footer from "../../Components/Footer";
 
 
 export default function Franchise () {
@@ -92,12 +94,14 @@ export default function Franchise () {
                 </Container>
                 <Box as="section" boxBackground={boxBackground}>
                 <Title 
-                        // style={{ marginTop: '50px' }}
+                        style={{ marginBottom: '470px' }}
                         color="#fff" 
                         fontSize="2.8rem">
                             Se cadastre para saber mais! 
-                    </Title>
+                </Title>
+                    <Form />
                 </Box>
+                <Footer />
         </>
     )
 };

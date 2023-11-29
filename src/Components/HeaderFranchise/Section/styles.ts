@@ -55,6 +55,7 @@ const Button = styled.button`
     border-radius: 35px;
     font-size: 1.4rem;
     cursor: pointer;
+    border: none;
 `;
 
 export {Box, Title, Paragraph, ImageArea, Image, Button};
