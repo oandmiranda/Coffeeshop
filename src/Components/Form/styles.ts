@@ -9,7 +9,6 @@ const Container = styled.div`
     max-width: 416px;
     height: auto;
     padding: 44px 30px;
-    gap: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,7 +30,7 @@ const SubTitle = styled.p`
 `;
 
 const Input = styled.input`
-    padding-block: 20px;
+    margin-top: 25px;
     height: 30px;
     width: 100%;
     border-top: none;
@@ -42,9 +41,14 @@ const Input = styled.input`
 `;
 
 const ButtonSubmit = styled(Button)`
-    margin-block: 0;
+    margin-block: 30px;
     padding: 14px;
     border: none;
 `;
 
-export {Container, Title, SubTitle, Input, ButtonSubmit};
+const ErrorMessage = styled.p`
+    color: red;
+    align-self: flex-start;
+`;
+
+export {Container, Title, SubTitle, Input, ButtonSubmit, ErrorMessage};
