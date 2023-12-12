@@ -24,9 +24,13 @@ export const Div = styled.div`
     display: flex;
     `;
 
-    export const BoxLink = styled(Div)`
+export const BoxLink = styled(Div)`
         gap: 40px;
         position: relative;
+
+        @media (max-width: 999px) {
+            display: none;
+        }
     `;
 
 export const NavbarLink= styled(Link)<LinkProps>`
@@ -38,6 +42,10 @@ export const NavbarLink= styled(Link)<LinkProps>`
 export const Logo = styled.img`
     width: 70px;
     height: 70px;
+
+    @media (max-width: 999px) {
+        display: none;
+    }
 `;
 
 /* Componentes de Icone */
