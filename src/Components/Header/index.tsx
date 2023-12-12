@@ -6,6 +6,7 @@ import Nav from "../Header/Nav";
 import Children from "./Children";
 import Title from "../Title";
 import { Container, ImageBackground, Wrapper } from "./styles";
+import BurgerMenu from "../BurgerMenu";
 
 const Header = (props: HeaderProps) => {
 
@@ -16,6 +17,7 @@ const Header = (props: HeaderProps) => {
     return (
         <Container height={height}>
             <Nav urlImage='/assets/logo.png' textoAlternativo='logo da marca'/> 
+            <BurgerMenu pageWrapId={"page-wrap"} outerContainerId={"outer-container"}/>
             <SwiperWrapper
                 modules={[Navigation, Pagination, Scrollbar, Autoplay]}
                 navigation={true}
