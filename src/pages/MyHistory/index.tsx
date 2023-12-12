@@ -1,13 +1,13 @@
+import BurgerMenu from "../../Components/BurgerMenu";
 import Content from "../../Components/Content";
 import Footer from "../../Components/Footer";
 import Nav from "../../Components/Header/Nav";
 import nossoGraoImage from "../../assets/img/nossograo.png";
 
-const MyHistory = () => {
-
+export default function MyHistory () {
     return (
         <>
-            {/* <Header {...props} /> */}
+            <BurgerMenu pageWrapId={"page-wrap"} outerContainerId={"outer-container"}/>
             <Nav urlImage="/assets/logo.png" style={{ position: 'fixed', top: '3px'}}/>
             <Content 
                 style={{ marginTop: '120px' }}
@@ -24,6 +24,4 @@ const MyHistory = () => {
             <Footer />
         </>
     )
-}
-
-export default MyHistory;
+};

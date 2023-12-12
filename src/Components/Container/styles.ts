@@ -11,7 +11,7 @@ export const StyledContainer = styled.section<StyledContainerProps>`
     justify-content: space-around;
     gap: 7px;
     border-radius: 10px;
-    background: ${(props) => (props.isWhite && '#fff')};
+    background: ${({isWhite}) => (isWhite && '#fff')};
 `;
 
 StyledContainer.defaultProps = {

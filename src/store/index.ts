@@ -1,14 +1,14 @@
 import { configureStore } from '@reduxjs/toolkit';
 import categoriesSlice from './reducer/categories';
 import itemsSlice from './reducer/items'; 
-import headerContentSlice from './reducer/header';
+import headerHomeSlice from './reducer/headerHome';
 import coffeeshopAreaSlice from "./reducer/coffeeshopAreas";
 
 const store = configureStore({
     reducer: {
         categories: categoriesSlice,
         items: itemsSlice,
-        headerContent: headerContentSlice,
+        headerHome: headerHomeSlice,
         coffeeshopAreas: coffeeshopAreaSlice
     }
 });

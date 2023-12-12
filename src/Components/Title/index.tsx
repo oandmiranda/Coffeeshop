@@ -1,14 +1,12 @@
 import { TitleProps } from "../../Types/userTypes";
 import { StyledTitle } from "./styles";
 
-const Title = ({positionTop, positionLeft, positionRight, fontSize, children, color}: TitleProps) => {
+const Title = ({fontSize, children, color, style}: TitleProps) => {
     return (
         <StyledTitle
-            positionTop={positionTop}
-            positionLeft={positionLeft}
-            positionRight={positionRight}
             fontSize={fontSize}
             color={color}
+            style={style}
         >
             {children}
         </StyledTitle>

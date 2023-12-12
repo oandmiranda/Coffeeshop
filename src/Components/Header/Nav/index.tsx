@@ -5,7 +5,7 @@ import PopUp from "../../PopUp";
 import { Container, BoxLink, NavbarLink, Logo, Div, InstagramIcon, ArrowIcon, FacebookIcon } from "./styles";
 
 const Nav = ({urlImage, textoAlternativo, style}: NavProps) => {
-    const [isVisible, setVisible] = useState<boolean>(false)
+    const [isVisible, setVisible] = useState<boolean>(false);
 
     const handleOver = () => {
         setVisible(true)
@@ -34,9 +34,9 @@ const Nav = ({urlImage, textoAlternativo, style}: NavProps) => {
                     Empório
                     <ArrowIcon />
                 </NavbarLink>
-                <NavbarLink to="/">Nossa História</NavbarLink>
+                <NavbarLink to="/myhistory">Nossa História</NavbarLink>
                 <NavbarLink to="/">Lojas</NavbarLink>
-                <NavbarLink to="/">Seja um franqueado</NavbarLink>
+                <NavbarLink to="/franchise">Seja um franqueado</NavbarLink>
                 <NavbarLink to="/">
                     Aprenda mais
                     <ArrowIcon />
@@ -49,8 +49,9 @@ const Nav = ({urlImage, textoAlternativo, style}: NavProps) => {
                 </NavbarLink>
                 <NavbarLink to="/">
                     <FacebookIcon />
-                </NavbarLink>
+                </NavbarLink>    
             </Div>
+           
         </Container>    
     )
 }
