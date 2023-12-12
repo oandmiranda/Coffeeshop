@@ -14,6 +14,7 @@ import imageSectionNossosProdutos2 from "../../assets/img/image-nossosProdutos.p
 import Box from "../../Components/Box";
 import Form from "../../Components/Form";
 import Footer from "../../Components/Footer";
+import BurgerMenu from "../../Components/BurgerMenu";
 
 
 export default function Franchise () {
@@ -25,7 +26,7 @@ export default function Franchise () {
     }
 
     return (
-        <>
+    <>      <BurgerMenu pageWrapId={"page-wrap"} outerContainerId={"outer-container"}/>
             <Nav urlImage="/assets/logo.png" style={{ position: 'fixed', top: '3px'}}/>
             <HeaderFranchise 
                 title="Seja franqueado da rede de cafeterias que mais cresce no Brasil!"
