@@ -1,5 +1,6 @@
 import { styled, keyframes} from "styled-components";
 import { PopUpProps } from "../../../Types/userTypes";
+import { device } from "../../../Styles/themes";
 
 const slide = keyframes`
      0% {
@@ -25,6 +26,10 @@ export const Container = styled.div<PopUpProps>`
     animation-delay: 1.2s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
+
+    @media ${device.mobileS} {
+        display: none;
+    }
     `;
 
 export const SubTitle = styled.h1`

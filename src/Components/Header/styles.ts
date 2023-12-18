@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 import { ContainerProps } from "../../Types/userTypes";
+import { device } from "../../Styles/themes";
 
 export const Container = styled.header<ContainerProps>`
     height: ${props => props.height};
@@ -7,12 +8,21 @@ export const Container = styled.header<ContainerProps>`
     justify-content: center;
     background-size: cover;
     background-position: center;
+
+    @media ${device.mobileS} {
+        height: 65vh;
+    }    
 `;
 
 export const Wrapper = styled.div<ContainerProps>`
     width: 100vw;
     height: ${props => props.height};
     position: relative;
+
+    @media ${device.mobileS} {
+        width: 100%;
+        height: 60vh;
+    }
 `;
 
 export const ImageBackground = styled.img`
@@ -21,4 +31,9 @@ export const ImageBackground = styled.img`
     object-fit: cover;
     background-size: cover;
     z-index: 3;
+
+    @media ${device.mobileS} {
+        width: 100%;
+        height: 100%;
+    }
 `;

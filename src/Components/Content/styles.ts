@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 import { ImageProps, StyleProps } from "../../Types/userTypes";
+import { device } from "../../Styles/themes";
 
 export const ContentWrapper = styled.div<StyleProps>`
     width: 95%;
@@ -29,6 +30,11 @@ export const TextBox = styled.div<StyleProps>`
     background-color: ${props => props.backgroundColor || props.theme.colors.tertiary}; // define props.theme.colors.tertiary por default caso a prop "backgroundColor" não seja passada no componente
     border-radius: 10px;
     padding: 30px;
+
+    @media ${device.mobileS} {
+        width: 70%;
+        padding: 15px;
+    }
 `;
 
 export const Title = styled.h2`
@@ -36,5 +42,9 @@ export const Title = styled.h2`
     font-family: ${props => props.theme.fonts.title.fontFamily};
     letter-spacing: 2px;
     font-size: 1.8rem;
+
+    @media ${device.mobileS} {
+        font-size: ${props => props.theme.sizes.subtitle};
+    }
 `;
 

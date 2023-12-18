@@ -12,6 +12,11 @@
     opacity: 0.5;
     padding: 3px;
     margin-bottom: 60px;
+
+    /* seguindo o padrão de device-size do arquivo 'theme.ts' */
+    @media screen and (min-width: 310px) and (max-width: 520px) {
+        display: none;
+    }
 }
 
 .swiper-pagination > .swiper-pagination-bullet-active {
@@ -21,6 +26,6 @@
 
 .swiper-button-prev::after, .swiper-button-next::after {
     color: #fff;
-    opacity: 0.4;
+    opacity: 0;
     padding-right: 5px;
 }
