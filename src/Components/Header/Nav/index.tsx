@@ -35,11 +35,10 @@ const Nav = ({urlImage, textoAlternativo, style}: NavProps) => {
                     <ArrowIcon />
                 </NavbarLink>
                 <NavbarLink to="/myhistory">Nossa História</NavbarLink>
-                <NavbarLink to="/">Lojas</NavbarLink>
+                <NavbarLink to="/stores">Lojas</NavbarLink>
                 <NavbarLink to="/franchise">Seja um franqueado</NavbarLink>
                 <NavbarLink to="/">
                     Aprenda mais
-                    <ArrowIcon />
                 </NavbarLink>
             </BoxLink>
 
