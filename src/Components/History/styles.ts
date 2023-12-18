@@ -17,6 +17,21 @@ export const Container = styled.div`
         height: auto;
         margin-bottom: 40px;
     }
+
+    @media ${device.mobileL} {
+        flex-direction: column;
+        width: 95%;
+        height: auto;
+        margin-bottom: 40px;
+        gap: 15px;
+    }
+
+    @media ${device.tablet} {
+        width: 85%;
+        height: auto;
+        margin-bottom: 14px;
+        gap: 10px;
+    };
 `;
 
 export const Paragraph = styled.p`
@@ -27,6 +42,14 @@ export const Paragraph = styled.p`
     @media ${device.mobileS} {
         width: 100%;
     }
+
+    @media ${device.mobileL} {
+        width: 100%;
+    }
+
+    @media ${device.tablet} {
+        width: 100%;
+    };
 `;
 
 export const Image = styled.div`
@@ -39,4 +62,5 @@ export const Image = styled.div`
     @media ${device.mobileS} {
         display: none;
     }
+
 `;
