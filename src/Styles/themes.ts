@@ -25,3 +25,19 @@ export const theme = {
         titleDelivery: '5rem'
     }
 }
+
+export const size = {
+    mobileS: '310px',
+    mobileL: '520px',
+    tablet: '768px',
+    laptop: '1024px',
+    desktop: '2560px'
+   }
+   
+export const device = {
+    mobileS: `(min-width: ${size.mobileS}) and (max-width: ${size.mobileL})`,
+    mobileL: `(min-width: ${size.mobileL}) and (max-width: ${size.tablet})`,
+    tablet: `(min-width: ${size.tablet} and (max-width: ${size.laptop}))`,
+    laptop: `(min-width: ${size.laptop} and (max-width: ${size.desktop}))`,
+    desktop: `(min-width: ${size.desktop})`,
+   };
