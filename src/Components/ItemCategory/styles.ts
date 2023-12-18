@@ -17,6 +17,10 @@ export const Section = styled.div`
         gap: 25px;
         padding: 25px 20px;
     }
+
+    @media ${device.mobileL} {
+        flex-wrap: wrap;
+    }
 `;
 
 export const Item = styled.li`
@@ -49,9 +53,19 @@ export const Image = styled.img`
     border-radius: 50%;
 
     @media ${device.mobileS} {
+        width: 110px;
+        height: 110px;
+    };
+
+    @media ${device.mobileL} {
         width: 120px;
         height: 120px;
-    };
+    }
+
+    @media ${device.tablet} {
+        width: 130px;
+        height: 130px;
+    }
 `;
 
 export const Description = styled.h3`
