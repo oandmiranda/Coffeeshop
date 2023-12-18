@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { TitleProps } from "../../Types/userTypes";
+import { device } from "../../Styles/themes";
 
 export const StyledTitle = styled.h1<TitleProps>`
     position: absolute;
@@ -7,4 +8,8 @@ export const StyledTitle = styled.h1<TitleProps>`
     font-size: ${props => props.fontSize};
     text-align: center;
     font-family: ${props => props.theme.fonts.default.fontFamily};
+
+    @media ${device.mobileS} {
+        font-size: ${props => props.theme.sizes.subtitle};
+    }
 `;

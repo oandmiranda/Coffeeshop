@@ -12,7 +12,7 @@ export const DropDownWrapper = styled.div<DropDownProps>`
     border-radius: 10px;
     position: absolute;
     top: 29px;
-    left: -40px;
+    left: 40px;
     opacity: ${({isVisible}) => (isVisible ? '1' : '0')};
 `;
 

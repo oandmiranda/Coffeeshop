@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 import { ButtonProps } from "../../Types/userTypes";
+import { device } from "../../Styles/themes";
 
 export const StyleButton = styled.a<ButtonProps>`
     width: 200px;
@@ -19,6 +20,11 @@ export const StyleButton = styled.a<ButtonProps>`
     &:hover {
         background: ${(props) => props.background_Button};
         border: none;
+    }
+
+    @media ${device.mobileS} {
+        width: 140px;
+        height: 40px;
     }
 `;
 

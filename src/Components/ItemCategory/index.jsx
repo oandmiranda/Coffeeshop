@@ -8,15 +8,15 @@ const ItemCategory = ({title}) => {
 
     return (
         <Section>
-                    <Title
-                        positionTop="15px"
-                        positionLeft="60px"
-                        positionRight="65px"
-                        color="black"
-                        fontSize="1.8rem"
-                    >
-                        {title}
-                    </Title>
+            <Title
+                positionTop="15px"
+                positionLeft="60px"
+                positionRight="65px"
+                color="black"
+                fontSize="1.8rem"
+            >
+                {title}
+            </Title>
             { categories.map((item, index) => (
                 <Item key={index}>
                     <Link to={`/categoria/${item.id}`}>

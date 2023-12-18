@@ -1,5 +1,5 @@
 import { Div, FacebookIcon, InstagramIcon, Logo } from "../Header/Nav/styles";
-import { UpperArea, GridContainer, LowerArea } from "./styles";
+import { UpperArea, GridContainer, LowerArea, H2 } from "./styles";
 
 const Footer = () => {
     return (
@@ -8,7 +8,7 @@ const Footer = () => {
                 <Div>
                     <Logo src="/assets/logo.png"  alt="logomarca da empresa" />
                 </Div>
-                <h2>Todos os dias das 8 as 21h</h2>
+                <H2>Todos os dias das 8 as 21h</H2>
                 <Div>
                     <InstagramIcon />
                     <FacebookIcon />
