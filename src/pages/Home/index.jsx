@@ -15,7 +15,7 @@ import SwiperWrapper from "../../Components/Swiper";
 export default function Home () {
 
   const headerHome = useSelector(state => state.headerHome);
-  console.log("headerHome", headerHome)
+  const coffeeshopAreas = useSelector(state => state.coffeeshopAreas);
 
   const props = {
     content: headerHome,
@@ -25,8 +25,6 @@ export default function Home () {
     fontSize: "3rem",
     color: '#fff',
   };
-
-  const coffeeshopAreas = useSelector(state => state.coffeeshopAreas);
 
   return (
     <>        
@@ -60,7 +58,7 @@ export default function Home () {
                   backgroundColor={item.background}
                 />
               </SwiperSlide>
-            ))};
+            ))}
         </SwiperWrapper>
         <Content
           reverse={true}
@@ -69,7 +67,7 @@ export default function Home () {
           title="Nosso Café"
           paragraph="Perfeição em cada grão, uma jornada de sabores que desperta os sentidos em cada gole."
           btnVisible
-          children="Conheça nossa história"
+          children="Conheça-nos"
           background_Button='black'
         />
         <Category title="Conheça nosso menu completo" />
