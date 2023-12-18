@@ -4,7 +4,7 @@ import coverCroissant from "../../assets/img/cover-croissant.png";
 import coffeeshop from "../../assets/img/coffeeshop.png";
 import cake from "../../assets/img/cake.png";
 
-interface IState {
+export interface IState {
     id: number 
     image: string
     name: string 
