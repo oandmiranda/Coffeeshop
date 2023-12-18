@@ -7,6 +7,7 @@ import Category from "./pages/Category";
 import MyHistory from "./pages/MyHistory";
 import Item from "./pages/Item";
 import Franchise from "./pages/Franchise";
+import Stores from "./pages/Stores";
 
 const AppRoutes = () => {
     return (
@@ -19,6 +20,7 @@ const AppRoutes = () => {
                     <Route path="/categoria/:categoryRoute/:itemRoute" element={ <Item /> }></Route>
                     <Route path="/myhistory" element={ <MyHistory /> }></Route>
                     <Route path="/franchise" element={ <Franchise /> }></Route>
+                    <Route path="/stores" element={ <Stores /> }></Route>
                 </Routes>
             </BrowserRouter>
         </ThemeProvider>
