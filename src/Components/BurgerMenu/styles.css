@@ -36,6 +36,8 @@
   
   /* General sidebar styles */
   .bm-menu {
+    display: flex;
+    justify-content: center;
     background: rgb(113,67,4);
     background: radial-gradient(circle, rgba(113,67,4,1) 0%, rgba(35,21,1,1) 67%, rgba(15,9,0,1) 97%);
     opacity: 0.93;
