@@ -1,12 +1,12 @@
 import styled from "styled-components";
 import {textAreaProps} from "../../../Types/userTypes";
+import { device } from "../../../Styles/themes";
 
 const Box = styled.div<textAreaProps>`
-    margin-bottom: 100px;
-    padding-left: 150px;
-    padding-right: 150px;
+    margin: 50px 0;
+    padding: 0 100px;
     width: 100%;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,21 +14,37 @@ const Box = styled.div<textAreaProps>`
     background: url(${props => props.boxBackground});
     background-color: ${({backgroundWhite}) => backgroundWhite && '#fff'};
     background-size: cover;
+
+    @media ${device.mobileS} {
+        padding: 0 20px;
+    };
 `;
 
 const Title = styled.h1<textAreaProps>`
     font-size: ${props => props.theme.sizes.title};
     color: ${({color}) => color};
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+
+    @media ${device.mobileS} {
+        font-size: ${props => props.theme.sizes.titleMobile};
+    };
 `;
 
 const Paragraph = styled.p<textAreaProps>`
     font-size: ${((props) => props.fontSize)};
+
+    @media ${device.mobileS} {
+        margin-bottom: 20px;
+    };
 `;
 
 const ImageArea = styled.div`
     display: flex;
     flex-direction: row;
+
+    @media ${device.mobileS} {
+        flex-direction: column;
+    };
 `;
 
 const Image = styled.img<textAreaProps>`
@@ -40,6 +56,11 @@ const Image = styled.img<textAreaProps>`
     padding-inline: 10px;
     border-color: #000;
     margin-block: 30px;
+
+    @media ${device.mobileS} {
+        margin-block: 8px;
+        padding-inline: 2px;
+    };
 `;
 
 const Button = styled.button`
@@ -56,6 +77,11 @@ const Button = styled.button`
     font-size: 1.4rem;
     cursor: pointer;
     border: none;
+
+    @media ${device.mobileS} {
+        width: auto;
+        height: 80px;
+    };
 `;
 
 export {Box, Title, Paragraph, ImageArea, Image, Button};
