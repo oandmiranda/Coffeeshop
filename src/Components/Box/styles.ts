@@ -2,11 +2,8 @@ import styled from "styled-components";
 import {BoxProps} from "./index";
 
 const StyledBox = styled.div<BoxProps>`
-    margin-bottom: 100px;
-    padding-left: 150px;
-    padding-right: 150px;
     width: 100%;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
