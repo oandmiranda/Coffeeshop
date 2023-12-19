@@ -21,6 +21,7 @@ export const theme = {
     sizes: {
         default: '1rem',
         title: '2.8rem',
+        titleMobile: '1.7rem',
         subtitle: '1.3rem',
         titleDelivery: '5rem'
     }
