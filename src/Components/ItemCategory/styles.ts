@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 import { device } from "../../Styles/themes";
 
 export const Section = styled.div`
-    margin: 40px auto;
+    margin: 30px auto;
     width: 95%;
     height: auto;
     background: ${props => props.theme.colors.default};
@@ -16,10 +16,14 @@ export const Section = styled.div`
         flex-wrap: wrap;
         gap: 25px;
         padding: 25px 20px;
+        margin-top: 0;
+        margin-bottom: 15px;
     }
 
     @media ${device.mobileL} {
         flex-wrap: wrap;
+        margin-top: 0;
+        margin-bottom: 15px;
     }
 `;
 
@@ -53,13 +57,13 @@ export const Image = styled.img`
     border-radius: 50%;
 
     @media ${device.mobileS} {
-        width: 110px;
-        height: 110px;
+        width: 80px;
+        height: 80px;
     };
 
     @media ${device.mobileL} {
-        width: 120px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
     }
 
     @media ${device.tablet} {
