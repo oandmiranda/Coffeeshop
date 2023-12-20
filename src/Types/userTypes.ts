@@ -19,12 +19,9 @@ export interface BoxProps {
     boxBackground: string
 }
 
-export interface ContainerProps extends StyledContainerProps {
+export interface ContainerProps {
     children: React.ReactNode
     height?: string
-}
-
-export interface StyledContainerProps {
     isWhite?: string
 }
 
