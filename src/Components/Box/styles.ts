@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {BoxProps} from "./index";
+import { BoxProps } from "../../Types/userTypes"; 
 
 const StyledBox = styled.div<BoxProps>`
     width: 100%;
