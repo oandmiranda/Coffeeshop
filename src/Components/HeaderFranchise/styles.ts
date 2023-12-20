@@ -30,12 +30,26 @@ const TextArea = styled.div`
         width: 100%;
         padding: 0;
     };
+
+    @media ${device.mobileL} {
+        width: 100%;
+        padding: 0;
+    };
+
+    @media ${device.tablet} {
+        width: 100%;
+        padding: 0;
+    };
 `;
 
 const Title = styled.h2`
     font-size: ${props => props.theme.sizes.title};
 
     @media ${device.mobileS} {
+        font-size: ${props => props.theme.sizes.titleMobile};
+    };
+
+    @media ${device.mobileL} {
         font-size: ${props => props.theme.sizes.titleMobile};
     };
 `;
