@@ -11,5 +11,9 @@ export const StyledTitle = styled.h1<TitleProps>`
 
     @media ${device.mobileS} {
         font-size: ${props => props.theme.sizes.titleMobile};
-    }
+    };
+
+    @media ${device.mobileL} {
+        font-size: ${props => props.theme.sizes.titleMobile};
+    };
 `;
