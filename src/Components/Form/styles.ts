@@ -23,6 +23,11 @@ const Container = styled.div`
         width: 85%;
         margin: 170px auto 60px auto;
     };
+
+    @media ${device.mobileL} {
+        width: 95%;
+        margin: 170px auto 60px auto;
+    };
 `;
 
 const Title = styled.h1<FormProps>`
