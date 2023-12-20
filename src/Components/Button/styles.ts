@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 import { ButtonProps } from "../../Types/userTypes";
 import { device } from "../../Styles/themes";
 
-export const StyleButton = styled.a<ButtonProps>`
+const StyleButton = styled.a<ButtonProps>`
     width: 200px;
     height: 50px;
     display: flex;
@@ -31,3 +31,5 @@ export const StyleButton = styled.a<ButtonProps>`
 StyleButton.defaultProps = {
     background_Button: '#000'
 };
+
+export { StyleButton };
