@@ -3,7 +3,7 @@ import { StyleButton } from "../../Components/Button/styles";
 import { ContainerProps } from "../../Types/userTypes";
 import { device } from "../../Styles/themes";
 
-export const StyledContainer = styled.section<ContainerProps>`
+const StyledContainer = styled.section<ContainerProps>`
     width: 95%;
     margin: 20px auto 20px auto;
     display: flex;
@@ -19,7 +19,8 @@ StyledContainer.defaultProps = {
     isWhite: 'black'  // estabelece "black" como cor padrão caso "isWhite" não seja aplicado
 };
 
-export const ItemContainer = styled.div`
+// componente estilizado utilizado em outros componentes
+const ItemContainer = styled.div`
     width: 250px;
     min-height: 275px;
     background-color: white;
@@ -35,19 +36,24 @@ export const ItemContainer = styled.div`
     };
 `;
 
-export const Image = styled.img`
+// componente estilizado utilizado em outros componentes
+const Image = styled.img`
     width: 100%;
     height: auto;
     max-height: 145px;
 `;
 
-export const Description = styled.p`
+// componente estilizado utilizado em outros componentes
+const Description = styled.p`
     font-size: 1.1rem;
     padding: 5px;
     color: black;
     text-align: center;
 `;
 
-export const ButtonCard = styled(StyleButton)`
+// componente estilizado utilizado em outros componentes
+const ButtonCard = styled(StyleButton)`
     background: gray;
 `;
+
+export { StyledContainer, ItemContainer, Image, Description, ButtonCard };
