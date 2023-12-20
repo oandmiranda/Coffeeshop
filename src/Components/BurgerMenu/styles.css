@@ -81,7 +81,7 @@
     color: #ffffff;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 999px) {
     .bm-burger-button {
         display: none;
     }
