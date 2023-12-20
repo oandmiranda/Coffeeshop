@@ -60,7 +60,7 @@ export default function Home () {
               </SwiperSlide>
             ))}
         </SwiperWrapper>
-        <Content
+        <Content 
           reverse={true}
           backgroundImage={imageGraos}
           positionCenter
