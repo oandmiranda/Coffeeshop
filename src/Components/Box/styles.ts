@@ -8,7 +8,7 @@ const StyledBox = styled.div<BoxProps>`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url(${props => props.boxBackground});
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${props => props.boxBackground});
     background-size: cover;
 `;
 
