@@ -34,7 +34,15 @@ export const TextBox = styled.div<StyleProps>`
     @media ${device.mobileS} {
         width: 70%;
         padding: 15px;
-    }
+    };
+
+    @media ${device.mobileL} {
+        padding: 20px;
+    };
+
+    @media ${device.tablet} {
+        padding: 20px;
+    };
 `;
 
 export const Title = styled.h2`
