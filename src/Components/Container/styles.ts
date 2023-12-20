@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import { StyleButton } from "../../Components/Button/styles";
-import { StyledContainerProps } from "../../Types/userTypes";
+import { ContainerProps } from "../../Types/userTypes";
 import { device } from "../../Styles/themes";
 
-export const StyledContainer = styled.section<StyledContainerProps>`
+export const StyledContainer = styled.section<ContainerProps>`
     width: 95%;
     margin: 20px auto 20px auto;
     display: flex;
@@ -16,7 +16,7 @@ export const StyledContainer = styled.section<StyledContainerProps>`
 `;
 
 StyledContainer.defaultProps = {
-    isWhite: 'black'
+    isWhite: 'black'  // estabelece "black" como cor padrão caso "isWhite" não seja aplicado
 };
 
 export const ItemContainer = styled.div`
