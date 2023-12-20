@@ -86,7 +86,7 @@ export interface ContentProps extends ButtonProps {
     paragraph?: string 
     backgroundImage?: ImageProps
     btnVisible?: boolean
-    style?: React.CSSProperties
+    styleAdicional?: React.CSSProperties
     reverse?: boolean
     positionCenter?: boolean
     backgroundColor?: string
