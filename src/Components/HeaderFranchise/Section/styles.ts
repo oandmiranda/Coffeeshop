@@ -11,12 +11,23 @@ const Box = styled.div<textAreaProps>`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url(${props => props.boxBackground});
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${props => props.boxBackground});
     background-color: ${({backgroundWhite}) => backgroundWhite && '#fff'};
     background-size: cover;
 
     @media ${device.mobileS} {
         padding: 0 20px;
+    };
+
+    @media ${device.mobileL} {
+        padding: 0 30px;
+    };
+
+    @media ${device.tablet} {
+        padding: 0 50px;
+    };
+
+    @media ${device.desktop} {
     };
 `;
 
@@ -28,22 +39,35 @@ const Title = styled.h1<textAreaProps>`
     @media ${device.mobileS} {
         font-size: ${props => props.theme.sizes.titleMobile};
     };
+
+    @media ${device.mobileL} {
+        font-size: ${props => props.theme.sizes.titleMobile};
+    };
 `;
 
 const Paragraph = styled.p<textAreaProps>`
     font-size: ${((props) => props.fontSize)};
-
-    @media ${device.mobileS} {
-        margin-bottom: 20px;
-    };
+    margin-bottom: 20px;
 `;
 
 const ImageArea = styled.div`
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 
     @media ${device.mobileS} {
         flex-direction: column;
+    };
+
+    @media ${device.mobileL} {
+        flex-direction: column;
+    };
+
+    @media ${device.tablet} {
+        justify-content: space-around;
+    };
+
+    @media ${device.laptop} {
     };
 `;
 
@@ -60,6 +84,21 @@ const Image = styled.img<textAreaProps>`
     @media ${device.mobileS} {
         margin-block: 8px;
         padding-inline: 2px;
+    };
+
+    @media ${device.mobileL} {
+        margin-block: 10px;
+        flex: 1;
+        width: auto;
+    };
+
+    @media ${device.tablet} {
+        margin-block: 10px;
+        width: 50%;
+    };
+
+    @media ${device.laptop} {
+        margin-block: 10px;
     };
 `;
 
