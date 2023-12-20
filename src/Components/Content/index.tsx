@@ -3,7 +3,7 @@ import Button from "../Button";
 import { Image, ContentWrapper, TextBox, Title } from "./styles";
 import { Link } from "react-router-dom";
 
-const Content = ({ reverse, backgroundImage, positionCenter, title, paragraph, background_Button, children, backgroundColor, style, btnVisible = true }: ContentProps) => {
+export default function Content ({ reverse, backgroundImage, positionCenter, title, paragraph, background_Button, children, backgroundColor, style, btnVisible = true }: ContentProps) {
     return (
         <ContentWrapper reverse={reverse} style={style}>
             <Image backgroundImage={backgroundImage} />
@@ -19,7 +19,5 @@ const Content = ({ reverse, backgroundImage, positionCenter, title, paragraph, b
                 )}
             </TextBox>
         </ContentWrapper> 
-    )
-}
-
-export default Content
+    );
+};
