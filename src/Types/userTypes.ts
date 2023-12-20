@@ -39,12 +39,6 @@ export interface ImageProps {
     backgroundImage: any
 }
 
-export interface StyleProps {
-    reverse?: boolean
-    positionCenter?: boolean
-    backgroundColor?: string
-}
-
 export interface DropDownProps {
     isVisible?: boolean
     children: React.ReactNode
@@ -87,12 +81,15 @@ export interface ChildrenProps {
     children?: React.ReactNode
 }
 
-export interface ContentProps extends StyleProps, ButtonProps {
-    title: string
-    paragraph: string 
-    backgroundImage: ImageProps
-    btnVisible: boolean
+export interface ContentProps extends ButtonProps {
+    title?: string
+    paragraph?: string 
+    backgroundImage?: ImageProps
+    btnVisible?: boolean
     style?: React.CSSProperties
+    reverse?: boolean
+    positionCenter?: boolean
+    backgroundColor?: string
 }
 
 export interface CategoryList {
