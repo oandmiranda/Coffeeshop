@@ -1,10 +1,5 @@
 import { StyledBox } from "./styles";
-
-export interface BoxProps {
-    as: keyof JSX.IntrinsicElements
-    children: React.ReactNode
-    boxBackground: string
-}
+import { BoxProps } from "../../Types/userTypes";
 
 export default function Box ({as, children, boxBackground}: BoxProps) {
     return (

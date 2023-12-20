@@ -13,6 +13,12 @@ export interface HeaderProps extends ContainerProps, PopUpProps, TitleProps {
     }>
 }
 
+export interface BoxProps {
+    as: keyof JSX.IntrinsicElements
+    children: React.ReactNode
+    boxBackground: string
+}
+
 export interface ContainerProps extends StyledContainerProps {
     children: React.ReactNode
     height?: string
