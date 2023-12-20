@@ -32,7 +32,7 @@ export const size = {
     mobileL: '520px',
     tablet: '768px',
     laptop: '1024px',
-    desktop: '2560px'
+    desktop: '1320px'
    }
    
 export const device = {
