@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import espacoKids1 from "../../assets/img/espaco-kids.png";
-import coffeeshop from "../../assets/img/coffeeshop.png";
+import cafeteriaSantoAndre from "../../assets/img/pagestore5.png"; 
 import imageSelfie from "../../assets/img/image-selfie1.png";
 
 const initialState = [{
@@ -12,7 +12,7 @@ const initialState = [{
     background: "#bb6f06"
 },
 {
-    image: coffeeshop,
+    image: cafeteriaSantoAndre,
     id: 2,
     name: "espacoKids2",
     title: "Ambiente aconchegante",
