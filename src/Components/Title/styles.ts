@@ -10,6 +10,10 @@ export const StyledTitle = styled.h1<TitleProps>`
     font-family: ${props => props.theme.fonts.default.fontFamily};
 
     @media ${device.mobileS} {
-        font-size: ${props => props.theme.sizes.subtitle};
-    }
+        font-size: ${props => props.theme.sizes.titleMobile};
+    };
+
+    @media ${device.mobileL} {
+        font-size: ${props => props.theme.sizes.titleMobile};
+    };
 `;

@@ -11,6 +11,10 @@ export const ContainerDelivery = styled.div`
     @media ${device.mobileS} {
         height: 380px;
     }
+
+    @media ${device.mobileL} {
+        height: 400px;
+    };
 `;
 
 export const TextArea = styled(TextBox)`
@@ -25,6 +29,22 @@ export const TextArea = styled(TextBox)`
         align-items: center;
         gap: 15px;
     };
+
+    @media ${device.mobileL} {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    };
+
+    @media ${device.tablet} {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    };
 `;
 
 export const H1 = styled.h1`
@@ -35,6 +55,15 @@ export const H1 = styled.h1`
         font-family: ${props => props.theme.fonts.title.fontFamily};
         padding-bottom: 10px;
     };
+
+    @media ${device.mobileL} {
+        font-size: ${props => props.theme.sizes.title};
+        font-family: ${props => props.theme.fonts.title.fontFamily};
+    }
+    
+    @media ${device.tablet} {
+        font-size: 4rem;
+    };
 `;
 
 export const ImageDelivery = styled(Image)`
@@ -42,6 +71,10 @@ export const ImageDelivery = styled(Image)`
     width: 50%;
 
     @media ${device.mobileS} {
+        display: none;
+    };
+
+    @media ${device.mobileL} {
         display: none;
     };
 `;

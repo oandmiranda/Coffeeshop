@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 import { Button } from "../HeaderFranchise/Section/styles";
+import { device } from "../../Styles/themes";
 
 interface FormProps {
     fontFamily?: string
@@ -8,15 +9,25 @@ interface FormProps {
 const Container = styled.div`
     max-width: 416px;
     height: auto;
-    padding: 44px 30px;
+    padding: 30px 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: white;
     border-radius: 12px;
-    margin-top: 230px;
+    margin-top: 180px;
     margin-bottom: 20px;
+
+    @media ${device.mobileS} {
+        width: 85%;
+        margin: 170px auto 60px auto;
+    };
+
+    @media ${device.mobileL} {
+        width: 95%;
+        margin: 170px auto 60px auto;
+    };
 `;
 
 const Title = styled.h1<FormProps>`
@@ -44,6 +55,12 @@ const ButtonSubmit = styled(Button)`
     margin-block: 30px;
     padding: 14px;
     border: none;
+    font-size: 1.2rem;
+
+    @media ${device.mobileS} {
+        width: 130px;
+        height: auto;
+    };
 `;
 
 const ErrorMessage = styled.p`

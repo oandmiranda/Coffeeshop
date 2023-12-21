@@ -1,10 +1,11 @@
 import styled from "styled-components";
 import { StyleButton } from "../../Components/Button/styles";
 import { StyledContainerProps } from "../../Types/userTypes";
+import { device } from "../../Styles/themes";
 
 export const StyledContainer = styled.section<StyledContainerProps>`
     width: 95%;
-    margin: 50px auto 20px auto;
+    margin: 20px auto 20px auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -28,6 +29,10 @@ export const ItemContainer = styled.div`
     justify-content: space-between;
     align-items: center;
     padding-bottom: 5px;
+
+    @media ${device.mobileS} {
+        margin-bottom: 10px;
+    };
 `;
 
 export const Image = styled.img`

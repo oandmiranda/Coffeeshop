@@ -9,7 +9,7 @@ const Children = ({ isVisible, subtitle, contentText }: PopUpProps) => {
             <SubTitle>{ subtitle }</SubTitle>
             <Button
                 background_Button="gray"
-                fontSize="1.5rem"
+                fontSize="1.1rem"
             > 
             { contentText }
             </Button>

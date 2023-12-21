@@ -8,7 +8,7 @@ export const GridContainer = styled.div`
     'rodape';
     grid-template-rows: auto 50px;
     grid-template-columns: 100% 100%;
-
+    padding: 20px;
 `;
 
 export const UpperArea = styled.div`

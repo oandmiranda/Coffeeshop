@@ -1,34 +1,74 @@
 import styled from "styled-components";
 import {textAreaProps} from "../../../Types/userTypes";
+import { device } from "../../../Styles/themes";
 
 const Box = styled.div<textAreaProps>`
-    margin-bottom: 100px;
-    padding-left: 150px;
-    padding-right: 150px;
+    margin: 50px 0;
+    padding: 0 100px;
     width: 100%;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url(${props => props.boxBackground});
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${props => props.boxBackground});
     background-color: ${({backgroundWhite}) => backgroundWhite && '#fff'};
     background-size: cover;
+
+    @media ${device.mobileS} {
+        padding: 0 20px;
+    };
+
+    @media ${device.mobileL} {
+        padding: 0 30px;
+    };
+
+    @media ${device.tablet} {
+        padding: 0 50px;
+    };
+
+    @media ${device.desktop} {
+    };
 `;
 
 const Title = styled.h1<textAreaProps>`
     font-size: ${props => props.theme.sizes.title};
     color: ${({color}) => color};
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+
+    @media ${device.mobileS} {
+        font-size: ${props => props.theme.sizes.titleMobile};
+    };
+
+    @media ${device.mobileL} {
+        font-size: ${props => props.theme.sizes.titleMobile};
+    };
 `;
 
 const Paragraph = styled.p<textAreaProps>`
     font-size: ${((props) => props.fontSize)};
+    margin-bottom: 20px;
 `;
 
 const ImageArea = styled.div`
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media ${device.mobileS} {
+        flex-direction: column;
+    };
+
+    @media ${device.mobileL} {
+        flex-direction: column;
+    };
+
+    @media ${device.tablet} {
+        justify-content: space-around;
+    };
+
+    @media ${device.laptop} {
+    };
 `;
 
 const Image = styled.img<textAreaProps>`
@@ -40,6 +80,26 @@ const Image = styled.img<textAreaProps>`
     padding-inline: 10px;
     border-color: #000;
     margin-block: 30px;
+
+    @media ${device.mobileS} {
+        margin-block: 8px;
+        padding-inline: 2px;
+    };
+
+    @media ${device.mobileL} {
+        margin-block: 10px;
+        flex: 1;
+        width: auto;
+    };
+
+    @media ${device.tablet} {
+        margin-block: 10px;
+        width: 50%;
+    };
+
+    @media ${device.laptop} {
+        margin-block: 10px;
+    };
 `;
 
 const Button = styled.button`
@@ -56,6 +116,11 @@ const Button = styled.button`
     font-size: 1.4rem;
     cursor: pointer;
     border: none;
+
+    @media ${device.mobileS} {
+        width: auto;
+        height: 80px;
+    };
 `;
 
 export {Box, Title, Paragraph, ImageArea, Image, Button};

@@ -74,7 +74,7 @@ export default function Franchise () {
                             Nossos Produtos 
                     </Title>
                     <Content 
-                        style={{ marginTop: '170px' }}
+                        style={{ marginTop: '130px' }}
                         reverse={false}
                         btnVisible={false}
                         backgroundImage={imageSectionNossosProdutos}
@@ -94,12 +94,12 @@ export default function Franchise () {
                     />
                 </Container>
                 <Box as="section" boxBackground={boxBackground}>
-                <Title 
-                        style={{ marginBottom: '470px' }}
-                        color="#fff" 
-                        fontSize="2.8rem">
-                            Se cadastre para saber mais! 
-                </Title>
+                    <Title 
+                            style={{ marginBottom: '580px' }}
+                            color="#fff" 
+                            fontSize="2.8rem">
+                                Se cadastre para saber mais! 
+                    </Title>
                     <Form />
                 </Box>
                 <Footer />

@@ -12,6 +12,14 @@ export const Container = styled.header<ContainerProps>`
     @media ${device.mobileS} {
         height: 65vh;
     }    
+
+    @media ${device.mobileL} {
+        height: 80vh;
+    }
+
+    @media ${device.tablet} {
+        height: 88vh;
+    }
 `;
 
 export const Wrapper = styled.div<ContainerProps>`
@@ -22,6 +30,11 @@ export const Wrapper = styled.div<ContainerProps>`
     @media ${device.mobileS} {
         width: 100%;
         height: 60vh;
+    }
+
+    @media ${device.mobileL} {
+        width: 100%;
+        height: 80vh;
     }
 `;
 
