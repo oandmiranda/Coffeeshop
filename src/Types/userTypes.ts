@@ -1,8 +1,11 @@
-
 import { AutoplayOptions, NavigationOptions, PaginationOptions, SwiperModule } from "swiper/types";
+import { IHeaderHome } from "../store/reducer/headerHome";
+import { ICoffeeShopAreas } from "../store/reducer/coffeeshopAreas";
+import { IHeaderStores } from "../store/reducer/headerStores";
+import { ICategories } from "../store/reducer/categories";
 
-export interface HeaderProps extends ContainerProps, PopUpProps, TitleProps {
-    children: string
+export interface HeaderProps extends AnimationProps, TitleProps {
+    height?: string
     content?: Array<{
         id: number
         image?: string
@@ -11,6 +14,16 @@ export interface HeaderProps extends ContainerProps, PopUpProps, TitleProps {
         text: string
         isVisible: boolean
     }>
+}
+
+export interface TitleProps {
+    fontSize?: string
+    children?: React.ReactNode
+    color: string
+    styleAdicional?: React.CSSProperties
+    positionTop?: string
+    positionLeft?: string
+    positionRight?: string
 }
 
 export interface BoxProps {
@@ -22,7 +35,7 @@ export interface BoxProps {
 export interface ContainerProps {
     children: React.ReactNode
     height?: string
-    isWhite?: string
+    isWhite?: string | boolean
 }
 
 export interface SwiperProps {
@@ -39,15 +52,22 @@ export interface ImageProps {
     backgroundImage: any
 }
 
+export interface BoxStyled {
+    backgroundImage?: string
+}
 export interface DropDownProps {
     isVisible?: boolean
     children: React.ReactNode
 }
 
-export interface PopUpProps {
+export interface AnimationProps {
     isVisible?: boolean
     subtitle?: string
     contentText?: React.ReactNode
+}
+
+export interface ItemCategoryProps {
+    title: string
 }
 
 export interface NavProps {
@@ -75,6 +95,10 @@ export interface DeliveryProps extends ButtonProps {
     positionCenter: boolean
 }
 
+export interface FormProps {
+    fontFamily?: string
+}
+
 export interface ChildrenProps {
     subtitle: string
     fontSize?: string 
@@ -84,7 +108,7 @@ export interface ChildrenProps {
 export interface ContentProps extends ButtonProps {
     title?: string
     paragraph?: string 
-    backgroundImage?: ImageProps
+    backgroundImage?: ImageProps | string
     btnVisible?: boolean
     styleAdicional?: React.CSSProperties
     reverse?: boolean
@@ -95,13 +119,6 @@ export interface ContentProps extends ButtonProps {
 export interface CategoryList {
     image: string
     id: string
-}
-
-export interface TitleProps {
-    fontSize?: string
-    children: React.ReactNode
-    color: string
-    style?: React.CSSProperties
 }
 
 export interface HeaderFranchiseProps {
@@ -123,4 +140,12 @@ export interface textAreaProps {
     image3?: string 
     fontSize?: string
     hasButton?: boolean
+}
+
+// interface de estado Redux
+export interface RootState {
+    headerHome: IHeaderHome[]
+    coffeeshopAreas: ICoffeeShopAreas[]
+    headerStores: IHeaderStores[]
+    categories: ICategories[];
 }
