@@ -10,7 +10,14 @@ import smallImageCroissant from "../../assets/img/category-croissant.png";
 import smallImageSobremesa from "../../assets/img/category-sobremesa.png";
 import smallImageCake from "../../assets/img/category-cake.png";
 
-const initialState = [{ 
+export interface ICategories {
+    name: string 
+    id: string
+    image: string
+    categoryImage: string
+}
+
+const initialState: ICategories[] = [{ 
         name: 'Cafés', 
         id: 'cafes',
         image: imageCoffe,
