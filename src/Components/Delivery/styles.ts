@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 import { Image, TextBox } from "../Content/styles";
 import { device } from "../../Styles/themes";
 
-export const ContainerDelivery = styled.div`
+const ContainerDelivery = styled.div`
     width: 100%;
     height: 500px;
     display: flex;
@@ -17,7 +17,7 @@ export const ContainerDelivery = styled.div`
     };
 `;
 
-export const TextArea = styled(TextBox)`
+const TextArea = styled(TextBox)`
     width: 50%;
     background: ${props => props.theme.colors.gradient};
     border-radius: 0;
@@ -47,7 +47,7 @@ export const TextArea = styled(TextBox)`
     };
 `;
 
-export const H1 = styled.h1`
+const H1 = styled.h1`
     font-size: ${props => props.theme.sizes.titleDelivery};
 
     @media ${device.mobileS} {
@@ -66,7 +66,7 @@ export const H1 = styled.h1`
     };
 `;
 
-export const ImageDelivery = styled(Image)`
+const ImageDelivery = styled(Image)`
     border-radius: 0;
     width: 50%;
 
@@ -78,3 +78,5 @@ export const ImageDelivery = styled(Image)`
         display: none;
     };
 `;
+
+export { ContainerDelivery, TextArea, H1, ImageDelivery };

@@ -1,5 +1,5 @@
 import { styled, keyframes} from "styled-components";
-import { PopUpProps } from "../../../Types/userTypes";
+import { AnimationProps } from "../../../Types/userTypes";
 import { device } from "../../../Styles/themes";
 
 const slide = keyframes`
@@ -13,7 +13,7 @@ const slide = keyframes`
   }
 `;
 
-export const Container = styled.div<PopUpProps>`
+export const Container = styled.div<AnimationProps>`
     width: 350px;
     display: ${({isVisible}) => (isVisible ? 'flex' : 'none')};
     flex-direction: column;

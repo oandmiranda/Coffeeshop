@@ -3,7 +3,16 @@ import espacoKids1 from "../../assets/img/espaco-kids.png";
 import cafeteriaSantoAndre from "../../assets/img/pagestore5.png"; 
 import imageSelfie from "../../assets/img/image-selfie1.png";
 
-const initialState = [{
+export interface ICoffeeShopAreas {
+    image: string
+    id: number
+    name: string
+    title: string
+    paragraph: string
+    background: string
+}
+
+const initialState: ICoffeeShopAreas[] = [{
     image: espacoKids1,
     id: 1,
     name: "espacoKids1",

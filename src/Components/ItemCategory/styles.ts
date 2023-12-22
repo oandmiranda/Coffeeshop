@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 import { device } from "../../Styles/themes";
 
-export const Section = styled.div`
+const Section = styled.div`
     margin: 30px auto;
     width: 95%;
     height: auto;
@@ -27,7 +27,7 @@ export const Section = styled.div`
     }
 `;
 
-export const Item = styled.li`
+const Item = styled.li`
     padding-top: 25px;
     display: flex;
     align-items: center;
@@ -51,7 +51,7 @@ export const Item = styled.li`
     };
 `;
 
-export const Image = styled.img`
+const Image = styled.img`
     width: 140px;
     height: 140px;
     border-radius: 50%;
@@ -72,8 +72,10 @@ export const Image = styled.img`
     }
 `;
 
-export const Description = styled.h3`
+const Description = styled.h3`
     font-size: 1.1rem;
     color: black;
     font-weight: normal;
 `;
+
+export { Section, Item, Image, Description };

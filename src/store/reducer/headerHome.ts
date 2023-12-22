@@ -4,7 +4,7 @@ import coverCroissant from "../../assets/img/cover-croissant.png";
 import coffeeshop from "../../assets/img/coffeeshop.png";
 import cake from "../../assets/img/cake.png";
 
-export interface IState {
+export interface IHeaderHome {
     id: number 
     image: string
     name: string 
@@ -12,7 +12,7 @@ export interface IState {
     isVisible: boolean
 }
 
-const initialState: IState[] = [{
+const initialState: IHeaderHome[] = [{
     id: 1, 
     image: coffee_Cookie, 
     name: 'coffe and cookie', 

@@ -42,7 +42,15 @@ import tortaHolandesa from "../../assets/img/torta-holandesa.png";
 import cakePacoca from "../../assets/img/cake-pacoca.png";
 import cakeLimon from "../../assets/img/cake-limon.png";
 
-const initialState = [{ 
+export interface I_Items {
+    image: string
+    category: string
+    name: string 
+    id: number
+    description: string
+}
+
+const initialState: I_Items[] = [{ 
     image: croissantQueijo,
     category: 'croissant',
     name: 'Croissant de Mussarela', 

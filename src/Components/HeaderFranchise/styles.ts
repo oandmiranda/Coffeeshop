@@ -1,10 +1,7 @@
 import styled from "styled-components";
 import { Paragraph } from "../History/styles";
 import { device } from "../../Styles/themes";
-
-interface BoxStyled {
-    backgroundImage?: string
-}
+import { BoxStyled } from "../../Types/userTypes";
 
 const Box = styled.div<BoxStyled>`
     width: 100wh;
@@ -60,4 +57,4 @@ const SubTitle = styled(Paragraph)`
     padding: 0;
 `;
 
-export { Box, TextArea, Title, SubTitle }
+export { Box, TextArea, Title, SubTitle };

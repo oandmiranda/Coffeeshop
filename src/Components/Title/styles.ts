@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { TitleProps } from "../../Types/userTypes";
 import { device } from "../../Styles/themes";
 
-export const StyledTitle = styled.h1<TitleProps>`
+const StyledTitle = styled.h1<TitleProps>`
     position: absolute;
     color: ${props => props.color};
     font-size: ${props => props.fontSize};
@@ -17,3 +17,5 @@ export const StyledTitle = styled.h1<TitleProps>`
         font-size: ${props => props.theme.sizes.titleMobile};
     };
 `;
+
+export { StyledTitle };

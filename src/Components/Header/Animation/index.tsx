@@ -1,9 +1,8 @@
-import { PopUpProps } from "../../../Types/userTypes";
+import { AnimationProps } from "../../../Types/userTypes";
 import Button from "../../Button";
 import { Container, SubTitle } from "./styles";
-// import { ChildrenProps } from "../../../Types/userTypes";
 
-const Children = ({ isVisible, subtitle, contentText }: PopUpProps) => {
+export default function Animation ({ isVisible, subtitle, contentText }: AnimationProps) {
     return (
         <Container isVisible={ isVisible }>
             <SubTitle>{ subtitle }</SubTitle>
@@ -14,7 +13,5 @@ const Children = ({ isVisible, subtitle, contentText }: PopUpProps) => {
             { contentText }
             </Button>
         </Container>
-    )
-}
-
-export default Children
+    );
+};

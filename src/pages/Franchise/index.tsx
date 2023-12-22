@@ -33,7 +33,7 @@ export default function Franchise () {
                 paragraph="Invista em uma marca com história, credibilidade, solidez, alta rentabilidade e que já soma mais de 120 unidades."
             />
              <Content 
-                style={{ marginTop: '15px' }}
+                styleAdicional={{ marginTop: '15px' }}
                 reverse={false}
                 btnVisible={false}
                 backgroundImage={historyImage}
@@ -68,13 +68,13 @@ export default function Franchise () {
                 />
                 <Container>
                     <Title 
-                        style={{ marginTop: '50px' }}
+                        styleAdicional={{ marginTop: '50px' }}
                         color="#000" 
                         fontSize="2.8rem">
                             Nossos Produtos 
                     </Title>
                     <Content 
-                        style={{ marginTop: '130px' }}
+                        styleAdicional={{ marginTop: '130px' }}
                         reverse={false}
                         btnVisible={false}
                         backgroundImage={imageSectionNossosProdutos}
@@ -95,7 +95,7 @@ export default function Franchise () {
                 </Container>
                 <Box as="section" boxBackground={boxBackground}>
                     <Title 
-                            style={{ marginBottom: '580px' }}
+                            styleAdicional={{ marginBottom: '580px' }}
                             color="#fff" 
                             fontSize="2.8rem">
                                 Se cadastre para saber mais! 

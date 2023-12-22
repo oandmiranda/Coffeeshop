@@ -2,9 +2,16 @@ import { createSlice } from "@reduxjs/toolkit";
 import imageCoffeeshop from "../../assets/img/pagestore1.png";
 import imageCoffeeshop1 from "../../assets/img/coffeeshop.png";
 import imageCoffeeshop3 from "../../assets/img/pagestore3.png";
-import { IState } from "./headerHome";
 
-const initialState: IState[] = [{
+export interface IHeaderStores {
+    id: number 
+    image: string
+    name: string
+    text: string 
+    isVisible: boolean
+}
+
+const initialState: IHeaderStores[] = [{
     id: 1, 
     image: imageCoffeeshop3, 
     name: 'imageCoffeeshop3', 

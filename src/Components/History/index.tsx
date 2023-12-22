@@ -1,6 +1,6 @@
 import { Container, Image, Paragraph } from "./styles"
 
-const History = () => {
+export default function History () {
     return (
         <Container>
             <Paragraph>
@@ -8,7 +8,5 @@ const History = () => {
             </Paragraph>
             <Image />
         </Container>
-    )
-}
-
-export default History
+    );
+};

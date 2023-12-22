@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 import { DropDownProps } from "../../Types/userTypes"
 import { NavbarLink } from "../Header/Nav/styles";
 
-export const DropDownWrapper = styled.div<DropDownProps>`
+const DropDownWrapper = styled.div<DropDownProps>`
     display: flex;
     justify-content: center;
     width: 150px;
@@ -22,7 +22,7 @@ const DropDownItem = styled.li`
     margin-left: 10px;
 `;
 
-export const Item = ({children}: DropDownProps) => {
+const Item = ({children}: DropDownProps) => {
     return (
         <DropDownItem>
             <NavbarLink 
@@ -33,3 +33,5 @@ export const Item = ({children}: DropDownProps) => {
         </DropDownItem>
     )
 }
+
+export { DropDownWrapper, DropDownItem, Item };

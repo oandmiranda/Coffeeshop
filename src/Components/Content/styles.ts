@@ -1,8 +1,8 @@
 import { styled } from "styled-components";
-import { ImageProps, StyleProps } from "../../Types/userTypes";
+import { ImageProps, ContentProps } from "../../Types/userTypes";
 import { device } from "../../Styles/themes";
 
-export const ContentWrapper = styled.div<StyleProps>`
+const ContentWrapper = styled.div<ContentProps>`
     width: 95%;
     height: auto;
     min-height: 300px;
@@ -13,7 +13,7 @@ export const ContentWrapper = styled.div<StyleProps>`
     margin-block: 15px;
     `;
     
-    export const Image = styled.div<ImageProps>`
+const Image = styled.div<ImageProps>`
     border-radius: 10px;
     width: 49%;
     background: ${(props) => `url(${props.backgroundImage})`};
@@ -21,7 +21,7 @@ export const ContentWrapper = styled.div<StyleProps>`
     background-position: center;
 `;
 
-export const TextBox = styled.div<StyleProps>`
+const TextBox = styled.div<ContentProps>`
     width: 49%;
     display: flex;
     flex-direction: column;
@@ -45,7 +45,7 @@ export const TextBox = styled.div<StyleProps>`
     };
 `;
 
-export const Title = styled.h2`
+const Title = styled.h2`
     padding-bottom: 20px;
     font-family: ${props => props.theme.fonts.title.fontFamily};
     letter-spacing: 2px;
@@ -56,3 +56,4 @@ export const Title = styled.h2`
     }
 `;
 
+export { ContentWrapper, Image, TextBox, Title };

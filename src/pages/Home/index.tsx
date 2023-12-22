@@ -11,11 +11,12 @@ import imageXicara from "../../assets/img/xicara.png";
 import imageGraos from '../../assets/img/graos.png';
 import imageCoffee from "../../assets/img/coffeeandcake.png";
 import SwiperWrapper from "../../Components/Swiper";
+import { RootState } from "../../Types/userTypes";
 
 export default function Home () {
 
-  const headerHome = useSelector(state => state.headerHome);
-  const coffeeshopAreas = useSelector(state => state.coffeeshopAreas);
+  const headerHome = useSelector((state: RootState) => state.headerHome);
+  const coffeeshopAreas = useSelector((state: RootState) => state.coffeeshopAreas);
 
   const props = {
     content: headerHome,
@@ -60,7 +61,7 @@ export default function Home () {
               </SwiperSlide>
             ))}
         </SwiperWrapper>
-        <Content
+        <Content 
           reverse={true}
           backgroundImage={imageGraos}
           positionCenter

@@ -2,7 +2,7 @@ import { DeliveryProps } from "../../Types/userTypes"
 import Button from "../Button";
 import { ContainerDelivery, H1, ImageDelivery, TextArea } from "./styles"
 
-const Delivery = ({title, background_Button, positionCenter, h2_children, children, backgroundImage}: DeliveryProps) => {
+export default function Delivery ({title, background_Button, positionCenter, h2_children, children, backgroundImage}: DeliveryProps) {
     return (
         <ContainerDelivery>
             <TextArea positionCenter={positionCenter}>
@@ -15,7 +15,5 @@ const Delivery = ({title, background_Button, positionCenter, h2_children, childr
 
             <ImageDelivery backgroundImage={ backgroundImage } />
         </ContainerDelivery>
-    )
-}
-
-export default Delivery
+    );
+};
