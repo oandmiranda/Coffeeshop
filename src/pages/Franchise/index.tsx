@@ -68,7 +68,7 @@ export default function Franchise () {
                 />
                 <Container>
                     <Title 
-                        style={{ marginTop: '50px' }}
+                        styleAdicional={{ marginTop: '50px' }}
                         color="#000" 
                         fontSize="2.8rem">
                             Nossos Produtos 
@@ -95,7 +95,7 @@ export default function Franchise () {
                 </Container>
                 <Box as="section" boxBackground={boxBackground}>
                     <Title 
-                            style={{ marginBottom: '580px' }}
+                            styleAdicional={{ marginBottom: '580px' }}
                             color="#fff" 
                             fontSize="2.8rem">
                                 Se cadastre para saber mais! 

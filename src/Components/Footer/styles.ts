@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { device } from "../../Styles/themes";
 
-export const GridContainer = styled.div`
+const GridContainer = styled.div`
     display: grid;
     grid-template-areas:
     'superior'
@@ -11,7 +11,7 @@ export const GridContainer = styled.div`
     padding: 20px;
 `;
 
-export const UpperArea = styled.div`
+const UpperArea = styled.div`
     grid-area: superior;
     display: flex;
     justify-content: space-around;
@@ -24,13 +24,13 @@ export const UpperArea = styled.div`
     }
 `;
 
-export const H2 = styled.h2`
+const H2 = styled.h2`
     @media ${device.mobileS} {
         font-size: ${props => props.theme.sizes.subtitle};
     };
 `;
 
-export const LowerArea = styled.div`
+const LowerArea = styled.div`
     grid-area: rodape; 
     display: flex;
     justify-content: center;
@@ -40,3 +40,5 @@ export const LowerArea = styled.div`
         font-size: .8rem;
     }
 `;
+
+export { GridContainer, UpperArea, H2, LowerArea };

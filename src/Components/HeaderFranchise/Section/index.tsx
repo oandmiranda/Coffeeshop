@@ -1,9 +1,9 @@
-import {Box, Title, Paragraph, ImageArea, Image, Button} from "./styles";
+import {Container, Title, Paragraph, ImageArea, Image, Button} from "./styles";
 import {textAreaProps} from "../../../Types/userTypes";
 
 export default function Section ({as, boxBackground, backgroundWhite, title, color, paragraph, fontSize, hasImage, hasButton, ...props}: textAreaProps) {
     return (
-        <Box as={as} boxBackground={boxBackground} backgroundWhite={backgroundWhite}>
+        <Container as={as} boxBackground={boxBackground} backgroundWhite={backgroundWhite}>
             <Title color={color}>{title}</Title>
             <Paragraph fontSize={fontSize}>{paragraph}</Paragraph>
             { hasImage && (
@@ -16,6 +16,6 @@ export default function Section ({as, boxBackground, backgroundWhite, title, col
             { hasButton && (
                 <Button as='a'>Quero ser um franqueado</Button>
             )}
-        </Box>
+        </Container>
     );
-}
+};

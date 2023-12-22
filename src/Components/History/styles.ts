@@ -2,7 +2,7 @@ import styled from "styled-components";
 import image from "../../assets/img/cafeteria.png";
 import { device } from "../../Styles/themes";
 
-export const Container = styled.div`
+const Container = styled.div`
     width: 80%;
     margin: 0 auto;
     height: 250px;
@@ -34,7 +34,7 @@ export const Container = styled.div`
     };
 `;
 
-export const Paragraph = styled.p`
+const Paragraph = styled.p`
     font-size: ${props => props.theme.sizes.default};
     width: 60%;
     padding: 10px;
@@ -52,7 +52,7 @@ export const Paragraph = styled.p`
     };
 `;
 
-export const Image = styled.div`
+const Image = styled.div`
     width: 420px;
     height: 220px;
     background-image: url(${image});
@@ -64,3 +64,5 @@ export const Image = styled.div`
     }
 
 `;
+
+export { Container, Paragraph, Image };

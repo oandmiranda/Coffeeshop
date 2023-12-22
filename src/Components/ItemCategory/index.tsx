@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import { useSelector} from "react-redux";
+import { RootState, ItemCategoryProps } from "../../Types/userTypes";
 import Title from "../Title";
 import { Description, Image, Item, Section } from "./styles";
 
-const ItemCategory = ({title}) => {
-    const categories = useSelector(state => state.categories)
+export default function ItemCategory ({title}: ItemCategoryProps) {
+    const categories = useSelector((state: RootState) => state.categories)
 
     return (
         <Section>
@@ -28,7 +29,5 @@ const ItemCategory = ({title}) => {
                 </Item>
             ))}
         </Section>
-    )
-}
-
-export default ItemCategory;
+    );
+};

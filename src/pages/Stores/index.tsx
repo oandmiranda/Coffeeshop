@@ -8,10 +8,11 @@ import cafeteriaSantoAndre from "../../assets/img/pagestore5.png";
 import cafeteriaIbirapuera from "../../assets/img/pagestore2.png"; 
 import Footer from "../../Components/Footer";
 import Container from "../../Components/Container";
+import { RootState } from "../../Types/userTypes";
 
 export default function Stores () {
 
-    const headerStores = useSelector(state => state.headerStores);
+    const headerStores = useSelector((state: RootState) => state.headerStores);
     const props = {
         content: headerStores,
         height: "85vh",
@@ -75,4 +76,4 @@ export default function Stores () {
             <Footer />
         </>
     );
-}
+};

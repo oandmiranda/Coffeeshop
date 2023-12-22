@@ -1,7 +1,7 @@
-import { PopUpProps } from "../../Types/userTypes";
+import { AnimationProps } from "../../Types/userTypes";
 import { DropDownWrapper, Item } from "./styles";
 
-const PopUp = ({isVisible}: PopUpProps) => {
+export default function PopUp ({isVisible}: AnimationProps) {
     return (
         <DropDownWrapper isVisible={isVisible} >
             <ul>
@@ -11,7 +11,5 @@ const PopUp = ({isVisible}: PopUpProps) => {
                 <Item>Contato</Item>
             </ul>
         </DropDownWrapper>
-    )
-}
-
-export default PopUp
+    );
+};

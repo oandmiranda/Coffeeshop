@@ -9,7 +9,7 @@ import "./swiper.css";
 import { SwiperProps } from "../../Types/userTypes";
 register();
 
-const SwiperWrapper = ({ children, navigation, pagination, loop, autoplay }: SwiperProps) => {
+export default function SwiperWrapper ({ children, navigation, pagination, loop, autoplay }: SwiperProps) {
     return (
         <Swiper 
             className="swiperWrapper"
@@ -20,7 +20,5 @@ const SwiperWrapper = ({ children, navigation, pagination, loop, autoplay }: Swi
         >
             {children}
         </Swiper>
-    )
-}
-
-export default SwiperWrapper
+    );
+};

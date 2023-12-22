@@ -1,7 +1,7 @@
 import { Div, FacebookIcon, InstagramIcon, Logo } from "../Header/Nav/styles";
 import { UpperArea, GridContainer, LowerArea, H2 } from "./styles";
 
-const Footer = () => {
+export default function Footer () {
     return (
         <GridContainer>
             <UpperArea>
@@ -19,7 +19,5 @@ const Footer = () => {
                 <p>Projeto em desenvolvimento</p>
             </LowerArea>
         </GridContainer>
-    )
-}
-
-export default Footer
+    );
+};

@@ -1,10 +1,7 @@
 import { styled } from "styled-components";
 import { Button } from "../HeaderFranchise/Section/styles";
 import { device } from "../../Styles/themes";
-
-interface FormProps {
-    fontFamily?: string
-}
+import { FormProps } from "../../Types/userTypes";
 
 const Container = styled.div`
     max-width: 416px;

@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 import { ContainerProps } from "../../Types/userTypes";
 import { device } from "../../Styles/themes";
 
-export const Container = styled.header<ContainerProps>`
+const Container = styled.header<ContainerProps>`
     height: ${props => props.height};
     display: flex;  
     justify-content: center;
@@ -22,7 +22,7 @@ export const Container = styled.header<ContainerProps>`
     }
 `;
 
-export const Wrapper = styled.div<ContainerProps>`
+const Wrapper = styled.div<ContainerProps>`
     width: 100vw;
     height: ${props => props.height};
     position: relative;
@@ -38,7 +38,7 @@ export const Wrapper = styled.div<ContainerProps>`
     }
 `;
 
-export const ImageBackground = styled.img`
+const ImageBackground = styled.img`
     width: 100vw;
     height: 100vh;
     object-fit: cover;
@@ -50,3 +50,5 @@ export const ImageBackground = styled.img`
         height: 100%;
     }
 `;
+
+export { Container, Wrapper, ImageBackground };

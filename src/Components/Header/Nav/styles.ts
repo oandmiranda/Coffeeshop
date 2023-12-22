@@ -5,7 +5,7 @@ import { ArrowDownShort } from "@styled-icons/bootstrap";
 import { Facebook } from "@styled-icons/fa-brands";
 import { LinkProps } from "../../../Types/userTypes";
 
-export const Container = styled.nav`
+const Container = styled.nav`
     width: 100%;
     height: 70px;
     display: flex;
@@ -20,11 +20,11 @@ export const Container = styled.nav`
     z-index: 3;
 `;
 
-export const Div = styled.div`
+const Div = styled.div`
     display: flex;
     `;
 
-export const BoxLink = styled(Div)`
+const BoxLink = styled(Div)`
         gap: 40px;
         position: relative;
 
@@ -33,13 +33,13 @@ export const BoxLink = styled(Div)`
         }
     `;
 
-export const NavbarLink= styled(Link)<LinkProps>`
+const NavbarLink= styled(Link)<LinkProps>`
     color: ${({isBlack}) => isBlack ? 'black' : 'white'};
     cursor: pointer;
     font-size: ${props => props.theme.sizes.default};
 `;
 
-export const Logo = styled.img`
+const Logo = styled.img`
     width: 70px;
     height: 70px;
 
@@ -49,18 +49,20 @@ export const Logo = styled.img`
 `;
 
 /* Componentes de Icone */
-export const InstagramIcon = styled(Instagram)`
+const InstagramIcon = styled(Instagram)`
     color: ${props => props.theme.colors.default};
     width: 30px;
 `;
 
-export const ArrowIcon = styled(ArrowDownShort)`
+const ArrowIcon = styled(ArrowDownShort)`
     color: ${props => props.theme.colors.default};
     height: 22px;
 `;
 
-export const FacebookIcon = styled(Facebook)`
+const FacebookIcon = styled(Facebook)`
     color: ${props => props.theme.colors.default};
     height: 30px;
     margin-left: 10px;
 `;
+
+export { Container, Div, BoxLink, NavbarLink, Logo, InstagramIcon, ArrowIcon, FacebookIcon };

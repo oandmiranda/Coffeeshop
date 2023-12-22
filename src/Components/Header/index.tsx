@@ -3,16 +3,14 @@ import { Navigation, Pagination, Scrollbar, Autoplay} from "swiper";
 import SwiperWrapper from "../Swiper";
 import { HeaderProps } from "../../Types/userTypes";
 import Nav from "../Header/Nav";
-import Children from "./Children";
+import Children from "./Animation";
 import Title from "../Title";
 import { Container, ImageBackground, Wrapper } from "./styles";
 import BurgerMenu from "../BurgerMenu";
 
-const Header = (props: HeaderProps) => {
+export default function Header (props: HeaderProps) {
 
-    const {
-        content, height, subtitle, contentText, fontSize, color 
-    } = props;
+    const { content, height, subtitle, contentText, fontSize, color } = props;
 
     return (
         <Container height={height}>
@@ -45,7 +43,5 @@ const Header = (props: HeaderProps) => {
                 ))} 
             </SwiperWrapper>
         </Container>
-    )
-}
-
-export default Header
+    );
+};

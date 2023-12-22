@@ -2,7 +2,7 @@ import styled from "styled-components";
 import {textAreaProps} from "../../../Types/userTypes";
 import { device } from "../../../Styles/themes";
 
-const Box = styled.div<textAreaProps>`
+const Container = styled.div<textAreaProps>`
     margin: 50px 0;
     padding: 0 100px;
     width: 100%;
@@ -123,4 +123,4 @@ const Button = styled.button`
     };
 `;
 
-export {Box, Title, Paragraph, ImageArea, Image, Button};
+export {Container, Title, Paragraph, ImageArea, Image, Button};
