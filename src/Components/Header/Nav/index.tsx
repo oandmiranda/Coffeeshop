@@ -7,14 +7,6 @@ import { Container, BoxLink, NavbarLink, Logo, Div, InstagramIcon, ArrowIcon, Fa
 export default function Nav ({urlImage, textoAlternativo, style}: NavProps) {
     const [isVisible, setVisible] = useState<boolean>(false);
 
-    // função para exibir e fechar o PopUp na barra de navegação
-    const handleOver = () => {
-        setVisible(true)
-    }
-    const handleOut = () => {
-        setVisible(false)
-    }
-
     return (
         <Container style={style}>
             <Div>
@@ -28,8 +20,9 @@ export default function Nav ({urlImage, textoAlternativo, style}: NavProps) {
                 <NavbarLink to="/">Home</NavbarLink>
                 <NavbarLink 
                     to="/"
-                    onMouseOver={handleOver}
-                    onMouseOut={handleOut}
+                    // função para exibir e ocultar o popup no nav
+                    onMouseOver={() => setVisible(true)}
+                    onMouseOut={() => setVisible(false)}
                     >
                     Empório
                     <ArrowIcon />
@@ -37,9 +30,6 @@ export default function Nav ({urlImage, textoAlternativo, style}: NavProps) {
                 <NavbarLink to="/myhistory">Nossa História</NavbarLink>
                 <NavbarLink to="/stores">Lojas</NavbarLink>
                 <NavbarLink to="/franchise">Seja um franqueado</NavbarLink>
-                {/* <NavbarLink to="/">
-                    Aprenda mais
-                </NavbarLink> */}
             </BoxLink>
 
             <Div>
