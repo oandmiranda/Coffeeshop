@@ -10,7 +10,7 @@ export default function MyHistory () {
             <BurgerMenu pageWrapId={"page-wrap"} outerContainerId={"outer-container"}/>
             <Nav urlImage="/assets/logo.png" style={{ position: 'fixed', top: '3px'}}/>
             <Content 
-                styleAdicional={{ marginTop: '120px' }}
+                styleAdicional={{ marginTop: '300px' }}
                 reverse
                 btnVisible={false}
                 backgroundImage={nossoGraoImage}

@@ -3,7 +3,6 @@ import Content from "../../Components/Content";
 import Nav from "../../Components/Header/Nav";
 import HeaderFranchise from "../../Components/HeaderFranchise";
 import Section from "../../Components/HeaderFranchise/Section";
-import Title from "../../Components/Title";
 import boxBackground from "../../assets/img/background-franchise.png";
 import historyImage from "../../assets/img/cafe-category.png";
 import image1 from "../../assets/img/image-selfie1.png"
@@ -26,7 +25,8 @@ export default function Franchise () {
     }
 
     return (
-    <>      <BurgerMenu pageWrapId={"page-wrap"} outerContainerId={"outer-container"}/>
+    <>      
+            <BurgerMenu pageWrapId={"page-wrap"} outerContainerId={"outer-container"}/>
             <Nav urlImage="/assets/logo.png" style={{ position: 'fixed', top: '3px'}}/>
             <HeaderFranchise 
                 title="Seja franqueado da rede de cafeterias que mais cresce no Brasil!"
@@ -67,12 +67,6 @@ export default function Franchise () {
                     hasButton
                 />
                 <Container>
-                    <Title 
-                        styleAdicional={{ marginTop: '50px' }}
-                        color="#000" 
-                        fontSize="2.8rem">
-                            Nossos Produtos 
-                    </Title>
                     <Content 
                         styleAdicional={{ marginTop: '130px' }}
                         reverse={false}
@@ -94,12 +88,6 @@ export default function Franchise () {
                     />
                 </Container>
                 <Box as="section" boxBackground={boxBackground}>
-                    <Title 
-                            styleAdicional={{ marginBottom: '580px' }}
-                            color="#fff" 
-                            fontSize="2.8rem">
-                                Se cadastre para saber mais! 
-                    </Title>
                     <Form />
                 </Box>
                 <Footer />
