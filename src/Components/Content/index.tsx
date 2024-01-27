@@ -11,7 +11,7 @@ export default function Content ({ reverse, backgroundImage, positionCenter, tit
                 <Title>{ title }</Title>
                 <p>{ paragraph }</p>
                 { btnVisible && (
-                    <Link to="/myhistory">
+                    <Link to="/">
                         <Button background_Button={ background_Button }>
                             { children }
                         </Button> 
