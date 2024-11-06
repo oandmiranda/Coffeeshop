@@ -57,6 +57,7 @@ export interface BoxStyled {
 }
 export interface DropDownProps {
     isVisible?: boolean
+    href?: string
     children: React.ReactNode
 }
 
