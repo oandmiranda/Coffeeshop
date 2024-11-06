@@ -1,14 +1,22 @@
 import { AnimationProps } from "../../Types/userTypes";
-import { DropDownWrapper, Item } from "./styles";
+import { DropDownWrapper } from "./styles";
 
-export default function PopUp ({isVisible}: AnimationProps) {
+interface PopUpProps extends AnimationProps {
+    onMouseEnter: () => void;
+    onMouseLeave: () => void;
+}
+
+export default function PopUp ({isVisible, onMouseEnter, onMouseLeave}: PopUpProps) {
     return (
-        <DropDownWrapper isVisible={isVisible} >
+        <DropDownWrapper 
+            isVisible={isVisible} 
+            onMouseEnter={onMouseEnter} 
+            onMouseLeave={onMouseLeave}
+        >
             <ul>
-                <Item>Nosso Café</Item>
-                <Item>Cardápio</Item>
-                <Item>Delivery</Item>
-                <Item>Contato</Item>
+                <li><a href={"/ourhistory"}>Nosso Café</a></li>
+                <li><a href={"/"}>Cardápio</a></li>
+                <li><a href={"/"}>Delivery</a></li>
             </ul>
         </DropDownWrapper>
     );

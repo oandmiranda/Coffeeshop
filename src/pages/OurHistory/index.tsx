@@ -4,7 +4,7 @@ import Footer from "../../Components/Footer";
 import Nav from "../../Components/Header/Nav";
 import nossoGraoImage from "../../assets/img/nossograo.png";
 
-export default function MyHistory () {
+export default function OurHistory () {
     return (
         <>
             <BurgerMenu pageWrapId={"page-wrap"} outerContainerId={"outer-container"}/>

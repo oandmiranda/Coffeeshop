@@ -57,6 +57,7 @@ export interface BoxStyled {
 }
 export interface DropDownProps {
     isVisible?: boolean
+    href?: string
     children: React.ReactNode
 }
 
@@ -114,6 +115,7 @@ export interface ContentProps extends ButtonProps {
     reverse?: boolean
     positionCenter?: boolean
     backgroundColor?: string
+    url?: string
 }
 
 export interface CategoryList {

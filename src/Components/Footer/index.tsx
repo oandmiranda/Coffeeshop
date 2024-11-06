@@ -1,5 +1,5 @@
 import { Div, FacebookIcon, InstagramIcon, Logo } from "../Header/Nav/styles";
-import { UpperArea, GridContainer, LowerArea, H2 } from "./styles";
+import { UpperArea, GridContainer, H2 } from "./styles";
 
 export default function Footer () {
     return (
@@ -14,10 +14,6 @@ export default function Footer () {
                     <FacebookIcon />
                 </Div>
             </UpperArea>
-            
-            <LowerArea>
-                <p>Projeto em desenvolvimento</p>
-            </LowerArea>
         </GridContainer>
     );
 };
