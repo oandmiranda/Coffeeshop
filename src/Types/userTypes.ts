@@ -115,6 +115,7 @@ export interface ContentProps extends ButtonProps {
     reverse?: boolean
     positionCenter?: boolean
     backgroundColor?: string
+    url?: string
 }
 
 export interface CategoryList {

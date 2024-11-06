@@ -14,7 +14,7 @@ export default function PopUp ({isVisible, onMouseEnter, onMouseLeave}: PopUpPro
             onMouseLeave={onMouseLeave}
         >
             <ul>
-                <li><a href={"/myhistory"}>Nosso Café</a></li>
+                <li><a href={"/ourhistory"}>Nosso Café</a></li>
                 <li><a href={"/"}>Cardápio</a></li>
                 <li><a href={"/"}>Delivery</a></li>
             </ul>

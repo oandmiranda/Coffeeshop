@@ -62,6 +62,7 @@ export default function Home () {
             ))}
         </SwiperWrapper>
         <Content 
+          url="/ourhistory"
           reverse={true}
           backgroundImage={imageGraos}
           positionCenter
