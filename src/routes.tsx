@@ -8,6 +8,7 @@ import OurHistory from "./pages/OurHistory";
 import Item from "./pages/Item";
 import Franchise from "./pages/Franchise";
 import Stores from "./pages/Stores";
+import Menu from "./pages/Menu";
 
 const AppRoutes = () => {
     return (
@@ -21,6 +22,7 @@ const AppRoutes = () => {
                     <Route path="/ourhistory" element={ <OurHistory /> }></Route>
                     <Route path="/franchise" element={ <Franchise /> }></Route>
                     <Route path="/stores" element={ <Stores /> }></Route>
+                    <Route path="/menu" element={ <Menu /> }></Route>
                 </Routes>
             </BrowserRouter>
         </ThemeProvider>
