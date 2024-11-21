@@ -16,7 +16,9 @@ export default function ItemCategory ({title}: ItemCategoryProps) {
                 color="black"
                 fontSize="1.8rem"
             >
-                {title}
+                <a href="/menu" style={{color: '#111'}}>
+                    {title}
+                </a>
             </Title>
             { categories.map((item, index) => (
                 <Item key={index}>
