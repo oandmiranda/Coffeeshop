@@ -32,6 +32,7 @@ export default function Home () {
         <Header {...props}/>
         <History /> 
         <Content 
+          url="/menu"
           reverse={true}
           backgroundImage={imageCoffee}
           positionCenter

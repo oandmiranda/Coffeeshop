@@ -64,7 +64,6 @@ export default function Franchise () {
                     fontSize='1.3rem'
                     hasImage
                     {...props}
-                    hasButton
                 />
                 <Container>
                     <Content 

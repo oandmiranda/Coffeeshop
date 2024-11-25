@@ -3,16 +3,17 @@ import { IHeaderHome } from "../store/reducer/headerHome";
 import { ICoffeeShopAreas } from "../store/reducer/coffeeshopAreas";
 import { IHeaderStores } from "../store/reducer/headerStores";
 import { ICategories } from "../store/reducer/categories";
+import { IHeaderMenu } from "../store/reducer/headerMenu";
 
 export interface HeaderProps extends AnimationProps, TitleProps {
     height?: string
     content?: Array<{
-        id: number
+        id?: number
         image?: string
         image2?: string
-        name: string
-        text: string
-        isVisible: boolean
+        name?: string
+        text?: string
+        isVisible?: boolean
     }>
 }
 
@@ -149,5 +150,6 @@ export interface RootState {
     headerHome: IHeaderHome[]
     coffeeshopAreas: ICoffeeShopAreas[]
     headerStores: IHeaderStores[]
-    categories: ICategories[];
+    categories: ICategories[]
+    headerMenu: IHeaderMenu[]
 }

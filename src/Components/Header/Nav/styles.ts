@@ -22,6 +22,8 @@ const Container = styled.nav`
 
 const Div = styled.div`
     display: flex;
+    align-items: center;
+    justify-content: center;
     `;
 
 const BoxLink = styled(Div)`

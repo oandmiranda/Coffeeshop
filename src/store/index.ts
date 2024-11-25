@@ -4,6 +4,7 @@ import itemsSlice from './reducer/items';
 import headerHomeSlice from './reducer/headerHome';
 import coffeeshopAreaSlice from "./reducer/coffeeshopAreas";
 import headerStoresSlice from './reducer/headerStores';
+import headerMenuSlice from './reducer/headerMenu';
 
 const store = configureStore({
     reducer: {
@@ -11,7 +12,8 @@ const store = configureStore({
         items: itemsSlice,
         headerHome: headerHomeSlice,
         coffeeshopAreas: coffeeshopAreaSlice,
-        headerStores: headerStoresSlice
+        headerStores: headerStoresSlice,
+        headerMenu: headerMenuSlice
     }
 });
 
