@@ -31,7 +31,7 @@ Ferramentas de desenvolvimento:
 - npm
 - Git & GitHub
 
-#🌟 Aprendizados e destaques
+# 🌟 Aprendizados e destaques
 - Prática em React: Fortaleci minha compreensão dos principais hooks e do fluxo de dados via props e estado global.
-- Código limpo: Com o feedback, evoluí na aplicação de boas práticas, organização de código e legibilidade, como por exemplo na aplicação de flags condicionais no componente, evitando repetição de código.
+- Código limpo: Com o feedback, evoluí na aplicação de boas práticas, organização de código e legibilidade, como por exemplo na aplicação de flags condicionais no componente, evitando a necessidade de repetição de código.
 - Colaboração: Melhor compreensão do uso de Git em equipes e do impacto do feedback técnico no desenvolvimento.
