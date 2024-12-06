@@ -6,4 +6,4 @@
 (X) refactor burger menu height
 (X) conferir endereçamento de todos os links
 (X) refactorar imagens na página "menu" (ajustar o responsivo)
-() excluir yarn.lock
+(X) excluir yarn.lock

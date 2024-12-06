@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import coffeeImage from "../../assets/img/coffeeMenu.png";
-import brigadeiroImage from "../../assets/img/brigadeiro.png";
-import croissantImage from "../../assets/img/O melhor croissant de sp.png";
+import desertImage from "../../assets/img/desert.png";
+import croissantImage from "../../assets/img/croissants.png";
 import cookieImage from "../../assets/img/cookieMenu.png";
 import cakeImage from "../../assets/img/cake-1.png";
 
@@ -18,8 +18,8 @@ const initialState: IHeaderMenu[] = [{
 },
 { 
     id: 2,
-    image: brigadeiroImage, 
-    name: 'brigadeiro', 
+    image: desertImage, 
+    name: 'desert', 
 },
 { 
     id: 3, 
